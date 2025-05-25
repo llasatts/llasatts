@@ -44,9 +44,10 @@
 
 	<b>Contents</b>
       <ul>
+        <li><a href="#Codec Reconstruction Samples">Codec Reconstruction Samples</a></li> 
         <li><a href="#Scaling Train-Time Compute">Scaling Train-Time Compute</a></li> 
 		<li><a href="#Scaling Inference-Time Compute">Scaling Inference-Time Compute</a></li> 
-		<li><a href="#Codec Reconstruction Samples">Codec Reconstruction Samples</a></li> 
+		
 		<!-- <li><a href="#rl-samples">Scaling Test-Time Compute</a></li>  Scaling Inference-Time Compute : Reconstruction Samples
         <li><a href="#zero-shot-icl-samples">Zero-shot In-context Learning</a></li>
         <li><a href="#speaker-finetune-samples">Speaker Fine-tune</a></li>
@@ -59,7 +60,7 @@
  
 </div>
 
-
+<!-- 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded">
     <h2 style="text-align: center;">Comparision Inference-Time scaling results using a different evaluation metric</h2>
     <div class="table-responsive pt-3" tabindex="0">
@@ -274,7 +275,523 @@
              </tbody>
         </table>
     </div>
-</div>
+</div> -->
+
+
+<div 
+  class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded"
+  style="overflow-x: auto; white-space: nowrap;"
+>
+<h2 id="Codec Reconstruction Samples" style="text-align: center;">Codec Reconstruction Samples</h2>
+	<table class="table table-hover pt-2" style="text-align: center;">
+		<thead>
+		<tr>
+			<!-- 第一列显示“Sample”或说明文字 -->
+			<th>Sample</th>
+			<th>GT</th>
+			<th>Xcodec2</th>
+			<th>StableCodec</th>
+			<th>WavTokenizer_40tps</th>
+			<th>WavTokenizer_75tps</th>
+			<th>Xcodec_nq1</th>
+			<th>Xcodec_nq2</th>
+			<th>BigCodec</th>
+			<th>DAC_16k_nq1</th>
+			<th>DAC_16k_nq2</th>
+			<th>DAC_16k_nq12</th>
+			<th>Encodec_nq2</th>
+			<th>Encodec_nq8</th>
+			<th>Mimi_nq4</th>
+			<th>Mimi_nq6</th>
+			<th>Mimi_nq8</th>
+			<th>SemanticCodec</th>
+			<th>SpeechTokenizer_nq1</th>
+			<th>SpeechTokenizer_nq2</th>
+		</tr>
+		</thead>
+		<tbody>
+		 
+		<!-- 第2行：121-121726-0000.flac -->
+		<tr>
+			<td>Sample 1</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/test_clean/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec2_0/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/StableCodec_base_700bps_0/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/WavTokenizer320_0/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/WavTokenizer600_0/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec_1/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec_2/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/BigCodec_0/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_1/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_2/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_12/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Encodec_2/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Encodec_8/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_4/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_6/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_8/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SemanticCodec_700bps_1/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SpeachTokenzier_1/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SpeachTokenzier_2/121-121726-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+		</tr>
+	
+		<!-- 第3行：237-126133-0000.flac -->
+		<tr>
+			<td>Sample 2</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/test_clean/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec2_0/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/StableCodec_base_700bps_0/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/WavTokenizer320_0/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/WavTokenizer600_0/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec_1/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec_2/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/BigCodec_0/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_1/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_2/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_12/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Encodec_2/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Encodec_8/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_4/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_6/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_8/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SemanticCodec_700bps_1/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SpeachTokenzier_1/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SpeachTokenzier_2/237-126133-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+		</tr>
+	
+		<!-- 第4行：260-123286-0000.flac -->
+		<tr>
+			<td>Sample 3</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/test_clean/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec2_0/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/StableCodec_base_700bps_0/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/WavTokenizer320_0/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/WavTokenizer600_0/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec_1/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec_2/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/BigCodec_0/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_1/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_2/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_12/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Encodec_2/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Encodec_8/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_4/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_6/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_8/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SemanticCodec_700bps_1/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SpeachTokenzier_1/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SpeachTokenzier_2/260-123286-0000.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+		</tr>
+	
+		<!-- 第5行：672-122797-0001.flac -->
+		<tr>
+			<td>Sample 4</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/test_clean/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec2_0/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/StableCodec_base_700bps_0/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/WavTokenizer320_0/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/WavTokenizer600_0/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec_1/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Xcodec_2/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/BigCodec_0/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_1/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_2/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/DAC_16k_12/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Encodec_2/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Encodec_8/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_4/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_6/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/Mimi_8/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SemanticCodec_700bps_1/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SpeachTokenzier_1/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+			<td>
+			<audio controls style="width: 160px;">
+				<source src="audios/Codec_Recon/SpeachTokenzier_2/672-122797-0001.flac">
+				Your browser does not support the audio element.
+			</audio>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>	
+
+
+
 
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
@@ -882,519 +1399,6 @@
           
 
 
-
-
-<div 
-  class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded"
-  style="overflow-x: auto; white-space: nowrap;"
->
-<h2 id="Codec Reconstruction Samples" style="text-align: center;">Codec Reconstruction Samples</h2>
-	<table class="table table-hover pt-2" style="text-align: center;">
-		<thead>
-		<tr>
-			<!-- 第一列显示“Sample”或说明文字 -->
-			<th>Sample</th>
-			<th>GT</th>
-			<th>Xcodec2</th>
-			<th>StableCodec</th>
-			<th>WavTokenizer_40tps</th>
-			<th>WavTokenizer_75tps</th>
-			<th>Xcodec_nq1</th>
-			<th>Xcodec_nq2</th>
-			<th>BigCodec</th>
-			<th>DAC_16k_nq1</th>
-			<th>DAC_16k_nq2</th>
-			<th>DAC_16k_nq12</th>
-			<th>Encodec_nq2</th>
-			<th>Encodec_nq8</th>
-			<th>Mimi_nq4</th>
-			<th>Mimi_nq6</th>
-			<th>Mimi_nq8</th>
-			<th>SemanticCodec</th>
-			<th>SpeechTokenizer_nq1</th>
-			<th>SpeechTokenizer_nq2</th>
-		</tr>
-		</thead>
-		<tbody>
-		 
-		<!-- 第2行：121-121726-0000.flac -->
-		<tr>
-			<td>Sample 1</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/test_clean/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec2_0/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/StableCodec_base_700bps_0/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/WavTokenizer320_0/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/WavTokenizer600_0/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec_1/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec_2/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/BigCodec_0/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_1/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_2/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_12/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Encodec_2/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Encodec_8/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_4/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_6/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_8/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SemanticCodec_700bps_1/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SpeachTokenzier_1/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SpeachTokenzier_2/121-121726-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-		</tr>
-	
-		<!-- 第3行：237-126133-0000.flac -->
-		<tr>
-			<td>Sample 2</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/test_clean/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec2_0/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/StableCodec_base_700bps_0/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/WavTokenizer320_0/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/WavTokenizer600_0/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec_1/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec_2/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/BigCodec_0/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_1/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_2/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_12/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Encodec_2/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Encodec_8/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_4/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_6/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_8/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SemanticCodec_700bps_1/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SpeachTokenzier_1/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SpeachTokenzier_2/237-126133-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-		</tr>
-	
-		<!-- 第4行：260-123286-0000.flac -->
-		<tr>
-			<td>Sample 3</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/test_clean/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec2_0/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/StableCodec_base_700bps_0/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/WavTokenizer320_0/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/WavTokenizer600_0/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec_1/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec_2/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/BigCodec_0/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_1/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_2/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_12/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Encodec_2/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Encodec_8/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_4/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_6/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_8/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SemanticCodec_700bps_1/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SpeachTokenzier_1/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SpeachTokenzier_2/260-123286-0000.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-		</tr>
-	
-		<!-- 第5行：672-122797-0001.flac -->
-		<tr>
-			<td>Sample 4</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/test_clean/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec2_0/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/StableCodec_base_700bps_0/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/WavTokenizer320_0/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/WavTokenizer600_0/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec_1/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Xcodec_2/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/BigCodec_0/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_1/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_2/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/DAC_16k_12/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Encodec_2/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Encodec_8/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_4/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_6/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/Mimi_8/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SemanticCodec_700bps_1/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SpeachTokenzier_1/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-			<td>
-			<audio controls style="width: 160px;">
-				<source src="audios/Codec_Recon/SpeachTokenzier_2/672-122797-0001.flac">
-				Your browser does not support the audio element.
-			</audio>
-			</td>
-		</tr>
-		</tbody>
-	</table>
-</div>	
 
 
 
