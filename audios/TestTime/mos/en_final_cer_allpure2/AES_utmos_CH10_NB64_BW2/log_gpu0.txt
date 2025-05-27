@@ -1,0 +1,865 @@
+2025-05-13 23:17:15.817134: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 23:17:15.823064: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 23:17:15.823093: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 23:18:10,124 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/6 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 17%|█▋        | 1/6 [06:36<33:02, 396.47s/it] 33%|███▎      | 2/6 [12:09<23:57, 359.32s/it] 50%|█████     | 3/6 [26:56<30:00, 600.02s/it] 67%|██████▋   | 4/6 [36:33<19:42, 591.09s/it] 83%|████████▎ | 5/6 [43:21<08:44, 524.86s/it]100%|██████████| 6/6 [50:09<00:00, 485.43s/it]100%|██████████| 6/6 [50:09<00:00, 501.66s/it]
+输入文本: Annie keeps disrupting class, stirring the whole room. Teacher An urges her to behave, and finally Annie settles down and listens quietly.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 0 - Beam 0 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 1 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 2 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 3 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 4 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 5 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 6 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 7 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 8 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 9 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 10 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 11 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 12 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 13 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 14 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 15 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 16 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 17 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 18 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 19 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 20 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 21 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 22 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 23 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 24 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 25 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 26 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 27 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 28 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 29 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 30 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 31 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 32 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 33 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 34 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 35 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 36 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 37 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 38 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 39 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 40 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 41 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 42 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 43 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 44 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 45 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 46 - Predicted:  hanny keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.91
+Sample 0 - Beam 47 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 48 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 49 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 50 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 51 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 52 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 53 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 54 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 55 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 56 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 57 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 58 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 59 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 60 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 61 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 62 - Predicted:  hanny keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.91
+Sample 0 - Beam 63 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 64 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 65 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 66 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 67 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 68 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 69 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 70 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 71 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 72 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 73 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 74 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 75 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 76 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 77 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 78 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 79 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 80 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 81 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 82 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 83 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 84 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 85 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 86 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 87 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 88 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 89 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 90 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 91 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 92 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 93 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 94 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 95 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 96 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 97 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 98 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 99 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 100 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 101 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 102 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 103 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 104 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 105 - Predicted:  annie keeps disrupting class stirring the whole room teacher n urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 106 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 107 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 108 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 109 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 110 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 111 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 112 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 113 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 114 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 115 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 116 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 117 - Predicted:  annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly  - CER: 0.95
+Sample 0 - Beam 118 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 119 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 120 - Predicted:  tearing the whole room teacher anne  - CER: 0.18
+Sample 0 - Beam 121 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 122 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 123 - Predicted:  annie keeps disrupting class stirring the whole room teacher n urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+Sample 0 - Beam 124 - Predicted:  annie keeps disrupting flaps stirring the whole room teacher m urges her to behave and finally annie settles down and listens quietly - CER: 0.91
+Sample 0 - Beam 125 - Predicted:  annie keeps disrupting floss stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.91
+Sample 0 - Beam 126 - Predicted:  annie keeps disrupting class stirring her whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.91
+Sample 0 - Beam 127 - Predicted:  annie keeps disrupting class stirring the whole room teacher ann urges her to behave and finally annie settles down and listens quietly - CER: 0.95
+输入文本: Girl peddling eggs, shouting once and turning the corner—buy three, get two, no haggling!
+Sample 1 - Beam 0 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  girl pevelling eggs shouting once and turning the corner buy three get two no haggling  - CER: 0.93
+Sample 1 - Beam 2 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 9 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 12 - Predicted:  girl peddling eggs shouting once and turning the corner by three get two no haggling - CER: 0.93
+Sample 1 - Beam 13 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 14 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 16 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 17 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 18 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 19 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 20 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 21 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 22 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 23 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 24 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 25 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 26 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 27 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 28 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 29 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 30 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 31 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 32 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 33 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 34 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 35 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 36 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 37 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 38 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 39 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 40 - Predicted:  girl pivling eggs shouting once and turning the corner buy three get two no haggling - CER: 0.93
+Sample 1 - Beam 41 - Predicted:  girl peddling eggs shouting once and turning the corner by three get two no haggling - CER: 0.93
+Sample 1 - Beam 42 - Predicted:  girl pebbling eggs shouting once and turning the corner buy three get two no haggling  - CER: 0.93
+Sample 1 - Beam 43 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 44 - Predicted:  girl peddling eggs shouting once and turning the corner by three get to no haggling - CER: 0.87
+Sample 1 - Beam 45 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 46 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 47 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 48 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 49 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 50 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 51 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 52 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 53 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 54 - Predicted:  girl peddling eggs shouting once and turning the corner by three get to no haggling - CER: 0.87
+Sample 1 - Beam 55 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 56 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 57 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 58 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 59 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 60 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 61 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 62 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 63 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 64 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 65 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 66 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 67 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 68 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 69 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 70 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 71 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 72 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 73 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 74 - Predicted:  girl peveling eggs shouting once and turning the corner buy three get two no haggling  - CER: 0.93
+Sample 1 - Beam 75 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 76 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 77 - Predicted:  girl peddling egg shouting once and turning the corner buy three get two no haggling  - CER: 0.93
+Sample 1 - Beam 78 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 79 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 80 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 81 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 82 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 83 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 84 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 85 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 86 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 87 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 88 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 89 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 90 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 91 - Predicted:  girl peddling eggs shouting once and turning the corner by three get two no haggling - CER: 0.93
+Sample 1 - Beam 92 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 93 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no hackling - CER: 0.93
+Sample 1 - Beam 94 - Predicted:  girl peddling eggs shouting once and turning the corner by three get two no haggling - CER: 0.93
+Sample 1 - Beam 95 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haddling - CER: 0.93
+Sample 1 - Beam 96 - Predicted:  girl peddling eggs shouting once in turning the corner buy three get two no haggling - CER: 0.93
+Sample 1 - Beam 97 - Predicted:  girl peddling eggs shouting once and turning the corner by three get two no haggling  - CER: 0.93
+Sample 1 - Beam 98 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 99 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 100 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 101 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 102 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 103 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 104 - Predicted:  girl peddling eggs shouting once and turning the corner by three get two no haggling - CER: 0.93
+Sample 1 - Beam 105 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 106 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 107 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 108 - Predicted:  girl peddling eggs shouting once and turning the corner by three get two no haggling - CER: 0.93
+Sample 1 - Beam 109 - Predicted:  girl peddling eggs shouting once and turning the corner by three get to no haggling - CER: 0.87
+Sample 1 - Beam 110 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 111 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 112 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 113 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 114 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 115 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 116 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling  - CER: 1.00
+Sample 1 - Beam 117 - Predicted:  girl peddling eggs shutter eyes and turning a corner i ve had that too now i have them  - CER: 0.20
+Sample 1 - Beam 118 - Predicted:  girl peddling eggs show in once and turning the corner five three get two new brother  - CER: 0.67
+Sample 1 - Beam 119 - Predicted:  girl peddling eggs shouting winks and turning the corner 5 3 go to new hobby  - CER: 0.53
+Sample 1 - Beam 120 - Predicted:  girl pevel and yanks shouting once and turning the corner by three get to no hackling - CER: 0.60
+Sample 1 - Beam 121 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 122 - Predicted:  girl peddling eggs shouting once and turning the corner buy three get two no haggling - CER: 1.00
+Sample 1 - Beam 123 - Predicted:  girl peddling eggs shouting once and turning the corner by three get two no haggling - CER: 0.93
+Sample 1 - Beam 124 - Predicted:  girl penny and sharon s return to care thank you get to your home  - CER: 0.13
+Sample 1 - Beam 125 - Predicted:  girl peddling eggs shouting once and turning the corner five through get two nine high again  - CER: 0.67
+Sample 1 - Beam 126 - Predicted:  group only ranks  - CER: 0.00
+Sample 1 - Beam 127 - Predicted:  go out pay the relax shout out loud some time in the corner i ve been uptown you know what happened  - CER: -0.27
+输入文本: The Liang family’s sheep knock down the Jiang family’s wall; the wall hurts the sheep. Liang wants Jiang to pay for the sheep, Jiang wants Liang to rebuild the wall.
+Sample 2 - Beam 0 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  the liang family s sheep knock down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.91
+Sample 2 - Beam 4 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 7 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 8 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 9 - Predicted:  the liang family s sheep knocked down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.88
+Sample 2 - Beam 10 - Predicted:  the liang family s sheep knock down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.91
+Sample 2 - Beam 11 - Predicted:  the liang family sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 12 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 13 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 14 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 15 - Predicted:  the liang family s sheep knock down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.91
+Sample 2 - Beam 16 - Predicted:  the liang family s sheep knocked down the zheng family s wall the wall hurts the sheep liang wants zheng to pay for the sheep zheng wants liang to rebuild the wall  - CER: 0.88
+Sample 2 - Beam 17 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 18 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 19 - Predicted:  the liang family s ship knocked down the zhang family s wall the wall hurts the ship liang wants zhang to pay for the ship zhang wants liang to rebuild the wall  - CER: 0.78
+Sample 2 - Beam 20 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 21 - Predicted:  the liang family s sheep knock down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.91
+Sample 2 - Beam 22 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 23 - Predicted:  the liang family s sheep knocked down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.88
+Sample 2 - Beam 24 - Predicted:  the liang family s sheep knocked down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.88
+Sample 2 - Beam 25 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 26 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 27 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 28 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 29 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 30 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 31 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall - CER: 1.00
+Sample 2 - Beam 32 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 33 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 34 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 35 - Predicted:  the liang family s sheep knocked down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.88
+Sample 2 - Beam 36 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 37 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 38 - Predicted:  the liang family s sheep knock down the zhang family s wall the wall hurts the sheep  - CER: 0.50
+Sample 2 - Beam 39 - Predicted:  the liang family s sheep knock down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.91
+Sample 2 - Beam 40 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall herds the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 41 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep  - CER: 0.50
+Sample 2 - Beam 42 - Predicted:  the liang family s sheep knock down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.91
+Sample 2 - Beam 43 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 44 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 45 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 46 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 47 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 48 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 49 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 50 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall herds the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 51 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 52 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang  - CER: 0.81
+Sample 2 - Beam 53 - Predicted:  the liang family s sheep knock down the jian family s wall the wall hurts the sheep liang wants xian to pay for the sheep jian wants liang to rebuild the wall  - CER: 0.91
+Sample 2 - Beam 54 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep  - CER: 0.53
+Sample 2 - Beam 55 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 56 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 57 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 58 - Predicted:  the liang family s sheep knock down the jiang family s wall the bull hurst the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the bull  - CER: 0.91
+Sample 2 - Beam 59 - Predicted:  the liang family s sheep knock down the zhang family s wall the wall herds the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.88
+Sample 2 - Beam 60 - Predicted:  the liang family s sheep knocked down the jiang family s wall  - CER: 0.34
+Sample 2 - Beam 61 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 62 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 63 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 64 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 65 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 66 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 67 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall herds the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.94
+Sample 2 - Beam 68 - Predicted:  the liang family s sheep knocked down the zhao family s wall the wall hurts the sheep liang wants zhao to pay for the sheep zhao wants liang to rebuild the wall  - CER: 0.88
+Sample 2 - Beam 69 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 70 - Predicted:  the liang family s sheep knocked down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants the liang to rebuild the wall  - CER: 0.84
+Sample 2 - Beam 71 - Predicted:  you - CER: 0.00
+Sample 2 - Beam 72 - Predicted:  you - CER: 0.00
+Sample 2 - Beam 73 - Predicted:  you - CER: 0.00
+Sample 2 - Beam 74 - Predicted:  you - CER: 0.00
+Sample 2 - Beam 75 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 0.97
+Sample 2 - Beam 76 - Predicted:  the liang family s sheep knocked down the zhang family s wall the wall hurts the sheep liang wants zhang to pay for the sheep zhang wants liang to rebuild the wall  - CER: 0.88
+Sample 2 - Beam 77 - Predicted:  you - CER: 0.00
+Sample 2 - Beam 78 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild  - CER: 0.94
+Sample 2 - Beam 79 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep  - CER: 0.53
+Sample 2 - Beam 80 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 81 - Predicted:  thank you  - CER: 0.00
+Sample 2 - Beam 82 - Predicted:  the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall  - CER: 1.00
+Sample 2 - Beam 83 - Predicted:  yeah  - CER: 0.00
+Sample 2 - Beam 84 - Predicted:  the liang family s sheep knock down the chang family s wall the wall hurts the sheep liang wants chang to pay for the sheep - CER: 0.72
+Sample 2 - Beam 85 - Predicted:  the liang family s ship out down the jang family s wall the wall hurts the ship liang wants jang to pay for the ship jang wants liang to rip out the wall - CER: 0.72
+Sample 2 - Beam 86 - Predicted:  the young man  - CER: 0.03
+Sample 2 - Beam 87 - Predicted:  mmm  - CER: 0.00
+Sample 2 - Beam 88 - Predicted:  the liang family s sheep knock down the jiang family s wall the bo herds the sheep  - CER: 0.47
+Sample 2 - Beam 89 - Predicted:  the liang family s sheep knocked down the zhang family s wall the wall hurts the sheep  - CER: 0.47
+Sample 2 - Beam 90 - Predicted:  blah  - CER: 0.00
+Sample 2 - Beam 91 - Predicted:  the liang family s sheep rocked on the jang family s wall the wall hurts the sheep no one wants jang to pay for the - CER: 0.56
+Sample 2 - Beam 92 - Predicted:  the liang family s sheep the wall  - CER: 0.22
+Sample 2 - Beam 93 - Predicted:  oh yeah  - CER: 0.00
+Sample 2 - Beam 94 - Predicted:  the  - CER: 0.03
+Sample 2 - Beam 95 - Predicted:  dhalo - CER: 0.00
+Sample 2 - Beam 96 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall hurts the sheep liang wants jiang  - CER: 0.59
+Sample 2 - Beam 97 - Predicted:  the young  - CER: 0.03
+Sample 2 - Beam 98 - Predicted:  da yoo woo  - CER: 0.00
+Sample 2 - Beam 99 - Predicted:  the liang family s sheep walked down the jiang family s wall the wall helped the sheep liang asked jiang to pay for the sheep jiang asked liang to repair the wall  - CER: 0.84
+Sample 2 - Beam 100 - Predicted:  oh - CER: 0.00
+Sample 2 - Beam 101 - Predicted:  and then you re in and - CER: 0.00
+Sample 2 - Beam 102 - Predicted:  the liang family s sheep rock down the jang family s lawn the rain hurts the sheep jang wants jang to care for the sheep jang wants jang to be the - CER: 0.66
+Sample 2 - Beam 103 - Predicted:  the lamb family s sheep make fun of jane s family s girl the girl hates the sheep now it s jane s turn to go for the sheep jane goes to meet the girl  - CER: 0.34
+Sample 2 - Beam 104 - Predicted:  then the young family sheep walk down a jow fires way the war hurts the sheep jow makes jow to pove a sheep jow makes jow to eave a - CER: 0.31
+Sample 2 - Beam 105 - Predicted:  the liang family s sheep were found at 10 20 a m tomorrow at 6 00  - CER: 0.16
+Sample 2 - Beam 106 - Predicted:  thank you  - CER: 0.00
+Sample 2 - Beam 107 - Predicted:  the liang family shipped out down the jiang tang s road  - CER: 0.22
+Sample 2 - Beam 108 - Predicted:  so we - CER: 0.00
+Sample 2 - Beam 109 - Predicted:  the young family s sheep knock down the  - CER: 0.22
+Sample 2 - Beam 110 - Predicted:  the liang family s ship out by the jiang family s wall the wall helps the ship liang wants jiang to pay for the ship  - CER: 0.59
+Sample 2 - Beam 111 - Predicted:  the long firing suit will not find him don t be wore be wore  - CER: 0.03
+Sample 2 - Beam 112 - Predicted:  thank you  - CER: 0.00
+Sample 2 - Beam 113 - Predicted:  the liang family s sheep knocked down the jiang family s wall the wall rots the sheep jiang wants jiang to care for the sheep jiang wants liang to ruin the wall  - CER: 0.84
+Sample 2 - Beam 114 - Predicted:  zim yam ham  - CER: 0.00
+Sample 2 - Beam 115 - Predicted:  the liang family s seed is not founded xiang family s war the war with the seed liang wants xiang to pay for the seed xiang wants liang to rebuild the war  - CER: 0.59
+Sample 2 - Beam 116 - Predicted:  the liang family sheep  - CER: 0.12
+Sample 2 - Beam 117 - Predicted:  the leong family s sheep knocked down john s family s wall the wall hits the sheep leong wants john to put up his sheep john wants leong to rebuild the wall  - CER: 0.62
+Sample 2 - Beam 118 - Predicted:  the world follows a ship not bound by a flag but with more the world keeps the ship the world loves the world loves the world the world loves the world  - CER: 0.12
+Sample 2 - Beam 119 - Predicted:  the end  - CER: 0.03
+Sample 2 - Beam 120 - Predicted:  the lion family s sheep walked on the jewel family s wall the wall hurts the sheep yang wants yang to pay for the sheep yang wants yang to rebuild the wall  - CER: 0.75
+Sample 2 - Beam 121 - Predicted:  thank you  - CER: 0.00
+Sample 2 - Beam 122 - Predicted:  the young families should not bond with young families while it s the same young ones don t to perfect the same young ones don t to over wound  - CER: 0.12
+Sample 2 - Beam 123 - Predicted:  the lion s family speak north carolina  - CER: 0.09
+Sample 2 - Beam 124 - Predicted:  bye bye  - CER: 0.00
+Sample 2 - Beam 125 - Predicted:  the leong family s sheep knocked down and john fell as well the wall hurts the sheep leong wants john to pay for his sheep john wants john to move the hay  - CER: 0.56
+Sample 2 - Beam 126 - Predicted:  the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family s chief lockdown is 24 the reign family - CER: -8.78
+Sample 2 - Beam 127 - Predicted:  the young farmer should not long for john s family s war the war brought the sheep john wants john to take over sheep john wants john to return for war  - CER: 0.34
+输入文本: Happy kids learn to write. The kitten loves fish bones, candy, and sweet honey—don’t forget!
+Sample 3 - Beam 0 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  happy kids learn to ride the kitten loves fish bones candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 6 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 10 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  happy kids learn to write the kitten loves fishbone candy and sweet honey don t forget  - CER: 0.88
+Sample 3 - Beam 12 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 13 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 15 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 16 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 17 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 18 - Predicted:  happy kids learned to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 19 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 20 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 21 - Predicted:  pappy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 22 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 23 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 24 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 25 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 26 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget - CER: 1.00
+Sample 3 - Beam 27 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 28 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 29 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 30 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 31 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 32 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 33 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget - CER: 1.00
+Sample 3 - Beam 34 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 35 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 36 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 37 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 38 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 39 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 40 - Predicted:  happy keats learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 41 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 42 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 43 - Predicted:  happy caste learn to write the kitten loves fish bows candy and sweet honey don t forget  - CER: 0.88
+Sample 3 - Beam 44 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 45 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 46 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 47 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 48 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget don t forget  - CER: 0.82
+Sample 3 - Beam 49 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 50 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 51 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 52 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 53 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 54 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 55 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 56 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 57 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 58 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 59 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 60 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 61 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 62 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 63 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 64 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 65 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 66 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 67 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 68 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 69 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 70 - Predicted:  happy kids learn to write the kitten loves fish balls candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 71 - Predicted:  happy kids learn to write a kicking of fish bangs candy and sweet honey don t forget  - CER: 0.76
+Sample 3 - Beam 72 - Predicted:  happy kids learn to act a kitten likes fish eggs candy and sweet honey don t forget  - CER: 0.76
+Sample 3 - Beam 73 - Predicted:  happy kid s end - CER: 0.06
+Sample 3 - Beam 74 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 75 - Predicted:  happy kids learn to write the kitten loves teddy balls candy and sweet honey don t forget  - CER: 0.88
+Sample 3 - Beam 76 - Predicted:  happy kids  - CER: 0.12
+Sample 3 - Beam 77 - Predicted:  happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget  - CER: 1.00
+Sample 3 - Beam 78 - Predicted:  thank you  - CER: 0.00
+Sample 3 - Beam 79 - Predicted:  happy kids run to rant the kitten loves fish bones candy and sweet honey don t forget  - CER: 0.88
+Sample 3 - Beam 80 - Predicted:  happy 15th year to you  - CER: 0.12
+Sample 3 - Beam 81 - Predicted:  happy kids don t rely on it a kitten loves fish bones candy and sweet food don t forget  - CER: 0.59
+Sample 3 - Beam 82 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 83 - Predicted:  happy kids learn to write a kitten loves fish bones can you expect honey don t forget  - CER: 0.76
+Sample 3 - Beam 84 - Predicted:  applications for internet - CER: 0.00
+Sample 3 - Beam 85 - Predicted:  happy kids learn to write the kitten loves fish balls candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 86 - Predicted:  happy kids room direct the company names smash bands kanda and spent hands thanks again  - CER: 0.24
+Sample 3 - Beam 87 - Predicted:  happy kids learn to write the kitten loves fish balls candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 88 - Predicted:  happy kids learn to write and kids and loves fish balls candy and sweet honey don t forget  - CER: 0.76
+Sample 3 - Beam 89 - Predicted:  happy kids lenten out the kitten loves fish balls candy and sweet honey don t forget  - CER: 0.76
+Sample 3 - Beam 90 - Predicted:  happy kids learn to write the kitten reads fish bones kangaroo and sweat hearing don t forget  - CER: 0.76
+Sample 3 - Beam 91 - Predicted:  happy kids learn tonight a kitten loves fish and candy and sweet honey don t forget  - CER: 0.76
+Sample 3 - Beam 92 - Predicted:  happy kids love tonight the kitten loves fish balls candy and sweet honey don t forget  - CER: 0.76
+Sample 3 - Beam 93 - Predicted:  happy kids learn to write  - CER: 0.29
+Sample 3 - Beam 94 - Predicted:  happy kids learn to write  - CER: 0.29
+Sample 3 - Beam 95 - Predicted:  happy gives learning to life we re kicking off this year s gambling go sweet oh i don t forget  - CER: 0.18
+Sample 3 - Beam 96 - Predicted:   - CER: 0.00
+Sample 3 - Beam 97 - Predicted:  happy kids learn to write the kitten loves fish balls candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 98 - Predicted:  happy kids learn to ride the kitten loves fish balls candy and sweet honey don t forget  - CER: 0.88
+Sample 3 - Beam 99 - Predicted:  happy kids learn to act the canton labs fishbowls canada svetlana don t forget - CER: 0.47
+Sample 3 - Beam 100 - Predicted:  happy kids learn to write and kutton loves fish bones candles whatever don t forget - CER: 0.65
+Sample 3 - Beam 101 - Predicted:   - CER: 0.00
+Sample 3 - Beam 102 - Predicted:  happy kids night night  - CER: 0.12
+Sample 3 - Beam 103 - Predicted:  happy tuesday to all i couldn t lose fish bones candy and sweet honey don t forget  - CER: 0.59
+Sample 3 - Beam 104 - Predicted:  happy kids lord jowai i can t allow spishbones canyons and onyx i don t forgot  - CER: 0.29
+Sample 3 - Beam 105 - Predicted:  happy kids mind your right the kitten loves fish bones candy and sweet honey don t forget  - CER: 0.82
+Sample 3 - Beam 106 - Predicted:  happy kids night rite the kitten loves fish bones candy and sweet honey don t forget  - CER: 0.82
+Sample 3 - Beam 107 - Predicted:  happy qt land rite i ve taken a nice christmas thank you  - CER: 0.06
+Sample 3 - Beam 108 - Predicted:  happy kids day tonight the kitten loves fish balls candy and sweet honey don t forget  - CER: 0.76
+Sample 3 - Beam 109 - Predicted:  happy kids learn to write the tip my love s fishbowls candy and sweet honey don t forget  - CER: 0.71
+Sample 3 - Beam 110 - Predicted:  happy kids man connects  - CER: 0.12
+Sample 3 - Beam 111 - Predicted:  happy kids learn to write the cat o lis fish bones candy and sweet honey they forget  - CER: 0.71
+Sample 3 - Beam 112 - Predicted:   - CER: 0.00
+Sample 3 - Beam 113 - Predicted:  apples can be used to make fish eggs candy and sweet iron  - CER: 0.24
+Sample 3 - Beam 114 - Predicted:  happy 29th anniversary  - CER: 0.06
+Sample 3 - Beam 115 - Predicted:   - CER: 0.00
+Sample 3 - Beam 116 - Predicted:   - CER: 0.00
+Sample 3 - Beam 117 - Predicted:  the end - CER: 0.06
+Sample 3 - Beam 118 - Predicted:  happy kids learn to write the kitten loves fish eggs candy and sweet honey don t forget  - CER: 0.94
+Sample 3 - Beam 119 - Predicted:  happy kids made a right they kept me lost fish balls candy and sweet honey don t forget  - CER: 0.53
+Sample 3 - Beam 120 - Predicted:  applicants need to write the given words to express carry and slip on are not for that  - CER: 0.18
+Sample 3 - Beam 121 - Predicted:  happy kids is a great event the children of fishbowl candy and sweet honey all survived  - CER: 0.35
+Sample 3 - Beam 122 - Predicted:  happy kids angel night we re kicking your ass with fresh bones candy and sweet honey don t forget  - CER: 0.47
+Sample 3 - Beam 123 - Predicted:  happy kids learn a lot it s okay let s take long standing sitting don t forget okay  - CER: 0.29
+Sample 3 - Beam 124 - Predicted:   - CER: 0.00
+Sample 3 - Beam 125 - Predicted:  happy kids live connect the kids will love it fish beans candy and sweet honey don t forget  - CER: 0.53
+Sample 3 - Beam 126 - Predicted:  at 2 00 p m central time the teacher allows his students to use a screen reader to check their grades  - CER: -0.18
+Sample 3 - Beam 127 - Predicted:  happy kids 1 connect the kitten loves fish bones candy sweet and don t forget  - CER: 0.71
+输入文本: On the second day of the second lunar month, the dragon lifts its head. Thunder boomed two nights ago; today’s sunshine is a good omen.
+Sample 4 - Beam 0 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 1 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 2 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 3 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 4 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 5 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 6 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 7 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 8 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 9 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 10 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 11 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 12 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 13 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 14 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 15 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 16 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 17 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 18 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 19 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 20 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 21 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 22 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 23 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 24 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 25 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 26 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 27 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 28 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 29 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 30 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 31 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 32 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 33 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 34 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 35 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 36 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 37 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 38 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 39 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 40 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 41 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 42 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 43 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 44 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 45 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 46 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 47 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 48 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 49 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 50 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 51 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 52 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 53 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 54 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 55 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 56 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 57 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 58 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 59 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 60 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 61 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 62 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 63 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 64 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 65 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 66 - Predicted:  on the second day of the second lunar month the dragon lifts its hat thunder boomed two nights ago today s sunshine is a good omen  - CER: 0.96
+Sample 4 - Beam 67 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 68 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 69 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 70 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 71 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 72 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 73 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 74 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 75 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 76 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 77 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 78 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 79 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 80 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 81 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 82 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 83 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 84 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 85 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 86 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 87 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 88 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 89 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 90 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 91 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 92 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 93 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 94 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 95 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 96 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 97 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 98 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 99 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 100 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 101 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 102 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 103 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 104 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 105 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 106 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 107 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 108 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 109 - Predicted:  on the second day of the second lunar month the dragon lifts his head thunder boomed two nights ago today s sunshine is a good omen  - CER: 0.96
+Sample 4 - Beam 110 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 111 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunderboom two nights ago today s sunshine is a good omen  - CER: 0.92
+Sample 4 - Beam 112 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 113 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 114 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 115 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 116 - Predicted:  on the second day of the second lunar month the dragon lifts his head thunder boomed two nights ago today s sunshine is a good omen  - CER: 0.96
+Sample 4 - Beam 117 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 118 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boom two nights ago today s sunshine is a good omen  - CER: 0.96
+Sample 4 - Beam 119 - Predicted:  on the second day of the second lunar month the dragon lifts his hat thunder boomed two nights ago today s sunshine is a good omen  - CER: 0.92
+Sample 4 - Beam 120 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 121 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 122 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 123 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 124 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen  - CER: 1.00
+Sample 4 - Beam 125 - Predicted:  on the second day of the second lunar month the dragon lifts its head thunder boom toooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio - CER: 0.58
+Sample 4 - Beam 126 - Predicted:  on the second day of the second round of work the dragon was established the dragon fought ten nights ago the day s subject is the dragon  - CER: 0.42
+Sample 4 - Beam 127 - Predicted:  on the second day of the second holiday month the cabin lifts its head from the end two months ago today s sunshine is at home  - CER: 0.65
+输入文本: Convex glass beats concave, concave beats convex—round and round the tongue goes.
+Sample 5 - Beam 0 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 2 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 3 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 4 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 5 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 6 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 7 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 8 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 9 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 10 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 11 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 12 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 13 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 14 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 15 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 16 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 17 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 18 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 19 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 20 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 21 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 22 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 23 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 24 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 25 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 26 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 27 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 28 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 29 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 30 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 31 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 32 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 33 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 34 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 35 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 36 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 37 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 38 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 39 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 40 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 41 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 42 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 43 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 44 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 45 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 46 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 47 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 48 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 49 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 50 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 51 - Predicted:  convex blast beats concave concave beats convex round and round the tongue goes  - CER: 0.92
+Sample 5 - Beam 52 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 53 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 54 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 55 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 56 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 57 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 58 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 59 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 60 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 61 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 62 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 63 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 64 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 65 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 66 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 67 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 68 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 69 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 70 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 71 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 72 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 73 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 74 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 75 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 76 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 77 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 78 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 79 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 80 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 81 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 82 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 83 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 84 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 85 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 86 - Predicted:  convex glass beats concave concave beats convex round and round the ton goes  - CER: 0.92
+Sample 5 - Beam 87 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 88 - Predicted:  convex glass beats concave beats concave beats round and round the ton does  - CER: 0.69
+Sample 5 - Beam 89 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 90 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 91 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 92 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 93 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 94 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 95 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 96 - Predicted:  convex glass beads concave concave beads convex round and round the tongue goes - CER: 0.85
+Sample 5 - Beam 97 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 98 - Predicted:  convex glass beads concave concave beads convex round and round the tongue goes - CER: 0.85
+Sample 5 - Beam 99 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes - CER: 1.00
+Sample 5 - Beam 100 - Predicted:  convex glass beads concave concave beads convex round and round the tongue goes - CER: 0.85
+Sample 5 - Beam 101 - Predicted:  convex glass beads concave concave beads convex round and round the tongue goes  - CER: 0.85
+Sample 5 - Beam 102 - Predicted:  convex glass beats concave concave beats convex round and round the tangles  - CER: 0.85
+Sample 5 - Beam 103 - Predicted:  convex - CER: 0.08
+Sample 5 - Beam 104 - Predicted:  convex glass meets concave concave meets convex round and round the tongue does  - CER: 0.77
+Sample 5 - Beam 105 - Predicted:  convex glass beats concave concave beats convex wind and wind the tangles  - CER: 0.69
+Sample 5 - Beam 106 - Predicted:  convex glass meets concave concave meets convex round and round the tongue goes  - CER: 0.85
+Sample 5 - Beam 107 - Predicted:  convex glass its concave concave its convex round and round the kind days - CER: 0.69
+Sample 5 - Beam 108 - Predicted:  convex glass beats concave  - CER: 0.31
+Sample 5 - Beam 109 - Predicted:  convex glass beats concave concave beats convex round and round the tangles  - CER: 0.85
+Sample 5 - Beam 110 - Predicted:  convex glass beats concave concave beats convex round and round the tongue goes  - CER: 1.00
+Sample 5 - Beam 111 - Predicted:  convex glass beats concave concave beats convex round and round the town goes  - CER: 0.92
+Sample 5 - Beam 112 - Predicted:  convex glass beats concave concave beats convex now i m going round the tangoes  - CER: 0.54
+Sample 5 - Beam 113 - Predicted:  convex grass beats concave concave beats convex round and round the tongue goes  - CER: 0.92
+Sample 5 - Beam 114 - Predicted:  convex glass beats concave concave beats convex round and round the tongue - CER: 0.92
+Sample 5 - Beam 115 - Predicted:  convex glass meets concave concave meets convex round and round become both  - CER: 0.62
+Sample 5 - Beam 116 - Predicted:  convex glass beats concave concave beats convex round and round the conga s  - CER: 0.85
+Sample 5 - Beam 117 - Predicted:  convex class is contif contif contif round and round the conves  - CER: 0.38
+Sample 5 - Beam 118 - Predicted:  conex glass beats concave concave beats convex wind and wind the cone goes  - CER: 0.69
+Sample 5 - Beam 119 - Predicted:  convex concave concave convex convex all the way to convex  - CER: 0.31
+Sample 5 - Beam 120 - Predicted:  convex wise means contract contract means convex round and round have both round  - CER: 0.38
+Sample 5 - Beam 121 - Predicted:  convex glass its content contain its convex round and round the converse  - CER: 0.54
+Sample 5 - Beam 122 - Predicted:  convex glass meets concave concave meets convex round and round the tongue goes  - CER: 0.85
+Sample 5 - Beam 123 - Predicted:  convex glass beats concave concave beats convex round and round the converse  - CER: 0.85
+Sample 5 - Beam 124 - Predicted:  convex loss it s concave concave it s convex right around the converse  - CER: 0.23
+Sample 5 - Beam 125 - Predicted:  convex glass mix on air on air based on wax - CER: 0.15
+Sample 5 - Beam 126 - Predicted:  convex glass beats concave concave beats convex round and round the tongue burns  - CER: 0.92
+Sample 5 - Beam 127 - Predicted:  convex glass piece concave piece convex round and round with tongue bones  - CER: 0.62
+[GPU 0] Partial CER: 0.15%
+[GPU 0] Partial similarity: -0.006152216965953509
+[GPU 0] Partial similarity (ref seg): -0.02470555653174718
+[GPU 0] AES‑CE: 6.157677412033081
+[GPU 0] AES‑CU: 7.249361673990886
+[GPU 0] AES‑PC: 1.4084710280100505
+[GPU 0] AES‑PQ: 7.7391189734141035
+[GPU 0] AES‑utmos: 4.551778316497803
+GPU 0 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB64_BW2/partial_result_0.json

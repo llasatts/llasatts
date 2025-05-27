@@ -1,0 +1,35 @@
+{
+  "gpu_rank": 3,
+  "cer": 0.0035778175313059034,
+  "similarity": 0.05694838954756657,
+  "similarity_r": 0.11621289700269699,
+  "trans_gt": [
+    "writing the character fu whose calligraphy is better mr fanghu or mr huanghu ",
+    "husband and wife make tofu and sell it both grow rich rich husband rich wife happy together ",
+    "elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight ",
+    "red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade ",
+    "militia platoon picks eight model soldiers to visit beijing let s see who s best ",
+    "a knife hangs upside down on the bridge the rope snaps the knife drops point first onto the road "
+  ],
+  "trans_pred": [
+    " writing the character 傅 whose calligraphy is better mr fanghu or mr huanghu ",
+    " husband and wife make tofu and sell it both grow rich rich husband rich wife happy together",
+    " elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight",
+    " red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade",
+    " militia platoon picks eight model soldiers to visit beijing let s see who s best ",
+    " a knife hangs upside down on the bridge the rope snaps the knife drops point first onto the road "
+  ],
+  "cer_results": [
+    0.9230769230769231,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "aes_ce": 5.870113134384155,
+  "aes_cu": 6.760733763376872,
+  "aes_pc": 1.5143412550290425,
+  "aes_pq": 7.275561571121216,
+  "aes_utmos": 4.10008446375529
+}

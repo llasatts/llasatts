@@ -1,0 +1,194 @@
+2025-05-13 21:55:29.449236: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 21:55:29.454704: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 21:55:29.454734: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 21:56:23,950 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/6 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 17%|█▋        | 1/6 [01:48<09:00, 108.01s/it] 33%|███▎      | 2/6 [02:50<05:25, 81.49s/it]  50%|█████     | 3/6 [03:32<03:10, 63.35s/it] 67%|██████▋   | 4/6 [04:25<01:58, 59.01s/it] 83%|████████▎ | 5/6 [05:45<01:06, 66.66s/it]100%|██████████| 6/6 [06:53<00:00, 67.22s/it]100%|██████████| 6/6 [06:53<00:00, 68.93s/it]
+输入文本: Writing the character “Fu”: whose calligraphy is better, Mr. Fanghu or Mr. Huanghu?
+Sample 0 - Beam 0 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 1 - Predicted:  writing the character fudo is quite a fan of mr fongo and mr hongo  - CER: 0.31
+Sample 0 - Beam 2 - Predicted:  writing the character fu is called if it is better mr fanghu and mr huanghu  - CER: 0.62
+Sample 0 - Beam 3 - Predicted:  writing the character fu whose calligraphy is better mr fang hu or mr huang hu  - CER: 0.69
+Sample 0 - Beam 4 - Predicted:  writing the character fu was kind of his bad just a fail or just a problem  - CER: 0.15
+Sample 0 - Beam 5 - Predicted:  raina kappa - CER: 0.00
+Sample 0 - Beam 6 - Predicted:  right to the top of the phone  - CER: 0.00
+Sample 0 - Beam 7 - Predicted:  writing the character foo whose character is better in mr foo and mr foo  - CER: 0.54
+Sample 0 - Beam 8 - Predicted:  writing the character foo fooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioioio - CER: 0.23
+Sample 0 - Beam 9 - Predicted:  writing the character for cosplay is  - CER: 0.31
+Sample 0 - Beam 10 - Predicted:  writing the character for his choreography is better it s the fun part or it s the fun part  - CER: 0.00
+Sample 0 - Beam 11 - Predicted:  writing the character for this paragraph is better mr fong  - CER: 0.46
+Sample 0 - Beam 12 - Predicted:  writing the chapter four  - CER: 0.15
+Sample 0 - Beam 13 - Predicted:  ready to target aim face can t get to the sky stay aim stay hold aim  - CER: -0.23
+Sample 0 - Beam 14 - Predicted:  wrecking the character foon whose political field is that mr foon who or mr  - CER: 0.38
+Sample 0 - Beam 15 - Predicted:  writing the character is purposely inappropriate if it is in his own - CER: 0.23
+输入文本: Husband and wife make tofu and sell it; both grow rich—rich husband, rich wife, happy together.
+Sample 1 - Beam 0 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 9 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 12 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 13 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+Sample 1 - Beam 14 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  husband and wife make tough friends say it wants to play rich rich husband youthful wife happy together  - CER: 0.59
+输入文本: Elder brother and third uncle eat sweet potatoes beneath a cypress, peeling and splitting them with delight.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 2 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight  - CER: 1.00
+Sample 2 - Beam 8 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 9 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 10 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 11 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 12 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 13 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress healing and splitting them with delight - CER: 0.94
+Sample 2 - Beam 14 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 15 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+输入文本: Red Child and Yellow Child swap shoes: red wears yellow, yellow wears red, and both laugh happily after the trade.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 3 - Beam 0 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 10 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 12 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 13 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 15 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+输入文本: Militia platoon picks eight model soldiers to visit Beijing—let’s see who’s best!
+Sample 4 - Beam 0 - Predicted:  militia platoon picks eight moldovan soldiers to visit erzing yet so who s best  - CER: 0.67
+Sample 4 - Beam 1 - Predicted:  militia platoon picks eight more soldiers to visit beijing it s the savior s best  - CER: 0.73
+Sample 4 - Beam 2 - Predicted:  nolisha plitink xaa suggests to visit aging let s see who s best  - CER: 0.53
+Sample 4 - Beam 3 - Predicted:  militia platoon takes 8 military days to visit beijing let s see who s best  - CER: 0.73
+Sample 4 - Beam 4 - Predicted:  mirror shaker 2 picks 8 royal sages to visit razor let s see who s both  - CER: 0.47
+Sample 4 - Beam 5 - Predicted:  militia perturio picks eight loyal soldiers to visit beijing let s see who is best  - CER: 0.80
+Sample 4 - Beam 6 - Predicted:  militia yes  - CER: 0.07
+Sample 4 - Beam 7 - Predicted:  militia kachong takes eight model soldiers to visit beijing let s see who s best  - CER: 0.87
+Sample 4 - Beam 8 - Predicted:  militia platoon kicks eight model soldiers to visit asia let s see who s next  - CER: 0.80
+Sample 4 - Beam 9 - Predicted:  richard platton p s a moral service 13th legion  - CER: 0.00
+Sample 4 - Beam 10 - Predicted:  militia fatum takes aid moral service it is a big thing let s see who is best  - CER: 0.27
+Sample 4 - Beam 11 - Predicted:  militia platoon picks eight model soldiers to visit banja let s see what works best  - CER: 0.80
+Sample 4 - Beam 12 - Predicted:  nourish opportunity  - CER: 0.00
+Sample 4 - Beam 13 - Predicted:  militia platoon picks 8 new researchers to visit auxier let s see who s first  - CER: 0.67
+Sample 4 - Beam 14 - Predicted:  i m going to sleep  - CER: 0.07
+Sample 4 - Beam 15 - Predicted:  rishabh pantone takes eight wild soldiers to visit bain that scene was best  - CER: 0.33
+输入文本: A knife hangs upside-down on the bridge. The rope snaps, the knife drops point-first onto the road.
+Sample 5 - Beam 0 - Predicted:  a knife hangs upside down on a branch the rope slaps the life traps point first onto the rock  - CER: 0.68
+Sample 5 - Beam 1 - Predicted:  a knife hangs upside down on a birch the rope sets the knife cuts through first into the web  - CER: 0.63
+Sample 5 - Beam 2 - Predicted:  a knife hangs upside down on the blanket the rope snaps the left drops point first onto the road  - CER: 0.89
+Sample 5 - Beam 3 - Predicted:  a knife hangs upside down on the bridge the rope snaps the knife drops point first onto the rug  - CER: 0.95
+Sample 5 - Beam 4 - Predicted:  a knife hangs upside down on the branch the rope snaps the knife drops point first onto the rod  - CER: 0.89
+Sample 5 - Beam 5 - Predicted:  a knife hangs upside down on the brush the rope snaps and the laptop points first over to the wall  - CER: 0.58
+Sample 5 - Beam 6 - Predicted:  a knife hangs upside down on the yank the rope snaps the knife drops point faced onto the yank  - CER: 0.84
+Sample 5 - Beam 7 - Predicted:  hey  - CER: 0.00
+Sample 5 - Beam 8 - Predicted:  the knife rings upside down on the clip the rope snaps the knife drops point fast onto the rope  - CER: 0.74
+Sample 5 - Beam 9 - Predicted:  a knife hangs upside down on the bridge the wood slaps the knife crops point first onto the road  - CER: 0.84
+Sample 5 - Beam 10 - Predicted:  a knife hangs upside down on the fence the rope snaps the knife drops one fist over the wall  - CER: 0.74
+Sample 5 - Beam 11 - Predicted:  a knife hangs upside down on the neck the knife snaps the knife caps point the knife onto the end  - CER: 0.68
+Sample 5 - Beam 12 - Predicted:  the knife hangs upside down on the ledge the rock slaps the leg gaps quite close while doing it - CER: 0.42
+Sample 5 - Beam 13 - Predicted:  a knife hangs upside down on the bridge the rope sets the knife cracks from first onto the rope  - CER: 0.79
+Sample 5 - Beam 14 - Predicted:  unlike and upside down again don t snap the laptop and phone first of all  - CER: 0.21
+Sample 5 - Beam 15 - Predicted:  a knife hangs upside down on a bench the knife snaps the knife clasp right first onto the end  - CER: 0.68
+[GPU 3] Partial CER: 2.50%
+[GPU 3] Partial similarity: 0.031154332992931206
+[GPU 3] Partial similarity (ref seg): 0.1452896942694982
+[GPU 3] AES‑CE: 5.023992896080017
+[GPU 3] AES‑CU: 5.778655608495076
+[GPU 3] AES‑PC: 1.598158021767934
+[GPU 3] AES‑PQ: 6.31667176882426
+[GPU 3] AES‑utmos: 3.1062917510668435
+GPU 3 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB8_BW2/partial_result_3.json

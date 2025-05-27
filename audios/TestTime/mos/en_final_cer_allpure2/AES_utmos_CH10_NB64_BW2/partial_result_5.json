@@ -1,0 +1,38 @@
+{
+  "gpu_rank": 5,
+  "cer": 0.0,
+  "similarity": 0.028892568445631435,
+  "similarity_r": 0.11997679461325918,
+  "trans_gt": [
+    "counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles ",
+    "old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly ",
+    "a monkey up the tree a dog below they clash bark howl then both run who fears whom ",
+    "old shi always skips stone fetching teacher scolds saying he s dishonest ",
+    "raise the mast open the sail wind blows boat glides through the bay ",
+    "kick the shuttlecock with flair eight immortals pass counting all the way to one hundred ",
+    "little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair "
+  ],
+  "trans_pred": [
+    " counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles",
+    " old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly",
+    " a monkey up the tree a dog below they clash bark howl then both run who fears whom",
+    " old shi always skips stone fetching teacher scolds saying he s dishonest ",
+    " raise the mast open the sail wind blows boat glides through the bay ",
+    " kick the shuttlecock with flair eight immortals pass counting all the way to one hundred ",
+    " little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair"
+  ],
+  "cer_results": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "aes_ce": 6.109623295920236,
+  "aes_cu": 7.257382324763706,
+  "aes_pc": 1.3960559368133545,
+  "aes_pq": 7.731564998626709,
+  "aes_utmos": 4.518485886710031
+}

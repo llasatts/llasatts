@@ -1,0 +1,38 @@
+{
+  "gpu_rank": 6,
+  "cer": 0.027538726333907058,
+  "similarity": 0.020728646378432,
+  "similarity_r": 0.2026246791439397,
+  "trans_gt": [
+    "no string drum no string gong kids sing sing well all cheer sing poorly bang the gong ",
+    "you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward ",
+    "grandpa picks radishes grandma steams buns they trade and thank each other happily ",
+    "camel caravan crosses the desert uncle praises the camels they work so well ",
+    "white hen lays white eggs eats white rice fills the little white pot with pride ",
+    "month by month lanterns temple fairs rice dumplings moon watching winter feasts ",
+    "little boy cries for a bride to light the lamp talk at night and braid his hair in the morning "
+  ],
+  "trans_pred": [
+    " no string drum no string gong kids sing sing well all cheer sing poorly bang the gong",
+    " you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward",
+    " grandpa picks radishes grandma steams buns they trade and thank each other happily ",
+    " camel caravan crosses the desert uncle praises the camels they work so well",
+    " white hen with white ears eats white rice fills the little white pocket bowl ",
+    " month by month lanterns temple fairs rice dumplings moon watching winter feasts",
+    " little boy cries for a bride to light the lamp talk at night and braid his hair in the morning"
+  ],
+  "cer_results": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.6666666666666667,
+    1.0,
+    1.0
+  ],
+  "aes_ce": 5.710210732051304,
+  "aes_cu": 6.724495342799595,
+  "aes_pc": 1.4905340841838293,
+  "aes_pq": 7.276104041508266,
+  "aes_utmos": 4.049246447426932
+}

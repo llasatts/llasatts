@@ -1,0 +1,866 @@
+2025-05-13 23:17:16.603853: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 23:17:16.609107: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 23:17:16.609134: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 23:18:11,180 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/6 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 17%|█▋        | 1/6 [13:06<1:05:30, 786.08s/it] 33%|███▎      | 2/6 [23:57<47:06, 706.73s/it]   50%|█████     | 3/6 [31:33<29:36, 592.28s/it] 67%|██████▋   | 4/6 [37:43<16:49, 504.67s/it] 83%|████████▎ | 5/6 [43:01<07:17, 437.15s/it]100%|██████████| 6/6 [48:23<00:00, 398.01s/it]100%|██████████| 6/6 [48:23<00:00, 483.86s/it]
+输入文本: Phoenix Mountain smells of phoenix flowers; phoenixes of many colors land upon Phoenix Terrace.
+Sample 0 - Beam 0 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 3 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 5 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 6 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 7 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 8 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 9 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 10 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 11 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace - CER: 1.00
+Sample 0 - Beam 12 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace - CER: 1.00
+Sample 0 - Beam 13 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colours land upon phoenix terrace - CER: 0.93
+Sample 0 - Beam 14 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 15 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace - CER: 1.00
+Sample 0 - Beam 16 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace - CER: 1.00
+Sample 0 - Beam 17 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 18 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 19 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 20 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 21 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 22 - Predicted:  phoenix mountain smells of phoenix fairs phoenix is at many colors land upon phoenix terrace  - CER: 0.71
+Sample 0 - Beam 23 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 24 - Predicted:   - CER: 0.00
+Sample 0 - Beam 25 - Predicted:   - CER: 0.00
+Sample 0 - Beam 26 - Predicted:  phoenix mountain smells of phoenix fowls phoenixes and many clouds ring upon phoenix toes  - CER: 0.64
+Sample 0 - Beam 27 - Predicted:  phoenix mountain smells of phoenix flares phoenixes of many prayers and the pale phoenix tears  - CER: 0.57
+Sample 0 - Beam 28 - Predicted:  phoenix mountain sells the phoenix fires phoenix is a really close and a quite phoenix to us  - CER: 0.07
+Sample 0 - Beam 29 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 30 - Predicted:  phoenix mountain snails of phoenix flowers phoenixes of many colors lying upon phoenix curves  - CER: 0.79
+Sample 0 - Beam 31 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes and rain colors lying upon phoenix toes  - CER: 0.71
+Sample 0 - Beam 32 - Predicted:  phoenix mountain smiles of phoenix flowers phoenixes of many colors land upon phoenix tares  - CER: 0.86
+Sample 0 - Beam 33 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colours land upon phoenix terrace - CER: 0.93
+Sample 0 - Beam 34 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix tares  - CER: 0.93
+Sample 0 - Beam 35 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors laying upon phoenix terrace - CER: 0.93
+Sample 0 - Beam 36 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 37 - Predicted:  phoenix mountains smells of phoenix flowers  - CER: 0.36
+Sample 0 - Beam 38 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix tusks  - CER: 0.93
+Sample 0 - Beam 39 - Predicted:  phoenix mountains smells of phoenix flowers phoenixes are very crazy and phoenix tears  - CER: 0.50
+Sample 0 - Beam 40 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors laying upon phoenix tares  - CER: 0.86
+Sample 0 - Beam 41 - Predicted:  scenic mountain smells of phoenix flares phoenixes of many colors laying upon phoenix terrace - CER: 0.79
+Sample 0 - Beam 42 - Predicted:  phoenix mountain snows of phoenix flowers phoenixes of many colors rank upon phoenix stars  - CER: 0.79
+Sample 0 - Beam 43 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes and many colors land upon phoenix terrace  - CER: 0.93
+Sample 0 - Beam 44 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 45 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix stairs  - CER: 0.93
+Sample 0 - Beam 46 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors roared upon phoenix - CER: 0.86
+Sample 0 - Beam 47 - Predicted:  phoenix mountain snows of phoenix flowers phoenixes of many colors rained upon phoenix - CER: 0.79
+Sample 0 - Beam 48 - Predicted:  phoenix mountains flowers of phoenix flowers phoenix s iguana colors land upon phoenix terrace  - CER: 0.64
+Sample 0 - Beam 49 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors ray on phoenix tails  - CER: 0.79
+Sample 0 - Beam 50 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 51 - Predicted:  fenix mountains lies a fenix grass fenixes of many colors and a calm fenix curse  - CER: 0.14
+Sample 0 - Beam 52 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 53 - Predicted:  phoenix moon smells of phoenix flowers phoenixes are many pies when on phoenix tasks  - CER: 0.57
+Sample 0 - Beam 54 - Predicted:  phoenix mountain snails of phoenix flies phoenixes of many colors land upon phoenix - CER: 0.79
+Sample 0 - Beam 55 - Predicted:  phoenix melters rise at phoenix falls it exists at many colors wearing a thin phoenix tess  - CER: 0.21
+Sample 0 - Beam 56 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors hang on a phoenix terrace  - CER: 0.79
+Sample 0 - Beam 57 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix s stairs  - CER: 0.86
+Sample 0 - Beam 58 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors rolled upon phoenix days  - CER: 0.86
+Sample 0 - Beam 59 - Predicted:  phoenix mountain smells like phoenix fells phoenix is a very close friend of phoenix toss  - CER: 0.29
+Sample 0 - Beam 60 - Predicted:  phoenix mountain smells of phoenix flowers phoenix is of many colors along the palm phoenix terrace  - CER: 0.64
+Sample 0 - Beam 61 - Predicted:  felix i ll tell you soon  - CER: 0.00
+Sample 0 - Beam 62 - Predicted:  mm hmm mm hmm  - CER: 0.00
+Sample 0 - Beam 63 - Predicted:  phoenix mountain smells of phoenix flies phoenixes of many colors roared upon phoenix skies  - CER: 0.79
+Sample 0 - Beam 64 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix towers  - CER: 0.93
+Sample 0 - Beam 65 - Predicted:  phoenix motors light up phoenix flowers phoenixes of many colors light upon phoenix towers  - CER: 0.64
+Sample 0 - Beam 66 - Predicted:  phoenix mountains now sell phoenix flowers phoenixes have many powers and i love all phoenix status  - CER: 0.29
+Sample 0 - Beam 67 - Predicted:   - CER: 0.00
+Sample 0 - Beam 68 - Predicted:  phoenix mountain spires are phoenix fires  - CER: 0.21
+Sample 0 - Beam 69 - Predicted:  phoenix mountain smells of phoenix fires phoenixes of my past lied upon phoenix stars  - CER: 0.64
+Sample 0 - Beam 70 - Predicted:   - CER: 0.00
+Sample 0 - Beam 71 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colours land upon phoenix - CER: 0.86
+Sample 0 - Beam 72 - Predicted:  phoenix mountain sloughs are phoenix flies phoenixes of many colors land upon phoenix trees - CER: 0.71
+Sample 0 - Beam 73 - Predicted:  phoenix mountain sounds of phoenix flowers - CER: 0.36
+Sample 0 - Beam 74 - Predicted:  phoenix mountains house of phoenix flies - CER: 0.21
+Sample 0 - Beam 75 - Predicted:  phoenix mountain smells of phoenix spires phoenixes of many colors lying upon phoenix terrace  - CER: 0.86
+Sample 0 - Beam 76 - Predicted:  phoenix mountain smells of phoenix flies phoenixes of many colours long upon phoenix tears - CER: 0.71
+Sample 0 - Beam 77 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 78 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 79 - Predicted:  phoenix mountain smells of phoenix flies phoenixes of many colors land upon phoenix case  - CER: 0.86
+Sample 0 - Beam 80 - Predicted:  phoenix mountain swans with phoenix flowers phoenixes of many colors land upon phoenix tires  - CER: 0.79
+Sample 0 - Beam 81 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many types land upon phoenix s toes  - CER: 0.79
+Sample 0 - Beam 82 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 83 - Predicted:  phoenix mountain snows and phoenix flowers phoenixes and many colors lined up on phoenix terrace  - CER: 0.57
+Sample 0 - Beam 84 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors lying upon phoenix terrace  - CER: 0.93
+Sample 0 - Beam 85 - Predicted:  phoenix mountain snows a phoenix flies phoenixes of many colors land upon phoenix tails  - CER: 0.71
+Sample 0 - Beam 86 - Predicted:  good morning ladies and gentlemen  - CER: 0.00
+Sample 0 - Beam 87 - Predicted:  phoenix light is raising phoenix flames phoenixes and river clues are all decaying phoenix toys  - CER: 0.21
+Sample 0 - Beam 88 - Predicted:   - CER: 0.00
+Sample 0 - Beam 89 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 1.00
+Sample 0 - Beam 90 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix clouds  - CER: 0.93
+Sample 0 - Beam 91 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 92 - Predicted:  phoenix mountain smells of phoenix fires phoenix is a many colors land upon phoenix terrace  - CER: 0.71
+Sample 0 - Beam 93 - Predicted:  the phoenix mountains spells are phoenix flowers phoenixes of many colors land on phoenix terrace  - CER: 0.64
+Sample 0 - Beam 94 - Predicted:  felix wanted to see the felix files felix is the famous guy who played felix tooties  - CER: -0.14
+Sample 0 - Beam 95 - Predicted:  phoenix mountain smells of phoenix skies phoenixes of many colors land on phoenix s toes  - CER: 0.71
+Sample 0 - Beam 96 - Predicted:  phoenix mountains mounds of phoenix flowers any colors land upon a phoenix terrace  - CER: 0.57
+Sample 0 - Beam 97 - Predicted:  phoenix mountains smells of phoenix flowers phoenixes of many colors land upon phoenix terrace  - CER: 0.93
+Sample 0 - Beam 98 - Predicted:   - CER: 0.00
+Sample 0 - Beam 99 - Predicted:  phoenix mountain smells of fenex flowers fenexes of many colors light upon fenex terrace  - CER: 0.71
+Sample 0 - Beam 100 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix towers  - CER: 0.93
+Sample 0 - Beam 101 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 102 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 103 - Predicted:  phoenix mountain smells of phoenix eyes phoenixes of unicorns laying upon phoenix tusks  - CER: 0.64
+Sample 0 - Beam 104 - Predicted:  thanks  - CER: 0.00
+Sample 0 - Beam 105 - Predicted:  phoenix mountain s ralphs are phoenix walrus phoenixes or lullabies world above phoenix  - CER: 0.29
+Sample 0 - Beam 106 - Predicted:  phoenix mountain 12 o clock 12 o clock  - CER: 0.14
+Sample 0 - Beam 107 - Predicted:   - CER: 0.00
+Sample 0 - Beam 108 - Predicted:  thanks fellas  - CER: 0.00
+Sample 0 - Beam 109 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 110 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many colors lying upon phoenix stairs  - CER: 0.86
+Sample 0 - Beam 111 - Predicted:  phoenix mountains smells of phoenix flowers phoenixes of many colors land upon phoenix tastes  - CER: 0.86
+Sample 0 - Beam 112 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes of many powers land upon phoenix terrace  - CER: 0.93
+Sample 0 - Beam 113 - Predicted:  phoenix mountain south of phoenix flies  - CER: 0.29
+Sample 0 - Beam 114 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 115 - Predicted:  phoenix mortar cells of phoenix fowlers phoenixes of many colors loud about phoenix tears  - CER: 0.57
+Sample 0 - Beam 116 - Predicted:  thanks mountain smells of thanks fowls thanks is an uncommon smell upon a fox s tail  - CER: 0.14
+Sample 0 - Beam 117 - Predicted:  phoenix mountain spires of phoenix stars phoenix s atlantic eyes and atlantic stars  - CER: 0.29
+Sample 0 - Beam 118 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 119 - Predicted:   - CER: 0.00
+Sample 0 - Beam 120 - Predicted:   - CER: 0.00
+Sample 0 - Beam 121 - Predicted:  phoenix mountain smells of phoenix flowers phoenixes in many colors land upon phoenix toes  - CER: 0.86
+Sample 0 - Beam 122 - Predicted:  phoenix mountains smells of phoenix flowers phoenixes of many colors land on phoenix stairs  - CER: 0.79
+Sample 0 - Beam 123 - Predicted:  phoenix mountains now the phoenix fairs phoenixes of many colors spread upon phoenix terrace  - CER: 0.64
+Sample 0 - Beam 124 - Predicted:   - CER: 0.00
+Sample 0 - Beam 125 - Predicted:  isn t smoking smell like a phoenix s nose phoenixes are really funny smell like a phoenix s nose  - CER: -0.14
+Sample 0 - Beam 126 - Predicted:  phoenix mountain smells like phoenix flowers phoenixes of many colors land upon phoenix trees  - CER: 0.86
+Sample 0 - Beam 127 - Predicted:  thank you  - CER: 0.00
+输入文本: Dad gives me silk, Mom a cow, Brother a paper fan, Sister-in-law a little maid. I wear the silk, ride the cow, shade myself with the fan, the maid follows behind.
+Sample 1 - Beam 0 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 2 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 3 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 6 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  dead gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.91
+Sample 1 - Beam 8 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 9 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 12 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 13 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 14 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 16 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 17 - Predicted:  thad gives me silk mum a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 18 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 19 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 20 - Predicted:  dad gives me silk mum a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 21 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 22 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 23 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 24 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 25 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 26 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 27 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 28 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 29 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 30 - Predicted:  dad gives me silk mam a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 31 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 32 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 33 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 34 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 35 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 36 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 37 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 38 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 39 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 40 - Predicted:  dad gives me silk mum a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 41 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 42 - Predicted:  dad gives me silk mum a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 43 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 44 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 45 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 46 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 47 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 48 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 49 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 50 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 51 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 52 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 53 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 54 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 55 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 56 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 57 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 58 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 59 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.91
+Sample 1 - Beam 60 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 61 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 62 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 63 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 64 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 65 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.91
+Sample 1 - Beam 66 - Predicted:  dad gives me silk mum a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 67 - Predicted:  dad gives me silk mum a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 68 - Predicted:  dad gives me silk mum a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 69 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 70 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 71 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 72 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.91
+Sample 1 - Beam 73 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 74 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 75 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 76 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 77 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 78 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 79 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 80 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 81 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 82 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 83 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 84 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 85 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 86 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.91
+Sample 1 - Beam 87 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 88 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 89 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind  - CER: 1.00
+Sample 1 - Beam 90 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 91 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 92 - Predicted:  dad gives me silk mum a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 93 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 94 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 95 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 96 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan - CER: 0.79
+Sample 1 - Beam 97 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 98 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 99 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 100 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind end of - CER: 0.94
+Sample 1 - Beam 101 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 102 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan - CER: 0.88
+Sample 1 - Beam 103 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 104 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 105 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with a fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 106 - Predicted:  doubt gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 107 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 108 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 109 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 110 - Predicted:  dad gives me silk mom a cow brother paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 111 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 112 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 113 - Predicted:  dad giz me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 114 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 115 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 116 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 117 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 118 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk  - CER: 0.64
+Sample 1 - Beam 119 - Predicted:  dad gives me silk mamma cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 120 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 121 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 122 - Predicted:  dad giz me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.97
+Sample 1 - Beam 123 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 1.00
+Sample 1 - Beam 124 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind  - CER: 1.00
+Sample 1 - Beam 125 - Predicted:  dad gives me silk mama cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind - CER: 0.94
+Sample 1 - Beam 126 - Predicted:  dad gives me silk  - CER: 0.12
+Sample 1 - Beam 127 - Predicted:  dad gives me silk mom a cow brother a paper fan sister in law  - CER: 0.42
+输入文本: Phoenix painted on a pink wall: red phoenix, pink phoenix, patterned phoenix—so many vibrant birds.
+Sample 2 - Beam 0 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 8 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 9 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 10 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 11 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 12 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 13 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 14 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 15 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 16 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 17 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 18 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 19 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 20 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 21 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 22 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 23 - Predicted:  phoenix painted on the pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 24 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 25 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 26 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 27 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 28 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 29 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 30 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 31 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 32 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 33 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds  - CER: 0.94
+Sample 2 - Beam 34 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 35 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 36 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 37 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 38 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 39 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 40 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 41 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 42 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 43 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 44 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 45 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 46 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 47 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 48 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 49 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds  - CER: 0.94
+Sample 2 - Beam 50 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 51 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 52 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patent phoenix so many vibrant birds  - CER: 0.94
+Sample 2 - Beam 53 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 54 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 55 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 56 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 57 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 58 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds  - CER: 0.94
+Sample 2 - Beam 59 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 60 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 61 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 62 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 63 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 64 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 65 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 66 - Predicted:  an ix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 0.88
+Sample 2 - Beam 67 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 68 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 69 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 70 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 71 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 72 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 73 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 74 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds a - CER: 0.94
+Sample 2 - Beam 75 - Predicted:  phoenix painted on a pink wall red phoenix peg phoenix patterned phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 76 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 77 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 78 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 79 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 80 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 81 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 82 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 83 - Predicted:  phoenix painted on a pink roll red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 84 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 85 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 86 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 87 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 88 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 89 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 90 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 91 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 92 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 93 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 94 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 95 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 96 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 97 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 98 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 99 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 100 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 101 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 102 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 103 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 104 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 105 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 106 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix catterned phoenix so many vibrant birds - CER: 0.94
+Sample 2 - Beam 107 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 108 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 109 - Predicted:  thank you  - CER: 0.00
+Sample 2 - Beam 110 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds  - CER: 1.00
+Sample 2 - Beam 111 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds - CER: 1.00
+Sample 2 - Beam 112 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix cat eye phoenix so many vibrant birds - CER: 0.88
+Sample 2 - Beam 113 - Predicted:  thank you  - CER: 0.00
+Sample 2 - Beam 114 - Predicted:  peace  - CER: 0.00
+Sample 2 - Beam 115 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vacant birds - CER: 0.94
+Sample 2 - Beam 116 - Predicted:  phoenix painted by kid phoenix  - CER: 0.19
+Sample 2 - Beam 117 - Predicted:  phoenix painting painting painting the phoenix painting the phoenix  - CER: 0.19
+Sample 2 - Beam 118 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern  - CER: 0.62
+Sample 2 - Beam 119 - Predicted:   - CER: 0.00
+Sample 2 - Beam 120 - Predicted:  thank you  - CER: 0.00
+Sample 2 - Beam 121 - Predicted:  phoenix indian red emperor red phoenix red phoenix adult phoenix soul of bible bites  - CER: 0.31
+Sample 2 - Beam 122 - Predicted:  phoenix painted out a pink wall red phoenix pink phoenix pattern phoenix so many vibrant birds  - CER: 0.88
+Sample 2 - Beam 123 - Predicted:  phoenix painted on a pink wall red phoenix pink phoenix pattern phoenix selling and buying beads  - CER: 0.69
+Sample 2 - Beam 124 - Predicted:  feeling pain that i can t allow that s it that s it that s it  - CER: 0.00
+Sample 2 - Beam 125 - Predicted:   - CER: 0.00
+Sample 2 - Beam 126 - Predicted:  thank you  - CER: 0.00
+Sample 2 - Beam 127 - Predicted:  thanks for watching  - CER: 0.00
+输入文本: Goats collide horns on the mountain, buffalo sink to their bellies in water, pigs root the trough, and a donkey bends under hay.
+Sample 3 - Beam 0 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 0.96
+Sample 3 - Beam 1 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 3 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 4 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 0.96
+Sample 3 - Beam 10 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 12 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 13 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 0.96
+Sample 3 - Beam 15 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 16 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root to trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 17 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 18 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 19 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 20 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 21 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 22 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 23 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 24 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 25 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 0.96
+Sample 3 - Beam 26 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 27 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 28 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 29 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 30 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 1.00
+Sample 3 - Beam 31 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 32 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 33 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 1.00
+Sample 3 - Beam 34 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 35 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 36 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 37 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 38 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 39 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 1.00
+Sample 3 - Beam 40 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 41 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 42 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 43 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 44 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 45 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 46 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 47 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 48 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 49 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 50 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 51 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 52 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 1.00
+Sample 3 - Beam 53 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 54 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 55 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 56 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 57 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 58 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 59 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 60 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 61 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 62 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 63 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 64 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 65 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 66 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 67 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 68 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 69 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 70 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and the donkey bends under hay - CER: 0.96
+Sample 3 - Beam 71 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 72 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 73 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 74 - Predicted:  goats collate horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 75 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 76 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 77 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 78 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 0.96
+Sample 3 - Beam 79 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 80 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 81 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 82 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 83 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 84 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 85 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 86 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 87 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 88 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 89 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 90 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 91 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 0.96
+Sample 3 - Beam 92 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 93 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 94 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 95 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 96 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 97 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 0.96
+Sample 3 - Beam 98 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 99 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 100 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 101 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 102 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay  - CER: 1.00
+Sample 3 - Beam 103 - Predicted:  goats collide horns on the mountain buffalo sing to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 104 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 105 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 106 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 107 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 108 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 109 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 110 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 111 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 112 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 113 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 114 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 115 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey dens under hay - CER: 0.96
+Sample 3 - Beam 116 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 117 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 118 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 1.00
+Sample 3 - Beam 119 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 120 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 121 - Predicted:  goats collide horns on the mountain buffalo sink to their bellies in water pigs with the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 122 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 123 - Predicted:  goats collide horns on an altar buffaloes sink to their bellies in water pigs wilt the trough and a donkey bounds under hay - CER: 0.78
+Sample 3 - Beam 124 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 125 - Predicted:  goats collide horns on the mountain buffaloes sink to their bellies in water pigs root the trough and a donkey bends under hay - CER: 0.96
+Sample 3 - Beam 126 - Predicted:  thokes collide horns on the mountain buffalo sink to their bellies in water pigs rip the trough and a donkey bends under hay - CER: 0.91
+Sample 3 - Beam 127 - Predicted:  goats collide horns in the mountain across and to the other thing along it was like a cat and above the bones of your head  - CER: 0.22
+输入文本: South-bank rails tie boats; untie them and the boat can return. Want to free the boat? First loose the rail.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 4 - Beam 0 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 1 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 2 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 3 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 4 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 5 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 6 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 7 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 8 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 9 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 10 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 11 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 12 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 13 - Predicted:  soft bang rails tie boats unpie them and the boat can return want to free the boat first loose the rail  - CER: 0.86
+Sample 4 - Beam 14 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 15 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 16 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 17 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 18 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 19 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 20 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 21 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 22 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 23 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 24 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 25 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 26 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 27 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 28 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 29 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 30 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 31 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 32 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 33 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 34 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 35 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 36 - Predicted:  soft bank rails tie bows untie them and the boat can return want to free the boat first loose the rail  - CER: 0.90
+Sample 4 - Beam 37 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 38 - Predicted:  softbank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 0.90
+Sample 4 - Beam 39 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 40 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 41 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 42 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 43 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 44 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 45 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 46 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 47 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 48 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 49 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 50 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 51 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 52 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first lose the rail  - CER: 0.95
+Sample 4 - Beam 53 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 54 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 55 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 56 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 57 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 58 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 59 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 60 - Predicted:  southbank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 0.90
+Sample 4 - Beam 61 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 62 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 63 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 64 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 65 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 66 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 67 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 68 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 69 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 70 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 71 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 72 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 73 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 74 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 75 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 76 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 77 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 78 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 79 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 80 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 81 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 82 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 83 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 84 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 85 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 86 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first lose the rail - CER: 0.95
+Sample 4 - Beam 87 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 88 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 89 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 90 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 91 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 92 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 93 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 94 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 95 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 96 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 97 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 98 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 99 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 100 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat  - CER: 0.81
+Sample 4 - Beam 101 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 102 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 103 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 104 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 105 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 106 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 107 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first lose the rail  - CER: 0.95
+Sample 4 - Beam 108 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 109 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 110 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first lose the rail  - CER: 0.95
+Sample 4 - Beam 111 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 112 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 113 - Predicted:  south bank rails tied boats untie them and the boat can return what to free the boat first loose the rail - CER: 0.90
+Sample 4 - Beam 114 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 115 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 116 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 117 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 118 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 119 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 120 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail - CER: 1.00
+Sample 4 - Beam 121 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 122 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 123 - Predicted:  south bank rails tied boats untie them and the boat can return what to free the boat first loose the rail - CER: 0.90
+Sample 4 - Beam 124 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 125 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 126 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+Sample 4 - Beam 127 - Predicted:  south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail  - CER: 1.00
+输入文本: In deepest winter, the seventh and eighth days freeze ducks; by the ninth and tenth, even puppies shiver.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 5 - Beam 0 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 2 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 3 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 4 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 5 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 6 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 7 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 8 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 9 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 10 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 11 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 12 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 13 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 14 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 15 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 16 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 17 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 18 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 19 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 20 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 21 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 22 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 23 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 24 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 25 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 26 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 27 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 28 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 29 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 30 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 31 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 32 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 33 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 34 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 35 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 36 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 37 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 38 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 39 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 40 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver  - CER: 1.00
+Sample 5 - Beam 41 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 42 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 43 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 44 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 45 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even poppies shiver - CER: 0.94
+Sample 5 - Beam 46 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 47 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 48 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 49 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 50 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 51 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 52 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 53 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 54 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 55 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 56 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 57 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 58 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 59 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 60 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 61 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 62 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 63 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver  - CER: 1.00
+Sample 5 - Beam 64 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 65 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even poppies shiver - CER: 0.94
+Sample 5 - Beam 66 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 67 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 68 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 69 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 70 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 71 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 72 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even poppies shiver - CER: 0.94
+Sample 5 - Beam 73 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 74 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 75 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 76 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 77 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 78 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies - CER: 0.94
+Sample 5 - Beam 79 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 80 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 81 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 82 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 83 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 84 - Predicted:  in deepest winter the seventh and eighth days freeze ducks but ninth and tenth even puppies shiver - CER: 0.89
+Sample 5 - Beam 85 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 86 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 87 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 88 - Predicted:  in deepest winter the seventh and eighth days freeze ducks but the ninth and tenth even puppies shiver - CER: 0.94
+Sample 5 - Beam 89 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 90 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 91 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 92 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 93 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 94 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 95 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 96 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 97 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 98 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver  - CER: 1.00
+Sample 5 - Beam 99 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver  - CER: 1.00
+Sample 5 - Beam 100 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 101 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 102 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 103 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 104 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver  - CER: 1.00
+Sample 5 - Beam 105 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 106 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 107 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 108 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 109 - Predicted:  in deepest winter the seventh and eighth days freeze dogs by the ninth and tenth even poppies shiver - CER: 0.89
+Sample 5 - Beam 110 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 111 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 112 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 113 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 114 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 115 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 116 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 117 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 118 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 119 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 120 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 121 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 122 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 123 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 124 - Predicted:  in deepest winter the seventh and eighth days freeze dense by the ninth and tenth even puppies shiver - CER: 0.94
+Sample 5 - Beam 125 - Predicted:  in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver - CER: 1.00
+Sample 5 - Beam 126 - Predicted:  in deepest glitter the seventh and eighth days freeze dust but in ninth and tenth even puppies shiver - CER: 0.78
+Sample 5 - Beam 127 - Predicted:  in deepest blighter the sun of the nigh days frees dots by the ninth and tenth even puppies - CER: 0.56
+[GPU 4] Partial CER: 0.00%
+[GPU 4] Partial similarity: 0.018701127109428246
+[GPU 4] Partial similarity (ref seg): 0.17498419371743998
+[GPU 4] AES‑CE: 6.1814649899800616
+[GPU 4] AES‑CU: 7.413499037424724
+[GPU 4] AES‑PC: 1.4093896349271138
+[GPU 4] AES‑PQ: 7.722639004389445
+[GPU 4] AES‑utmos: 4.545714537302653
+GPU 4 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB64_BW2/partial_result_4.json

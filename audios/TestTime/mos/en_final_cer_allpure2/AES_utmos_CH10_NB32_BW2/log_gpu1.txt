@@ -1,0 +1,417 @@
+2025-05-13 22:41:29.810641: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 22:41:29.816295: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 22:41:29.816325: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 22:42:15,626 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/5 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 20%|██        | 1/5 [03:46<15:04, 226.23s/it] 40%|████      | 2/5 [07:50<11:50, 236.93s/it] 60%|██████    | 3/5 [11:16<07:25, 222.75s/it] 80%|████████  | 4/5 [16:32<04:19, 259.44s/it]100%|██████████| 5/5 [23:30<00:00, 316.61s/it]100%|██████████| 5/5 [23:30<00:00, 282.04s/it]
+输入文本: Look at these fence-top grasses: when the wind blows east they lean west, when it blows west they lean east.
+Sample 0 - Beam 0 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 3 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 5 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 6 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 7 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 8 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 9 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 10 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 11 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 12 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 13 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 14 - Predicted:  look at these fenced up grasses when the wind blows east they lean west when it blows west they lean east  - CER: 0.90
+Sample 0 - Beam 15 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 16 - Predicted:  look at these fenced up grasses when the wind blows east they lean west when it blows west they lean east  - CER: 0.90
+Sample 0 - Beam 17 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 18 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 19 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 20 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 21 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 22 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 23 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 24 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 25 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 26 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 27 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 28 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 29 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 30 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 31 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 32 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 33 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 34 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 35 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 36 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 37 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 38 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 39 - Predicted:  look at these thence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 0.95
+Sample 0 - Beam 40 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 41 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 42 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 43 - Predicted:  look at these fence top grasses when the wind flows east they lean west when it flows west they lean east - CER: 0.90
+Sample 0 - Beam 44 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 45 - Predicted:  look at these fensthorpe grasses when the wind blows east they lean west when it blows west they lean east - CER: 0.90
+Sample 0 - Beam 46 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 47 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 48 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 49 - Predicted:  look at these spencetot grasses when the wind blows east they lean west when it blows west they lean east - CER: 0.90
+Sample 0 - Beam 50 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 51 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 52 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 53 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east  - CER: 1.00
+Sample 0 - Beam 54 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west  - CER: 0.86
+Sample 0 - Beam 55 - Predicted:  look at these fence top grasses 2 when it - CER: 0.38
+Sample 0 - Beam 56 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 57 - Predicted:  look at these fence top grasses when the wind blows east they lean west when it blows west they lean east - CER: 1.00
+Sample 0 - Beam 58 - Predicted:  look at these fence top grasses there s east there s east there s east there s east  - CER: 0.38
+Sample 0 - Beam 59 - Predicted:  look at these fence top grasses when the wind blows east they rain west when it blows west they rain east  - CER: 0.90
+Sample 0 - Beam 60 - Predicted:  look at these fence top grasses  - CER: 0.29
+Sample 0 - Beam 61 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 62 - Predicted:  look at these fence top grasses and there it is east and there it is west and there it is west and there it is east  - CER: 0.29
+Sample 0 - Beam 63 - Predicted:  look at these fence top grasses when the wind blows east they really rust when it blows west they really east  - CER: 0.86
+输入文本: Kites are such fun! A spring breeze lifts them: swallows, little bats, the Monkey King chasing a centipede—flip, dive, down they go.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 1 - Beam 0 - Predicted:  kites are such fun a spring breeze lifts em swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 0.96
+Sample 1 - Beam 1 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 9 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 12 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 13 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 14 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 16 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 17 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 18 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 19 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 20 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 21 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 22 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flit dive down they go - CER: 0.96
+Sample 1 - Beam 23 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 24 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 25 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 26 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 27 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 28 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 29 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 30 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 31 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 32 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 33 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chase in a centipede flip dive down they go - CER: 0.91
+Sample 1 - Beam 34 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 35 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 36 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 37 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 38 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 39 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 40 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 41 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 42 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 43 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 44 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 45 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 46 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 47 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 48 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 49 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 50 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 51 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 52 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 53 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 54 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 55 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 56 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 57 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 58 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 59 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip die down they go - CER: 0.96
+Sample 1 - Beam 60 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 61 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 62 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+Sample 1 - Beam 63 - Predicted:  kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go - CER: 1.00
+输入文本: Little Flat-wa picks flat beans with a flat basket on Flat Mountain. He picks so many beans the basket is too heavy, so he carries only half back.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 1 - Predicted:  little flat wa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 3 - Predicted:  little flat wa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 5 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back  - CER: 0.93
+Sample 2 - Beam 6 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 7 - Predicted:  little flatwop picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 8 - Predicted:  little flat wah picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.97
+Sample 2 - Beam 9 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 10 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 11 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back  - CER: 0.93
+Sample 2 - Beam 12 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 13 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 14 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 15 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 16 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 17 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 18 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 19 - Predicted:  little flat wa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 1.00
+Sample 2 - Beam 20 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 21 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 22 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back  - CER: 0.93
+Sample 2 - Beam 23 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 24 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 25 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 26 - Predicted:  little flatwile picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back  - CER: 0.93
+Sample 2 - Beam 27 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 28 - Predicted:  little flat wa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 1.00
+Sample 2 - Beam 29 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 30 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 31 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 32 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 33 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 34 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 35 - Predicted:  little flat walk picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.97
+Sample 2 - Beam 36 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back  - CER: 0.93
+Sample 2 - Beam 37 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 38 - Predicted:  little flatwob picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 39 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 40 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 41 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 42 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 43 - Predicted:  little flat wa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 1.00
+Sample 2 - Beam 44 - Predicted:  little flat wah picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.97
+Sample 2 - Beam 45 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 46 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 47 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 48 - Predicted:  little flatwye picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 49 - Predicted:  little flatware picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 50 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 51 - Predicted:  little flat y picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.97
+Sample 2 - Beam 52 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 53 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back  - CER: 0.93
+Sample 2 - Beam 54 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 55 - Predicted:  little flatware picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 56 - Predicted:  little flat wa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 1.00
+Sample 2 - Beam 57 - Predicted:  little flat wah picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.97
+Sample 2 - Beam 58 - Predicted:  little flat wire picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half - CER: 0.93
+Sample 2 - Beam 59 - Predicted:  little flatwa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 60 - Predicted:  little flatwob picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 61 - Predicted:  little flatware picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 62 - Predicted:  little flatwug picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back - CER: 0.93
+Sample 2 - Beam 63 - Predicted:  a flat lot picks flat beams with a flat basket on a flat map if x ray beams the basket is too heavy so it carries only a half bat  - CER: 0.55
+输入文本: Count one-two-three, three-two-one. Seven girls gather with seven flower baskets, picking oranges, tangerines, persimmons and more.
+Sample 3 - Beam 0 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  count 1 2 3 3 2 1 7 girls gather with 7 flower baskets picking oranges tangerines persimmons and more  - CER: 0.60
+Sample 3 - Beam 2 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 3 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 5 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 6 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 8 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 10 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 11 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 12 - Predicted:  count 1 2 3 3 2 1 7 girls gather with 7 flower baskets picking oranges tangerines persimmons and more  - CER: 0.60
+Sample 3 - Beam 13 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 14 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 15 - Predicted:  count 1 2 3 3 2 1 7 girls gather with 7 flower baskets picking oranges tangerines persimmons and more  - CER: 0.60
+Sample 3 - Beam 16 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 17 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 18 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 19 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 20 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 21 - Predicted:  con 1 2 3 3 2 1 7 girls gather with 7 flower baskets picking oranges tangerines persimmons and more  - CER: 0.55
+Sample 3 - Beam 22 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 23 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 24 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 25 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 26 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 27 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 28 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 29 - Predicted:  count to three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.90
+Sample 3 - Beam 30 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 31 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 32 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 33 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 34 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 35 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 36 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 37 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 38 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 39 - Predicted:  count 1 2 3 3 2 1 7 girls gather with 7 flower baskets picking oranges tangerines persimmons and more  - CER: 0.60
+Sample 3 - Beam 40 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 41 - Predicted:  count 1 2 3 3 2 1 7 girls gather with 7 flower baskets picking oranges tangerines persimmons and more  - CER: 0.60
+Sample 3 - Beam 42 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 43 - Predicted:  count 1 2 3 3 2 1 7 girls gather with 7 flower baskets picking oranges tangerines persimmons and more  - CER: 0.60
+Sample 3 - Beam 44 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 45 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 46 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 47 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 48 - Predicted:  count 1 2 3 3 2 1 seven girls gather with seven flower baskets picking oranges tangerines persimmon and more  - CER: 0.65
+Sample 3 - Beam 49 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons  - CER: 0.90
+Sample 3 - Beam 50 - Predicted:  count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 1.00
+Sample 3 - Beam 51 - Predicted:  count 1 2 3 3 2 1  - CER: 0.05
+Sample 3 - Beam 52 - Predicted:  count 1 2 3 seven girls gather with seven flower baskets picking oranges tangerines persimmons and more  - CER: 0.70
+Sample 3 - Beam 53 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 54 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 55 - Predicted:  count 1 2 3 3 7 girls 7 tangerines tangerines tangerines  - CER: 0.15
+Sample 3 - Beam 56 - Predicted:  count one two three three two one seven girls gathered at seven flower baskets cooking oranges tangerines persimmons and more  - CER: 0.85
+Sample 3 - Beam 57 - Predicted:  count one two three three two seven boys gather with seven therabasks picking oranges tangerines persimmons and - CER: 0.75
+Sample 3 - Beam 58 - Predicted:  count 1 2 3  - CER: 0.05
+Sample 3 - Beam 59 - Predicted:  count 1 2 3  - CER: 0.05
+Sample 3 - Beam 60 - Predicted:  count 1 2 3 through 2 more 7 girls babbling at 7 fairy baskets picking oranges pigeons pistons and more  - CER: 0.35
+Sample 3 - Beam 61 - Predicted:  count 1 2 3 4 3 1 second row is going over 75 baskets picking up 8 2 3 4 5 6 7 8  - CER: -0.05
+Sample 3 - Beam 62 - Predicted:  count one two  - CER: 0.15
+Sample 3 - Beam 63 - Predicted:  count 1 2 3 3 2 1 seven girls got in seven fun baskets picking oranges tangerines chrysalis and more  - CER: 0.50
+输入文本: Poplar leaves rustle. “Sleep, child,” says Mom. “If the monkey comes I’ll chase it away!”
+Sample 4 - Beam 0 - Predicted:  poplar leaves russell sleep child says mom if the monkey comes i ll chase it away  - CER: 0.94
+Sample 4 - Beam 1 - Predicted:  poplar leads russell sleep child says mom if the monkey comes i ll chase it away  - CER: 0.88
+Sample 4 - Beam 2 - Predicted:  poplar leaves russell sleep child says mom if the monkey comes i ll chase it away  - CER: 0.94
+Sample 4 - Beam 3 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 4 - Predicted:  poplar leaves rustle sleep child says one if the monkey comes i ll chase it away - CER: 0.94
+Sample 4 - Beam 5 - Predicted:  poplar leaves russell sick child says nye if they ain t your cousins i ll chase it at her  - CER: 0.38
+Sample 4 - Beam 6 - Predicted:  poplar leaves russell sick child says mom if the mink comes i ll chase it away  - CER: 0.81
+Sample 4 - Beam 7 - Predicted:  poplar leaves rustle sick child says nan at the nanky comes a chestnut - CER: 0.44
+Sample 4 - Beam 8 - Predicted:  poplar leaves russell sleep child says long if the monkey comes i ll chase it away  - CER: 0.88
+Sample 4 - Beam 9 - Predicted:  poplar leaves russell snape child says i if there ain t any cones i ll chase it away  - CER: 0.50
+Sample 4 - Beam 10 - Predicted:  pupler leaves rustle sick child says mum if the monkey comes i ll chase him away - CER: 0.75
+Sample 4 - Beam 11 - Predicted:  poplar leaves rustle sick jade says nia with very decadent hsdr  - CER: 0.25
+Sample 4 - Beam 12 - Predicted:  poplar leaves also swamp child says gawain if the monkey comes i ll choose it away  - CER: 0.75
+Sample 4 - Beam 13 - Predicted:  poplar leaves rustle sick child says one if the monkey comes i ll give - CER: 0.69
+Sample 4 - Beam 14 - Predicted:  poplar leaves rustling sick child says man if the anky comes i ll chase it away - CER: 0.75
+Sample 4 - Beam 15 - Predicted:  poplar leaves rustle snip child says mom if an orca comes i ll chase it away  - CER: 0.81
+Sample 4 - Beam 16 - Predicted:  hopler used wassail sick child says mom if the uncle comes i ll chase it away  - CER: 0.69
+Sample 4 - Beam 17 - Predicted:  poplar leaves rustle sleep child says moan if the wanker comes i ll chase it away  - CER: 0.88
+Sample 4 - Beam 18 - Predicted:  thank you  - CER: 0.00
+Sample 4 - Beam 19 - Predicted:  poplar reeves russell sleep child says long if the long could come i ll chase it away  - CER: 0.62
+Sample 4 - Beam 20 - Predicted:  puck your leaves russell snape charles says now if the monkey comes i ll chase it away  - CER: 0.62
+Sample 4 - Beam 21 - Predicted:  pop my lips for us lord  - CER: 0.00
+Sample 4 - Beam 22 - Predicted:  poplar leaves russell sweet child says lynn if anything happens i ll chase it away  - CER: 0.62
+Sample 4 - Beam 23 - Predicted:  puckler leaves russell sleep child says man if the monkey comes i ll chase it away - CER: 0.81
+Sample 4 - Beam 24 - Predicted:  pecan leaves my sweet  - CER: 0.06
+Sample 4 - Beam 25 - Predicted:  poplar reed and thrasyl  - CER: 0.06
+Sample 4 - Beam 26 - Predicted:  open the screen  - CER: 0.06
+Sample 4 - Beam 27 - Predicted:  i m going to use the 5th one  - CER: 0.06
+Sample 4 - Beam 28 - Predicted:  poplar leaves awesome  - CER: 0.12
+Sample 4 - Beam 29 - Predicted:  pumper leaves russell snooktile says mom if the monkey comes i ll chase it away  - CER: 0.75
+Sample 4 - Beam 30 - Predicted:  poplar leaves russell the child says long if the monte clones are chasing away  - CER: 0.44
+Sample 4 - Beam 31 - Predicted:  poplar leaves rustle sleep child says mom if the monster comes i ll chase it away  - CER: 0.94
+Sample 4 - Beam 32 - Predicted:  poplar leaves rustle slick child says ma am if the rupee comes i ll chase it away - CER: 0.75
+Sample 4 - Beam 33 - Predicted:  hopla leaves russell  - CER: 0.06
+Sample 4 - Beam 34 - Predicted:  poplar leaves rustle sick child says mom if belong to coves i ll kiss it around - CER: 0.62
+Sample 4 - Beam 35 - Predicted:  papa is russell see charles says mom if the monkey comes i ll just be the one  - CER: 0.44
+Sample 4 - Beam 36 - Predicted:  poplar lives waffle  - CER: 0.06
+Sample 4 - Beam 37 - Predicted:  how do you - CER: 0.00
+Sample 4 - Beam 38 - Predicted:  poplar is blessing safe child peace  - CER: 0.12
+Sample 4 - Beam 39 - Predicted:  poplar leaves awesome slick charles says well if the mountain comes i ll chase it away  - CER: 0.69
+Sample 4 - Beam 40 - Predicted:  poplar reeves they ll say sweet god says ma if the monkey comes ain t trussin - CER: 0.25
+Sample 4 - Beam 41 - Predicted:  purple rain is dressing sleep time since long thanks for watching guys i ll catch you tomorrow  - CER: 0.12
+Sample 4 - Beam 42 - Predicted:  puckler leaves russell sleek child says val if malanta comes i ll trace it away  - CER: 0.56
+Sample 4 - Beam 43 - Predicted:  car play is awesome snick chad says no if the monkey comes i ll chase him away  - CER: 0.50
+Sample 4 - Beam 44 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 45 - Predicted:  okay yes no okay no no  - CER: 0.00
+Sample 4 - Beam 46 - Predicted:   - CER: 0.00
+Sample 4 - Beam 47 - Predicted:   - CER: 0.00
+Sample 4 - Beam 48 - Predicted:  book love is a lesson big child says mom if the mountain comes i ll chase it away  - CER: 0.56
+Sample 4 - Beam 49 - Predicted:  wappler leaves mercy sue ty says yes if the names of the claims are true superior  - CER: 0.25
+Sample 4 - Beam 50 - Predicted:  popcorn is russell steve chow chaz mung victor monkey comes i choose to go away  - CER: 0.25
+Sample 4 - Beam 51 - Predicted:  poplar beeves mussel snoot child says mom if the muck a comes i ll chase it away - CER: 0.69
+Sample 4 - Beam 52 - Predicted:  oprah lee s wrestling sweet child says me if the world could come i d chase it there  - CER: 0.31
+Sample 4 - Beam 53 - Predicted:  what were these answer third child said hey if there are two cows i ll choose the other  - CER: 0.12
+Sample 4 - Beam 54 - Predicted:  poplar leaves waffle sweet child says mom if the monkey comes i ll chase him away  - CER: 0.81
+Sample 4 - Beam 55 - Predicted:  parker leaves russell sweet child said mom if the monkey comes i ll chase it away  - CER: 0.75
+Sample 4 - Beam 56 - Predicted:  butler is laughing sleep time seems long it only comes out soon as it arrives  - CER: 0.19
+Sample 4 - Beam 57 - Predicted:  heartburn and stomach hmm stomach stomach it s been a long time since i ve had a stomachache  - CER: -0.06
+Sample 4 - Beam 58 - Predicted:  poplar leaves also third class is dry if the market price are closer - CER: 0.25
+Sample 4 - Beam 59 - Predicted:  welcome to our new auction this time thank you all we want to show all types of ideas  - CER: -0.12
+Sample 4 - Beam 60 - Predicted:  welcome to new scotland sweet times isn t it but the long kickers are just there  - CER: 0.00
+Sample 4 - Beam 61 - Predicted:  haple  - CER: 0.00
+Sample 4 - Beam 62 - Predicted:  pop your little swivel suicide says mom if the monkey comes i ll chase it away  - CER: 0.69
+Sample 4 - Beam 63 - Predicted:  okay  - CER: 0.00
+[GPU 1] Partial CER: 0.52%
+[GPU 1] Partial similarity: 0.018581264466047288
+[GPU 1] Partial similarity (ref seg): 0.03602629825472832
+[GPU 1] AES‑CE: 6.232645511627197
+[GPU 1] AES‑CU: 7.390832233428955
+[GPU 1] AES‑PC: 1.4016916751861572
+[GPU 1] AES‑PQ: 7.7596001625061035
+[GPU 1] AES‑utmos: 4.5376283645629885
+GPU 1 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB32_BW2/partial_result_1.json

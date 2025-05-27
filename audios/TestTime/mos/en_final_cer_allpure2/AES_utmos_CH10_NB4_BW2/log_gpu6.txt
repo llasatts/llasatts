@@ -1,0 +1,156 @@
+2025-05-13 21:41:12.320623: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 21:41:12.325506: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 21:41:12.325535: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 21:41:56,044 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/7 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 14%|█▍        | 1/7 [00:53<05:21, 53.51s/it] 29%|██▊       | 2/7 [02:01<05:11, 62.24s/it] 43%|████▎     | 3/7 [02:34<03:14, 48.70s/it] 57%|█████▋    | 4/7 [03:10<02:11, 43.82s/it] 71%|███████▏  | 5/7 [05:08<02:20, 70.37s/it] 86%|████████▌ | 6/7 [06:18<01:10, 70.43s/it]100%|██████████| 7/7 [07:19<00:00, 67.35s/it]100%|██████████| 7/7 [07:19<00:00, 62.83s/it]
+输入文本: No-string drum, no-string gong—kids sing: sing well, all cheer; sing poorly, bang the gong!
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 0 - Beam 0 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  no string drum no string gone kids sing sing well all cheer sing poorly bang the gong - CER: 0.94
+Sample 0 - Beam 3 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 5 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 6 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 7 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+输入文本: You say file, I say snow; say gun, I say bridge; a playful riddle rolling endlessly forward.
+Sample 1 - Beam 0 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+输入文本: Grandpa picks radishes, grandma steams buns. They trade and thank each other happily.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  grandpa picks radishes grandma stems buns they trade and thank each other happily  - CER: 0.92
+Sample 2 - Beam 5 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  grandpa picks radishes grandma stems buns they trade and thank each other happily  - CER: 0.92
+Sample 2 - Beam 7 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+输入文本: Camel caravan crosses the desert. Uncle praises the camels—they work so well!
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 3 - Beam 0 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  carroll chai ai crosses the desert uncle crazes the cows they work so well - CER: 0.62
+Sample 3 - Beam 7 - Predicted:  carol caroline crosses the desert how can she praise the cows they work so well  - CER: 0.46
+输入文本: White hen lays white eggs, eats white rice, fills the little white pot with pride.
+Sample 4 - Beam 0 - Predicted:  white hen blaze white eggs eggs fly twice phase day to day egg pop fifth egg  - CER: 0.20
+Sample 4 - Beam 1 - Predicted:  white hen knows white eggs - CER: 0.27
+Sample 4 - Beam 2 - Predicted:  white hen knows what is it s white rice fills the little white pot with pie  - CER: 0.60
+Sample 4 - Beam 3 - Predicted:  white hen lays white eggs eats white rice sees the little white pot with pie - CER: 0.87
+Sample 4 - Beam 4 - Predicted:  all right  - CER: 0.00
+Sample 4 - Beam 5 - Predicted:  whitehandcast net this podcast is made possible by blackhandcast  - CER: 0.00
+Sample 4 - Beam 6 - Predicted:  white egg means white eggs it s white rice eggs are written like what looks like  - CER: 0.27
+Sample 4 - Beam 7 - Predicted:  one day an earthquake hit the earth s surface sending the earth s surface to collapse  - CER: 0.00
+输入文本: Month by month: lanterns, temple fairs, rice dumplings, moon-watching, winter feasts.
+Sample 5 - Beam 0 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts - CER: 1.00
+Sample 5 - Beam 2 - Predicted:  mouth by mouth lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 0.83
+Sample 5 - Beam 3 - Predicted:  month by month laters temple fairs rice dumplings moon watching winter feasts  - CER: 0.92
+Sample 5 - Beam 4 - Predicted:  mom i am dating  - CER: 0.00
+Sample 5 - Beam 5 - Predicted:  month by month rockings temple fairs nice dumplings moon watching moon kisses  - CER: 0.67
+Sample 5 - Beam 6 - Predicted:  mark by the way thank you for your time and your patience we will continue to speak  - CER: -0.33
+Sample 5 - Beam 7 - Predicted:  month or month lancans drinking heath or ice dumplings or watching lake of lists - CER: 0.17
+输入文本: Little boy cries for a bride—to light the lamp, talk at night, and braid his hair in the morning.
+Sample 6 - Beam 0 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 1 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 2 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 3 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 4 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 5 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 6 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 7 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+[GPU 6] Partial CER: 1.03%
+[GPU 6] Partial similarity: -0.006904612428375653
+[GPU 6] Partial similarity (ref seg): 0.22550935032112257
+[GPU 6] AES‑CE: 5.870282173156738
+[GPU 6] AES‑CU: 6.824783597673688
+[GPU 6] AES‑PC: 1.449657917022705
+[GPU 6] AES‑PQ: 7.265473161424909
+[GPU 6] AES‑utmos: 4.064043794359479
+GPU 6 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB4_BW2/partial_result_6.json

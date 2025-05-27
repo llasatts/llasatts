@@ -1,0 +1,35 @@
+{
+  "gpu_rank": 2,
+  "cer": 0.0014858841010401188,
+  "similarity": 0.027959170130391914,
+  "similarity_r": 0.23756088130176067,
+  "trans_gt": [
+    "round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor ",
+    "little spider spins silver threads back and forth weaving a web to catch flies and mosquitoes ",
+    "golden blossoms glow yellow and fragrant each facing the sun with bright delight ",
+    "uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read ",
+    "anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout ",
+    "in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off "
+  ],
+  "trans_pred": [
+    " round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor",
+    " little spider spins silver threads back and forth waving a web to catch flies and mosquitoes ",
+    " golden blossoms glow yellow and fragrant each facing the sun with bright delight ",
+    " uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read",
+    " anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout",
+    " in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off"
+  ],
+  "cer_results": [
+    1.0,
+    0.9375,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "aes_ce": 5.879239638646443,
+  "aes_cu": 6.84662143389384,
+  "aes_pc": 1.463827133178711,
+  "aes_pq": 7.141228040059407,
+  "aes_utmos": 4.050008813540141
+}

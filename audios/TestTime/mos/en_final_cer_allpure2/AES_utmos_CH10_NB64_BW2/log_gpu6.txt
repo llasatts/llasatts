@@ -1,0 +1,993 @@
+2025-05-13 23:17:17.488885: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 23:17:17.494246: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 23:17:17.494276: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 23:18:08,489 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/7 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 14%|█▍        | 1/7 [08:08<48:52, 488.67s/it] 29%|██▊       | 2/7 [16:03<40:01, 480.31s/it] 43%|████▎     | 3/7 [22:16<28:45, 431.36s/it] 57%|█████▋    | 4/7 [29:09<21:12, 424.11s/it] 71%|███████▏  | 5/7 [42:47<18:52, 566.28s/it] 86%|████████▌ | 6/7 [55:02<10:23, 623.73s/it]100%|██████████| 7/7 [1:01:00<00:00, 536.61s/it]100%|██████████| 7/7 [1:01:00<00:00, 522.87s/it]
+输入文本: No-string drum, no-string gong—kids sing: sing well, all cheer; sing poorly, bang the gong!
+Sample 0 - Beam 0 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 3 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 5 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 6 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 7 - Predicted:  no string drum no string gong kids sing sing well old cheer sing poorly bang the gong - CER: 0.94
+Sample 0 - Beam 8 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 9 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 10 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 11 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 12 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 13 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 14 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 15 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 16 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 17 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 18 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 19 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 20 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 21 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 22 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 23 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 24 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 25 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 26 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 27 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 28 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 29 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 30 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 31 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 32 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 33 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 34 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 35 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 36 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 37 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 38 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 39 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 40 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 41 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 42 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 43 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 44 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 45 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 46 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 47 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 48 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 49 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 50 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 51 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 52 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 53 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 54 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 55 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 56 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 57 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bam de gong - CER: 0.88
+Sample 0 - Beam 58 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 59 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 60 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 61 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 62 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 63 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly thang the gong - CER: 0.94
+Sample 0 - Beam 64 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 65 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 66 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 67 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 68 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 69 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 70 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 71 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 72 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 73 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 74 - Predicted:  no string drum no string gone chid sing sing well all cheer sing poorly bang the gong - CER: 0.88
+Sample 0 - Beam 75 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 76 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 77 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 78 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 79 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 80 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 81 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 82 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 83 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 84 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 85 - Predicted:  no string drum no string gong chid sing sing well all cheer sing poorly thang the gong - CER: 0.88
+Sample 0 - Beam 86 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 87 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 88 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 89 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 90 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 91 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 92 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 93 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 94 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 95 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 96 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 97 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 98 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 99 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 100 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 101 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 102 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 103 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 104 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 105 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 106 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 107 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 108 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 109 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 110 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 111 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 112 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 113 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 114 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 115 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 116 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly  - CER: 0.82
+Sample 0 - Beam 117 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 118 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 119 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 120 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 121 - Predicted:  no string drum no string gong kids sing sing well all cheer sing - CER: 0.76
+Sample 0 - Beam 122 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 123 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 124 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 125 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 126 - Predicted:  no string drum no string gong  - CER: 0.35
+Sample 0 - Beam 127 - Predicted:  no string drum no string guy  - CER: 0.29
+输入文本: You say file, I say snow; say gun, I say bridge; a playful riddle rolling endlessly forward.
+Sample 1 - Beam 0 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 9 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 12 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 13 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 14 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 16 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 17 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 18 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 19 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 20 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 21 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 22 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 23 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 24 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 25 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 26 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 27 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 28 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 29 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 30 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 31 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 32 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 33 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 34 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 35 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 36 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 37 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 38 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 39 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 40 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 41 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 42 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 43 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 44 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 45 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 46 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 47 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 48 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 49 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 50 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 51 - Predicted:  you say file i say snow say gum i say bridge a playful riddle rolling endlessly forward - CER: 0.94
+Sample 1 - Beam 52 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 53 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 54 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 55 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 56 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 57 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 58 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 59 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 60 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 61 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 62 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 63 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 64 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 65 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 66 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 67 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 68 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 69 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 70 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 71 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 72 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 73 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 74 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 75 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 76 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 77 - Predicted:  you say fire i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 0.94
+Sample 1 - Beam 78 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 79 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 80 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 81 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 82 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 83 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 84 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 85 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 86 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 87 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 88 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 89 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 90 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 91 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 92 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 93 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 94 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 95 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 96 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 97 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 98 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 99 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 100 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 101 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 102 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 103 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 104 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 105 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 106 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward his - CER: 0.94
+Sample 1 - Beam 107 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 108 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 109 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 110 - Predicted:  ye say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 0.94
+Sample 1 - Beam 111 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 112 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 113 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 114 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 115 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 116 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 117 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 118 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 119 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 120 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 121 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 122 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 123 - Predicted:  you say file i say snow say gun  - CER: 0.47
+Sample 1 - Beam 124 - Predicted:  you say file i say snow say gun i say bridge a playful wriggle roaring endlessly forward  - CER: 0.88
+Sample 1 - Beam 125 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 126 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 127 - Predicted:  thank you  - CER: 0.00
+输入文本: Grandpa picks radishes, grandma steams buns. They trade and thank each other happily.
+Sample 2 - Beam 0 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 8 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 9 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 10 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 11 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily - CER: 1.00
+Sample 2 - Beam 12 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 13 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 14 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 15 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 16 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 17 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 18 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 19 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 20 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 21 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 22 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 23 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 24 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 25 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 26 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 27 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 28 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 29 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 30 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 31 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 32 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 33 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 34 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 35 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 36 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 37 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 38 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 39 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 40 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 41 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 42 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 43 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 44 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 45 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 46 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 47 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 48 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 49 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 50 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 51 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 52 - Predicted:  grandpa picks radishes grandma stems buns they trade and thank each other happily  - CER: 0.92
+Sample 2 - Beam 53 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 54 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 55 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 56 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 57 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 58 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 59 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 60 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 61 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 62 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 63 - Predicted:  grandpa picks radishes grandma stems buns they trade and thank each other happily  - CER: 0.92
+Sample 2 - Beam 64 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 65 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 66 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 67 - Predicted:  grandpa picks radishes grandma stems buns they trade and thank each other happily  - CER: 0.92
+Sample 2 - Beam 68 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 69 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 70 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 71 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 72 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 73 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 74 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 75 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 76 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 77 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 78 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 79 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 80 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 81 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 82 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 83 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 84 - Predicted:  grandpa takes radishes grandma steams buns they trade and thank each other happily  - CER: 0.92
+Sample 2 - Beam 85 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 86 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 87 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 88 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 89 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 90 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 91 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 92 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 93 - Predicted:  grandpa picks radishes grandma steams buns they trade and bang  - CER: 0.69
+Sample 2 - Beam 94 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 95 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 96 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 97 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 98 - Predicted:  grandpa cooks radishes grandma steams buns they trade and thank each other happily  - CER: 0.92
+Sample 2 - Beam 99 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 100 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 101 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 102 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 103 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 104 - Predicted:  grandpa picks radishes grandma steams buns  - CER: 0.46
+Sample 2 - Beam 105 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 106 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 107 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 108 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 109 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 110 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 111 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 112 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 113 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 114 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 115 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 116 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 117 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 118 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 119 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 120 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 121 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 122 - Predicted:  grandpa picks radishes grandma steams  - CER: 0.38
+Sample 2 - Beam 123 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 124 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 125 - Predicted:  they trade and thank each other happily  - CER: 0.54
+Sample 2 - Beam 126 - Predicted:  grandpa  - CER: 0.08
+Sample 2 - Beam 127 - Predicted:  grandpa bakes radishes grandma steams buns  - CER: 0.38
+输入文本: Camel caravan crosses the desert. Uncle praises the camels—they work so well!
+Sample 3 - Beam 0 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 10 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 12 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 13 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 15 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 16 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 17 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 18 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 19 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 20 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 21 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 22 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 23 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 24 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 25 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 26 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 27 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 28 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 29 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 30 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 31 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 32 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 33 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 34 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 35 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 36 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 37 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 38 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 39 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 40 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 41 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 42 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 43 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 44 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 45 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 46 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 47 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 48 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 49 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 50 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 51 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 52 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 53 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 54 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 55 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 56 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 57 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 58 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 59 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 60 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 61 - Predicted:  camel caravan curses the desert uncle praises the camels they work so well  - CER: 0.92
+Sample 3 - Beam 62 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 63 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 64 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 65 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 66 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 67 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 68 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 69 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 70 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 71 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 72 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 73 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 74 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 75 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 76 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 77 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 78 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 79 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 80 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 81 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 82 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 83 - Predicted:  camel caravan crosses the desert uncle praises the camels  - CER: 0.69
+Sample 3 - Beam 84 - Predicted:  camel caravan crosses the desert uncle prezzes the camels and works so well  - CER: 0.77
+Sample 3 - Beam 85 - Predicted:  thank you  - CER: 0.00
+Sample 3 - Beam 86 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 87 - Predicted:  camel caravan crosses the desert it proposes the cameras to work solo  - CER: 0.54
+Sample 3 - Beam 88 - Predicted:  camel caravan crosses the desert implant cases the case they ache so  - CER: 0.62
+Sample 3 - Beam 89 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 90 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 91 - Predicted:  camel caravan crosses the desert emperor closes the curtains they walk so long  - CER: 0.62
+Sample 3 - Beam 92 - Predicted:  camel caravan crosses the desert uncle pleases the cows they work so well  - CER: 0.85
+Sample 3 - Beam 93 - Predicted:  camel caravan crosses the desert uncle cleanses the camels they work so well  - CER: 0.92
+Sample 3 - Beam 94 - Predicted:  camel caravan crosses the desert opal crazes the camels they work so well - CER: 0.85
+Sample 3 - Beam 95 - Predicted:  camel caravan crosses the desert uncle plays as the camels it looks so well  - CER: 0.69
+Sample 3 - Beam 96 - Predicted:  camel caravan passes the visit uncle presses the camels they walk so well  - CER: 0.69
+Sample 3 - Beam 97 - Predicted:  camel caravan crosses the desert uncle praises the cows that look so well  - CER: 0.77
+Sample 3 - Beam 98 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 99 - Predicted:  camel caravan crosses the mezzo occult passes the tunnels that run so low  - CER: 0.46
+Sample 3 - Beam 100 - Predicted:  camel carrying crosses the beswick opal praises the camels it works so well  - CER: 0.62
+Sample 3 - Beam 101 - Predicted:  camel caravan crosses the desert and closes the caves  - CER: 0.46
+Sample 3 - Beam 102 - Predicted:  camel caravan crosses the desert camel caravan crosses the plains and what s the law  - CER: 0.31
+Sample 3 - Beam 103 - Predicted:  camel caravan passes the desert polar pol closes the camels and wakes solwell  - CER: 0.38
+Sample 3 - Beam 104 - Predicted:   - CER: 0.00
+Sample 3 - Beam 105 - Predicted:  camel caravan crosses the desert awkward places in the caves they work so well  - CER: 0.69
+Sample 3 - Beam 106 - Predicted:  camel caravan crosses the desert uncle cleanses the cows they walk so well - CER: 0.77
+Sample 3 - Beam 107 - Predicted:  camel caravan crosses the desert opa pleases the camels they work so well  - CER: 0.85
+Sample 3 - Beam 108 - Predicted:  camel caravan crosses the desert eagle praises the camels they work so well  - CER: 0.92
+Sample 3 - Beam 109 - Predicted:  ka  - CER: 0.00
+Sample 3 - Beam 110 - Predicted:  camel caravan crosses the desert it closes the kennels it looks so old  - CER: 0.54
+Sample 3 - Beam 111 - Predicted:  ocal praises the cows they work so well  - CER: 0.46
+Sample 3 - Beam 112 - Predicted:  camel caron crosses the desert uncle prizes the cows they rock so well - CER: 0.69
+Sample 3 - Beam 113 - Predicted:  camel carabao crosses the desert i m caught crossing the coast that walks so well  - CER: 0.38
+Sample 3 - Beam 114 - Predicted:  camel charity classes the desert inquires the camels they work so well  - CER: 0.69
+Sample 3 - Beam 115 - Predicted:  our paradise passes the desert our pope raises the panels it works so well  - CER: 0.31
+Sample 3 - Beam 116 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 117 - Predicted:  camel caravan process the desert alpo praises the cows they work so well  - CER: 0.77
+Sample 3 - Beam 118 - Predicted:  camel caravan passes the desert ogle praises the camels they look so young  - CER: 0.69
+Sample 3 - Beam 119 - Predicted:  camel caravan praises the desert eagle praises the camels they work so well  - CER: 0.85
+Sample 3 - Beam 120 - Predicted:  colonel calavan crosses the desert uncle prizes the counties they rate so low  - CER: 0.54
+Sample 3 - Beam 121 - Predicted:  camel caravan passes the desert uncle pleases the cows they work so well  - CER: 0.77
+Sample 3 - Beam 122 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 123 - Predicted:   - CER: 0.00
+Sample 3 - Beam 124 - Predicted:  general kerribean crosses the desert uncle praises the town they have worked so well  - CER: 0.62
+Sample 3 - Beam 125 - Predicted:  camel car traces the dirt uncle places the cows it works so well  - CER: 0.46
+Sample 3 - Beam 126 - Predicted:  thank you  - CER: 0.00
+Sample 3 - Beam 127 - Predicted:  cable cargo houses development unpacked cargo recovered relive save  - CER: 0.00
+输入文本: White hen lays white eggs, eats white rice, fills the little white pot with pride.
+Sample 4 - Beam 0 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pride  - CER: 1.00
+Sample 4 - Beam 1 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 2 - Predicted:  thank you  - CER: 0.00
+Sample 4 - Beam 3 - Predicted:  thank you  - CER: 0.00
+Sample 4 - Beam 4 - Predicted:  white hen lays white eggs it s white house fells the little white pot of pipe  - CER: 0.60
+Sample 4 - Beam 5 - Predicted:  white hen lays white eggs it s white rice fells a little white pocket of pride  - CER: 0.60
+Sample 4 - Beam 6 - Predicted:  white hen wears white eggs eats white rice fills the little white pot with pie  - CER: 0.87
+Sample 4 - Beam 7 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pride - CER: 1.00
+Sample 4 - Beam 8 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pride  - CER: 1.00
+Sample 4 - Beam 9 - Predicted:  white hen lays white eggs it s my prize so far it s a lot of pot but pies  - CER: 0.13
+Sample 4 - Beam 10 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pride  - CER: 1.00
+Sample 4 - Beam 11 - Predicted:  white hen lays white eggs that s white rice ells lay white pot with pride  - CER: 0.67
+Sample 4 - Beam 12 - Predicted:   - CER: 0.00
+Sample 4 - Beam 13 - Predicted:  white hen lays white eggs eats white ice fills the little white pot of the pig - CER: 0.73
+Sample 4 - Beam 14 - Predicted:  what  - CER: 0.00
+Sample 4 - Beam 15 - Predicted:  white hen raised white eggs it s my ass that was the little white pot mcpie  - CER: 0.40
+Sample 4 - Beam 16 - Predicted:  white hen lays red eggs each rare course first they react big with - CER: 0.33
+Sample 4 - Beam 17 - Predicted:  white hen lays white eggs it s my class fills the little egg pot with pride  - CER: 0.67
+Sample 4 - Beam 18 - Predicted:  white hen leaves white eggs eats white rice fills the little white pot with bread  - CER: 0.87
+Sample 4 - Beam 19 - Predicted:  thank you  - CER: 0.00
+Sample 4 - Beam 20 - Predicted:  white hen lays white eggs eggs white rice fins any white part of pod  - CER: 0.53
+Sample 4 - Beam 21 - Predicted:  what  - CER: 0.00
+Sample 4 - Beam 22 - Predicted:  white hen lays white eggs eats white rice fills the long white pot with pride  - CER: 0.93
+Sample 4 - Beam 23 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pride  - CER: 1.00
+Sample 4 - Beam 24 - Predicted:  white hen - CER: 0.13
+Sample 4 - Beam 25 - Predicted:  white hen lays white eggs it s like ice fills the liquor like pot of clay  - CER: 0.47
+Sample 4 - Beam 26 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pride  - CER: 1.00
+Sample 4 - Beam 27 - Predicted:  white hen lays white earth it s white rice there s the little white pot with fire  - CER: 0.60
+Sample 4 - Beam 28 - Predicted:  white hen lays white eggs seeds white rice tells the letter white hot that cried  - CER: 0.60
+Sample 4 - Beam 29 - Predicted:  white hen lays white eggs it s white grass thin s the little white eyed muckbag  - CER: 0.47
+Sample 4 - Beam 30 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pie  - CER: 0.93
+Sample 4 - Beam 31 - Predicted:  what  - CER: 0.00
+Sample 4 - Beam 32 - Predicted:  white hand with right axe hits right twice fills the little red part with pride  - CER: 0.40
+Sample 4 - Beam 33 - Predicted:  white hair leaves white eggs and its white eyes so is the little white part of the flag  - CER: 0.27
+Sample 4 - Beam 34 - Predicted:   - CER: 0.00
+Sample 4 - Beam 35 - Predicted:  white hen lays white eggs eats white rice sales being a white pork next pie  - CER: 0.60
+Sample 4 - Beam 36 - Predicted:  white hen lays white eggs eats white rice throws the little red pot and plug  - CER: 0.73
+Sample 4 - Beam 37 - Predicted:  white hen there is white eggs it s white rice so s the little white pocket quite  - CER: 0.40
+Sample 4 - Beam 38 - Predicted:   - CER: 0.00
+Sample 4 - Beam 39 - Predicted:  what happened  - CER: 0.00
+Sample 4 - Beam 40 - Predicted:  what hey yes  - CER: 0.00
+Sample 4 - Beam 41 - Predicted:  whitehead has bad backs  - CER: 0.00
+Sample 4 - Beam 42 - Predicted:  white hen weighs white eggs eats white ice fills the little white pot with pride  - CER: 0.87
+Sample 4 - Beam 43 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pride  - CER: 1.00
+Sample 4 - Beam 44 - Predicted:  white hair is white eggs it s white rice food that white public heart  - CER: 0.33
+Sample 4 - Beam 45 - Predicted:  huh  - CER: 0.00
+Sample 4 - Beam 46 - Predicted:  what is life  - CER: 0.00
+Sample 4 - Beam 47 - Predicted:  white hen lays white eggs eats white rice feels little white eggs inside  - CER: 0.67
+Sample 4 - Beam 48 - Predicted:   - CER: 0.00
+Sample 4 - Beam 49 - Predicted:  what can this what is this what is  - CER: 0.00
+Sample 4 - Beam 50 - Predicted:  white hair raised by earth it s my life  - CER: 0.07
+Sample 4 - Beam 51 - Predicted:  white hen lays white eggs eats white rice fares the winter war up with prey  - CER: 0.67
+Sample 4 - Beam 52 - Predicted:  white hen with white eggs eats white rice fills their little white pot  - CER: 0.73
+Sample 4 - Beam 53 - Predicted:  white hen lays white eggs it s white rice fails to lay white heart at pie  - CER: 0.47
+Sample 4 - Beam 54 - Predicted:  white hands white face mixed white eyes  - CER: 0.20
+Sample 4 - Beam 55 - Predicted:  one thing with rx it s rx face data rx is rx  - CER: 0.00
+Sample 4 - Beam 56 - Predicted:  white hen lays white eggs eggs white yes eggs white yes  - CER: 0.47
+Sample 4 - Beam 57 - Predicted:  white hen has white eggs it s likewise fails the real white pot with pie  - CER: 0.53
+Sample 4 - Beam 58 - Predicted:  white hen lays white eggs eats white rice feeds the little white otter to hide  - CER: 0.73
+Sample 4 - Beam 59 - Predicted:  white hen lays white eggs eats white rice sounds very good like rock rock pie  - CER: 0.53
+Sample 4 - Beam 60 - Predicted:  white hair less white ears it s white lies  - CER: 0.20
+Sample 4 - Beam 61 - Predicted:  repain as black eggs eats white rice else the little white pot eat pride  - CER: 0.60
+Sample 4 - Beam 62 - Predicted:  white hen lays white eggs beads white mice  - CER: 0.40
+Sample 4 - Beam 63 - Predicted:  white hen lays white eggs eats white rice fills the living white pot with pride  - CER: 0.93
+Sample 4 - Beam 64 - Predicted:  white hen knows white eggs it s white ice fuzz like a white pot of plaque  - CER: 0.40
+Sample 4 - Beam 65 - Predicted:  white hair nose black eyes teeth black eyes bells down little white pot with egg  - CER: 0.33
+Sample 4 - Beam 66 - Predicted:  white ham rinses white eggs eats white rice fills the little white pot with blood  - CER: 0.80
+Sample 4 - Beam 67 - Predicted:  white heron as white axe eats my place first they hit the red bot with pay  - CER: 0.20
+Sample 4 - Beam 68 - Predicted:  white hen raise white eggs eats white rice tells little white pot with pie  - CER: 0.73
+Sample 4 - Beam 69 - Predicted:  what hang this white eggs it s white lies  - CER: 0.20
+Sample 4 - Beam 70 - Predicted:  white hen lays white eggs eats white rice fills the little white cup  - CER: 0.80
+Sample 4 - Beam 71 - Predicted:  why has this person been so dark  - CER: 0.00
+Sample 4 - Beam 72 - Predicted:  white hen lays white eggs it s white rice fills the little white pot with plaque  - CER: 0.80
+Sample 4 - Beam 73 - Predicted:  white hen lays white eggs eats white rice  - CER: 0.53
+Sample 4 - Beam 74 - Predicted:  white hen lays white eggs eats white ice feeds the little white pot with plague  - CER: 0.80
+Sample 4 - Beam 75 - Predicted:  white hair is white eggs it s white noise  - CER: 0.27
+Sample 4 - Beam 76 - Predicted:  white hair means white eggs eats white rice and is the little white pot with fire  - CER: 0.67
+Sample 4 - Beam 77 - Predicted:  white hair means white eggs eats white flies steals and nicks white  - CER: 0.40
+Sample 4 - Beam 78 - Predicted:  what  - CER: 0.00
+Sample 4 - Beam 79 - Predicted:  y2 there is yx it s like us so it s the living white pocket pod  - CER: 0.00
+Sample 4 - Beam 80 - Predicted:  white hen loves white eggs eats white rice fills the little red pot with pie  - CER: 0.80
+Sample 4 - Beam 81 - Predicted:  why ten years what else is what was so cynically what put a pride - CER: 0.07
+Sample 4 - Beam 82 - Predicted:  white hen lays white eggs eats white rice fills the little white pot like pride  - CER: 0.93
+Sample 4 - Beam 83 - Predicted:  white bear has white eggs it s white rice  - CER: 0.27
+Sample 4 - Beam 84 - Predicted:  white hen lays white eggs each white once thanks for the white poppy pod  - CER: 0.47
+Sample 4 - Beam 85 - Predicted:   - CER: 0.00
+Sample 4 - Beam 86 - Predicted:  okay where s my kids where s my kids where s my little white boy  - CER: 0.00
+Sample 4 - Beam 87 - Predicted:  right hand is like x it s like y s seems to be like y s  - CER: -0.07
+Sample 4 - Beam 88 - Predicted:  white hen wears white axe eats white rice fills the little white pot with pride  - CER: 0.87
+Sample 4 - Beam 89 - Predicted:  white hen lives white eggs eat the white rice fills the living white pot with pride  - CER: 0.73
+Sample 4 - Beam 90 - Predicted:  white hen feels like ants it s like ants it feels so little like ants it s hard  - CER: 0.00
+Sample 4 - Beam 91 - Predicted:  white pain there s white eggs it s white lies ewww and it s a white car it lies  - CER: 0.07
+Sample 4 - Beam 92 - Predicted:  white ham lays black eggs boots blackers fill the little white pot with cork  - CER: 0.53
+Sample 4 - Beam 93 - Predicted:  i m home i m home i m home  - CER: 0.00
+Sample 4 - Beam 94 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pie  - CER: 0.93
+Sample 4 - Beam 95 - Predicted:  white hen lives like us eats like us serves the little white fox with care  - CER: 0.47
+Sample 4 - Beam 96 - Predicted:  white hen lays white eggs eats white rice saves the living white fat with time  - CER: 0.73
+Sample 4 - Beam 97 - Predicted:  why turn these white ox its white eyes first the little white pot off court  - CER: 0.40
+Sample 4 - Beam 98 - Predicted:  white hen raise white eggs eats white ice fills the little white pot with pie  - CER: 0.80
+Sample 4 - Beam 99 - Predicted:  what has been a man s dream  - CER: 0.00
+Sample 4 - Beam 100 - Predicted:  white hen lays black eggs eats white rice feeds the little red pot with plaque  - CER: 0.73
+Sample 4 - Beam 101 - Predicted:  white hen lays wild ducks boots wild rice fills the little white pot with - CER: 0.67
+Sample 4 - Beam 102 - Predicted:  like how you use white eggs it s quite nice feels the way that poppy play  - CER: 0.07
+Sample 4 - Beam 103 - Predicted:  white hair is yx it s ys face data y is y  - CER: 0.07
+Sample 4 - Beam 104 - Predicted:  white hair with white eyes is the new white part in pride  - CER: 0.33
+Sample 4 - Beam 105 - Predicted:  white hen lays white eggs it s white rice tell me your white pie white pie  - CER: 0.47
+Sample 4 - Beam 106 - Predicted:  white hen mends white eggs eats white rice tastes the little white coffee s kind  - CER: 0.67
+Sample 4 - Beam 107 - Predicted:   - CER: 0.00
+Sample 4 - Beam 108 - Predicted:  right hand use right x its right x choose the little right block with i  - CER: 0.20
+Sample 4 - Beam 109 - Predicted:  white hair raise white eggs eats white rice fills the little white pot with pride  - CER: 0.87
+Sample 4 - Beam 110 - Predicted:  white ale with red eggs eats red rice fills a little red pot with pie  - CER: 0.53
+Sample 4 - Beam 111 - Predicted:  white hen weighs workouts it s reckless feels a little like pot with pie  - CER: 0.33
+Sample 4 - Beam 112 - Predicted:  white hand waves white eggs beats white rice ears the red white part of white  - CER: 0.47
+Sample 4 - Beam 113 - Predicted:  white hen mows white eggs eats white rice fills the white pot with crab  - CER: 0.80
+Sample 4 - Beam 114 - Predicted:  white hen has white eggs its white eggs fits directly with the pot of quark  - CER: 0.40
+Sample 4 - Beam 115 - Predicted:  white hen raise white eggs eats white ice hails a little white pot of pie  - CER: 0.60
+Sample 4 - Beam 116 - Predicted:  white hen wears white eggs its white voice fills the little white pot with pie  - CER: 0.73
+Sample 4 - Beam 117 - Predicted:  we have x a x x a x s a a a a a a a  - CER: -0.07
+Sample 4 - Beam 118 - Predicted:  white hair is white hair it s white hair it s white hair it s white hair  - CER: 0.07
+Sample 4 - Beam 119 - Predicted:  white hair rays white eggs its white voice fills the little white pot with black  - CER: 0.67
+Sample 4 - Beam 120 - Predicted:   - CER: 0.00
+Sample 4 - Beam 121 - Predicted:  white hen lays white eggs x or ys is a white dog a fly  - CER: 0.40
+Sample 4 - Beam 122 - Predicted:  white hair has white eyes black eyes his vehicle has a big car  - CER: 0.13
+Sample 4 - Beam 123 - Predicted:  what is your smartphone  - CER: 0.00
+Sample 4 - Beam 124 - Predicted:  white cali lane white x it s white white tell us only the white white it s white  - CER: 0.13
+Sample 4 - Beam 125 - Predicted:  one thing there s one thing it s one life two things are one life one life  - CER: -0.13
+Sample 4 - Beam 126 - Predicted:  white hen wears black axe hits black ice says that a lot part of the point  - CER: 0.07
+Sample 4 - Beam 127 - Predicted:  white hen has white eggs each black egg has a little egg at the top  - CER: 0.33
+输入文本: Month by month: lanterns, temple fairs, rice dumplings, moon-watching, winter feasts.
+Sample 5 - Beam 0 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 2 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 3 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 4 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 5 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 6 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 7 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 8 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 9 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 10 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 11 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts - CER: 1.00
+Sample 5 - Beam 12 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 13 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 14 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 15 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 16 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 17 - Predicted:  thank you  - CER: 0.00
+Sample 5 - Beam 18 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 19 - Predicted:  month by month my interns tend to pass our stempings and answering interviews  - CER: 0.17
+Sample 5 - Beam 20 - Predicted:  month by month  - CER: 0.25
+Sample 5 - Beam 21 - Predicted:  month by month unicorns temple fairs rice bankers moon watching ninker fists  - CER: 0.67
+Sample 5 - Beam 22 - Predicted:  month by month lanterns tackle fairs no stoplings no watching winter feasts  - CER: 0.67
+Sample 5 - Beam 23 - Predicted:  month by month air times temple fairs house dinklings mill watcher - CER: 0.33
+Sample 5 - Beam 24 - Predicted:  month by month unicorns pimple furs astinkers unicorn fists  - CER: 0.25
+Sample 5 - Beam 25 - Predicted:  month by month interns tink affairs east and kens noon watching interfeasts - CER: 0.25
+Sample 5 - Beam 26 - Predicted:  month by month wakens temple fairs west endings more watching waketh this - CER: 0.50
+Sample 5 - Beam 27 - Predicted:  month by month the entrance to the house the stinkers me watching interferes  - CER: 0.17
+Sample 5 - Beam 28 - Predicted:  month by month routings temple fairs rescuing re watching waker feasts  - CER: 0.58
+Sample 5 - Beam 29 - Predicted:  no  - CER: 0.00
+Sample 5 - Beam 30 - Predicted:  month by month the patrons tend to face less dumplings and watcher interface  - CER: 0.17
+Sample 5 - Beam 31 - Predicted:  month by month wankers camping fairs ice dumplings moon watching wanker feasts - CER: 0.67
+Sample 5 - Beam 32 - Predicted:  month by month workers take the first day to the major feasts  - CER: 0.33
+Sample 5 - Beam 33 - Predicted:  month by month man trades tenting fairs nice dumplings meat watching winter feasts - CER: 0.58
+Sample 5 - Beam 34 - Predicted:  month by month a case take it as sdps uag a - CER: 0.25
+Sample 5 - Beam 35 - Predicted:  month by month lanterns temple fairs rice dumplings being watching winter peace  - CER: 0.83
+Sample 5 - Beam 36 - Predicted:  month by month enters temper fares rise dentals re hunting winter - CER: 0.33
+Sample 5 - Beam 37 - Predicted:  month by month the items type of affairs rest items new watching new to fists  - CER: 0.08
+Sample 5 - Beam 38 - Predicted:  length by length lanterns temple fairs rice dumplings wang watcher interface - CER: 0.50
+Sample 5 - Beam 39 - Predicted:  month by month lanterns till prefers rose dumplings in the watching - CER: 0.42
+Sample 5 - Beam 40 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 41 - Predicted:  month by month and in steady phase as things in reaching in the feasts - CER: 0.17
+Sample 5 - Beam 42 - Predicted:  month by month mentors tech affairs ice duckers in watcher interfeasts  - CER: 0.25
+Sample 5 - Beam 43 - Predicted:  month by month lanterns temple fairs west duncan s miniature winter - CER: 0.58
+Sample 5 - Beam 44 - Predicted:  months families interns tech affairs rest areas new watching interviews  - CER: 0.08
+Sample 5 - Beam 45 - Predicted:  months by months writers tinker fares life stemplings new watching winter feast  - CER: 0.25
+Sample 5 - Beam 46 - Predicted:  month by month lanterns temple fairs rice dumplings moonwalking winter feasts - CER: 0.83
+Sample 5 - Beam 47 - Predicted:  we are like mountains keeping fears as they face we nurture and deface  - CER: -0.08
+Sample 5 - Beam 48 - Predicted:  month by month lanterns temple fairs rice dumplings war walking wetterfest - CER: 0.67
+Sample 5 - Beam 49 - Predicted:  months by months hunters temple fairers aristarchus new watching interfeasts - CER: 0.25
+Sample 5 - Beam 50 - Predicted:  month by mike renters type affairs hair stateless ear watching finger fists - CER: 0.25
+Sample 5 - Beam 51 - Predicted:  mom bye hal bye tess take care of tess thanks bye tess  - CER: 0.00
+Sample 5 - Beam 52 - Predicted:  month by month 19th tempo fares 5th tempers new watch and interface  - CER: 0.25
+Sample 5 - Beam 53 - Predicted:  month by month lighters tempo files ice dumpers new watching interface  - CER: 0.33
+Sample 5 - Beam 54 - Predicted:  month by month round toes temple fairs rice dumplings warm watching winter feasts - CER: 0.75
+Sample 5 - Beam 55 - Predicted:  month by month you enter state affairs or state links in watching interfaces  - CER: 0.17
+Sample 5 - Beam 56 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winker - CER: 0.83
+Sample 5 - Beam 57 - Predicted:  month line  - CER: 0.08
+Sample 5 - Beam 58 - Predicted:  month by month mornings tempeh fires nice dumplings noon watching winter feasts  - CER: 0.58
+Sample 5 - Beam 59 - Predicted:  month by month writers thinkers writers newsletters newsletters intersists  - CER: 0.25
+Sample 5 - Beam 60 - Predicted:  month by month orchids temple fires ice dumplings moon watching and catfish  - CER: 0.58
+Sample 5 - Beam 61 - Predicted:  month by month they enhance they make fairs  - CER: 0.25
+Sample 5 - Beam 62 - Predicted:  month by month air case coffee face air staircase air entry and air exits  - CER: 0.08
+Sample 5 - Beam 63 - Predicted:  look very long names temple faces base dumpings new reaction impeachments  - CER: 0.08
+Sample 5 - Beam 64 - Predicted:  month by month you re getting better and better at it  - CER: 0.25
+Sample 5 - Beam 65 - Predicted:  month by month winders tender fares rice mountains new watching interface - CER: 0.42
+Sample 5 - Beam 66 - Predicted:  month by month murders temple fairs western plays ring watching winter feasts  - CER: 0.67
+Sample 5 - Beam 67 - Predicted:  month by month ranches temple fairs rice daisies all watching ranchesists  - CER: 0.58
+Sample 5 - Beam 68 - Predicted:  month by month winters temple fairs rice dumplings new year s watching winter feasts  - CER: 0.67
+Sample 5 - Beam 69 - Predicted:  month by month reinhard s temple fairs rest on being me watching reinhard face  - CER: 0.33
+Sample 5 - Beam 70 - Predicted:  one by one characters type of fans last opens one watcher  - CER: 0.08
+Sample 5 - Beam 71 - Predicted:  mark flamer writings temple files rice dumplings name watching link in the description  - CER: 0.17
+Sample 5 - Beam 72 - Predicted:   - CER: 0.00
+Sample 5 - Beam 73 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 74 - Predicted:  month by month it enters taking place as it enters it enters it exists  - CER: 0.08
+Sample 5 - Beam 75 - Predicted:  month by month lanterns temple fairs live stumblings moon watching interfaces - CER: 0.67
+Sample 5 - Beam 76 - Predicted:  last i guess layer watcher manifests  - CER: 0.00
+Sample 5 - Beam 77 - Predicted:  1 by 1 waders table face rice tables room watching water face - CER: 0.25
+Sample 5 - Beam 78 - Predicted:  mm mm mm  - CER: 0.00
+Sample 5 - Beam 79 - Predicted:  month by month anton s tentacels has tenders in yatchi and desist  - CER: 0.25
+Sample 5 - Beam 80 - Predicted:  one fine month young guys temple thighs nice dumplings young watching young deafness  - CER: 0.25
+Sample 5 - Beam 81 - Predicted:  month by month anatomies temporal status  - CER: 0.25
+Sample 5 - Beam 82 - Predicted:  month by month lanterns temple fairies rice dumplings  - CER: 0.58
+Sample 5 - Beam 83 - Predicted:  my  - CER: 0.00
+Sample 5 - Beam 84 - Predicted:  month by month aips take affairs ai stakeholders ai agents ai interface  - CER: 0.25
+Sample 5 - Beam 85 - Predicted:  one by one mountains temples caves lands mountains and the ancient antithesis  - CER: 0.08
+Sample 5 - Beam 86 - Predicted:  month by month long times temple fires ice stoplings moonwalking winter boosts  - CER: 0.33
+Sample 5 - Beam 87 - Predicted:  month by month  - CER: 0.25
+Sample 5 - Beam 88 - Predicted:  months elements lanterns tempera fairs glass staples new action interfaces  - CER: 0.17
+Sample 5 - Beam 89 - Predicted:  month by month no things tackle fairies no stompings no marching no catfishes  - CER: 0.17
+Sample 5 - Beam 90 - Predicted:  mark find mark  - CER: 0.00
+Sample 5 - Beam 91 - Predicted:  good night  - CER: 0.00
+Sample 5 - Beam 92 - Predicted:  thank you for watching  - CER: 0.08
+Sample 5 - Beam 93 - Predicted:  1 8 the editor s type of errors are stated in the editor s interface  - CER: -0.25
+Sample 5 - Beam 94 - Predicted:  what do you want can t taste can t taste  - CER: 0.00
+Sample 5 - Beam 95 - Predicted:  month by month  - CER: 0.25
+Sample 5 - Beam 96 - Predicted:  month by month light days tempo phase light stick days video action and just this  - CER: 0.00
+Sample 5 - Beam 97 - Predicted:  month by month lanterns couple faves no stoppers me watching monkey fists  - CER: 0.42
+Sample 5 - Beam 98 - Predicted:   - CER: 0.00
+Sample 5 - Beam 99 - Predicted:  um - CER: 0.00
+Sample 5 - Beam 100 - Predicted:  mark brian burme antiques techniques facts antispokens new nation and day  - CER: 0.00
+Sample 5 - Beam 101 - Predicted:  months by year year things second phase year stages year 2 year 3  - CER: 0.00
+Sample 5 - Beam 102 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 103 - Predicted:  one per hour baggies table face ice toppings all action in texas  - CER: 0.00
+Sample 5 - Beam 104 - Predicted:  world by night lanterns tent of fires ice dumplings and watching winter feasts  - CER: 0.42
+Sample 5 - Beam 105 - Predicted:  once a month interns take the first live samples in a workshop in texas  - CER: -0.08
+Sample 5 - Beam 106 - Predicted:  month by month wartings temple fairs voice bubbles moon watching winter feasts  - CER: 0.75
+Sample 5 - Beam 107 - Predicted:  month by month mountains temple fairs ice dolphins moon watching winter feasts  - CER: 0.75
+Sample 5 - Beam 108 - Predicted:  month by month mountains temple fairs white sculpins me watching winter feasts  - CER: 0.67
+Sample 5 - Beam 109 - Predicted:  thank you  - CER: 0.00
+Sample 5 - Beam 110 - Predicted:  1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  - CER: -17.50
+Sample 5 - Beam 111 - Predicted:  mouth by mouth you re close people face you re stopless you re watching  - CER: -0.08
+Sample 5 - Beam 112 - Predicted:  month by month i taste simple tears less no taste mmm watching  - CER: 0.25
+Sample 5 - Beam 113 - Predicted:  brimfine mount rampage temple fires ice dumpings new watching winter feasts  - CER: 0.33
+Sample 5 - Beam 114 - Predicted:  book manual antiques technicalities life saving things many options and tricks  - CER: 0.00
+Sample 5 - Beam 115 - Predicted:  month by week year by year they differ year by year they differ  - CER: 0.08
+Sample 5 - Beam 116 - Predicted:  one by one  - CER: 0.08
+Sample 5 - Beam 117 - Predicted:  thank you for watching  - CER: 0.08
+Sample 5 - Beam 118 - Predicted:  well that is the os west office new working database  - CER: 0.00
+Sample 5 - Beam 119 - Predicted:  once per month mountains temple fairs high stampings moon rouching winter fests  - CER: 0.42
+Sample 5 - Beam 120 - Predicted:  month by month interns take affairs class studies year round training and therapies  - CER: 0.17
+Sample 5 - Beam 121 - Predicted:  month by month rankings type of fairs lifestyle things room watching and differences  - CER: 0.33
+Sample 5 - Beam 122 - Predicted:  no i m not  - CER: 0.00
+Sample 5 - Beam 123 - Predicted:  month by month writers tv creators and staffers are watching interface  - CER: 0.33
+Sample 5 - Beam 124 - Predicted:  month by month rain days rain festivals nice rain days rainy rainy days rainy days rain days rain days - CER: -0.33
+Sample 5 - Beam 125 - Predicted:  monster man  - CER: 0.00
+Sample 5 - Beam 126 - Predicted:  i m going to go to the next one  - CER: 0.00
+Sample 5 - Beam 127 - Predicted:  most families like to think of their kids as like they re really really rich  - CER: -0.25
+输入文本: Little boy cries for a bride—to light the lamp, talk at night, and braid his hair in the morning.
+Sample 6 - Beam 0 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 1 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 2 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 3 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 4 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 5 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 6 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 7 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 8 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 9 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 10 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 11 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 12 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 13 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 14 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 15 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 16 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 17 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 18 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 19 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 20 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 21 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 22 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 23 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 24 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 25 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 26 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 27 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 28 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 29 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 30 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 31 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 32 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 33 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 34 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 35 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 36 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 37 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 38 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 39 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 40 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 41 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 42 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 43 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 44 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 45 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 46 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 47 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 48 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 49 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 50 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 51 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 52 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 53 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 54 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 55 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 56 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 57 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 58 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 59 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 60 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 61 - Predicted:  little boy cries for a bride to light the lamp talk at night and break his hair in the morning - CER: 0.95
+Sample 6 - Beam 62 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 63 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 64 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 65 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 66 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 67 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 68 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 69 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 70 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 71 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 72 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 73 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 74 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 75 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 76 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 77 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 78 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 79 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 80 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 81 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 82 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 83 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 84 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 85 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 86 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 87 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 88 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 89 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 90 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 91 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 92 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 93 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 94 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 95 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 96 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 97 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 98 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 99 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 100 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 101 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 102 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 103 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 104 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 105 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 106 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 107 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 108 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 109 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 110 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 111 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 112 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 113 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 114 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 115 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 116 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 117 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 118 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 119 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 120 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 121 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 122 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 123 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 124 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 125 - Predicted:  little boy cries for a bride to light the lamp talk at night - CER: 0.65
+Sample 6 - Beam 126 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 127 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+[GPU 6] Partial CER: 0.00%
+[GPU 6] Partial similarity: -0.05389392961348806
+[GPU 6] Partial similarity (ref seg): 0.11541004771632808
+[GPU 6] AES‑CE: 6.199380874633789
+[GPU 6] AES‑CU: 7.332162652696882
+[GPU 6] AES‑PC: 1.3978576489857264
+[GPU 6] AES‑PQ: 7.8414396558489114
+[GPU 6] AES‑utmos: 4.533407415662493
+GPU 6 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB64_BW2/partial_result_6.json

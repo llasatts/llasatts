@@ -1,0 +1,323 @@
+2025-05-13 22:12:01.929759: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 22:12:01.935086: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 22:12:01.935112: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 22:12:49,549 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/7 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 14%|█▍        | 1/7 [01:31<09:08, 91.43s/it] 29%|██▊       | 2/7 [03:13<08:07, 97.57s/it] 43%|████▎     | 3/7 [04:24<05:42, 85.62s/it] 57%|█████▋    | 4/7 [05:59<04:27, 89.13s/it] 71%|███████▏  | 5/7 [08:38<03:48, 114.34s/it] 86%|████████▌ | 6/7 [11:25<02:12, 132.18s/it]100%|██████████| 7/7 [12:49<00:00, 116.53s/it]100%|██████████| 7/7 [12:49<00:00, 109.91s/it]
+输入文本: No-string drum, no-string gong—kids sing: sing well, all cheer; sing poorly, bang the gong!
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 0 - Beam 0 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 3 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 5 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 6 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 7 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 8 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang de gong - CER: 0.94
+Sample 0 - Beam 9 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 10 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 11 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 12 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 13 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 14 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 15 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 16 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 17 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 18 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 19 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 20 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 21 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 22 - Predicted:  no string drum no string gong kids sing sing well i ll cheer sing poorly bang the gong  - CER: 0.88
+Sample 0 - Beam 23 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 24 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 25 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 26 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong  - CER: 1.00
+Sample 0 - Beam 27 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 28 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 29 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the dong - CER: 0.94
+Sample 0 - Beam 30 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+Sample 0 - Beam 31 - Predicted:  no string drum no string gong kids sing sing well all cheer sing poorly bang the gong - CER: 1.00
+输入文本: You say file, I say snow; say gun, I say bridge; a playful riddle rolling endlessly forward.
+Sample 1 - Beam 0 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 9 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 12 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 13 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 14 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 16 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 17 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 18 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 19 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 20 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 21 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 22 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 23 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 24 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 25 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 26 - Predicted:  you say file i say snow say gum i say bridge a playful riddle rolling endlessly forward - CER: 0.94
+Sample 1 - Beam 27 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 28 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward  - CER: 1.00
+Sample 1 - Beam 29 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 30 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+Sample 1 - Beam 31 - Predicted:  you say file i say snow say gun i say bridge a playful riddle rolling endlessly forward - CER: 1.00
+输入文本: Grandpa picks radishes, grandma steams buns. They trade and thank each other happily.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 8 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 9 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 10 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 11 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 12 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 13 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 14 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 15 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 16 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 17 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 18 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 19 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 20 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 21 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 22 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 23 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 24 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 25 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 26 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 27 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 28 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other  - CER: 0.92
+Sample 2 - Beam 29 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 30 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+Sample 2 - Beam 31 - Predicted:  grandpa picks radishes grandma steams buns they trade and thank each other happily  - CER: 1.00
+输入文本: Camel caravan crosses the desert. Uncle praises the camels—they work so well!
+Sample 3 - Beam 0 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 10 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 12 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 13 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 15 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 16 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 17 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 18 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 19 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 20 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well - CER: 1.00
+Sample 3 - Beam 21 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 22 - Predicted:  camel caravan crosses the desert uncle places the camels they work so well  - CER: 0.92
+Sample 3 - Beam 23 - Predicted:  camel caravan crosses the desert oco praises the camels they work so well  - CER: 0.92
+Sample 3 - Beam 24 - Predicted:  camel caravan crosses the desert and proposes the case they exhale  - CER: 0.54
+Sample 3 - Beam 25 - Predicted:  camel caravan crosses the desert and closes the case the next day  - CER: 0.46
+Sample 3 - Beam 26 - Predicted:  camel caravan crosses the desert uncle praises the camels they work so well  - CER: 1.00
+Sample 3 - Beam 27 - Predicted:  camel caravan crosses the desert april closes the caves axao - CER: 0.46
+Sample 3 - Beam 28 - Predicted:  camel caravan crosses the desert ankle presses the cows they walk so long  - CER: 0.62
+Sample 3 - Beam 29 - Predicted:  can t look can t look can t look  - CER: 0.00
+Sample 3 - Beam 30 - Predicted:  camel caravan crosses the desert okay there s the camels and it s the camels  - CER: 0.38
+Sample 3 - Beam 31 - Predicted:  camel caravan crosses the desert epic poses the pains they all say that  - CER: 0.54
+输入文本: White hen lays white eggs, eats white rice, fills the little white pot with pride.
+Sample 4 - Beam 0 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with prague  - CER: 0.93
+Sample 4 - Beam 1 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with pride  - CER: 1.00
+Sample 4 - Beam 2 - Predicted:  white hen lays white eggs it s fat ass  - CER: 0.33
+Sample 4 - Beam 3 - Predicted:  white hen lays white eggs eats white rice fills the whole white pot with pride  - CER: 0.93
+Sample 4 - Beam 4 - Predicted:  white hen lays white eggs eats white rice fills the little white pot with clay  - CER: 0.93
+Sample 4 - Beam 5 - Predicted:  white hen  - CER: 0.13
+Sample 4 - Beam 6 - Predicted:  thank you  - CER: 0.00
+Sample 4 - Beam 7 - Predicted:  right hand  - CER: 0.00
+Sample 4 - Beam 8 - Predicted:  white hen lays white eggs eats white rice sells the low white pot with pad  - CER: 0.80
+Sample 4 - Beam 9 - Predicted:  white hen lays white eggs eats white ice saves the internet pot with pride  - CER: 0.73
+Sample 4 - Beam 10 - Predicted:  white hen lays white eggs it s white rice fills the little white pot with pride  - CER: 0.87
+Sample 4 - Beam 11 - Predicted:  white hen lays white eggs eats white rice fills the world white cot with pride - CER: 0.87
+Sample 4 - Beam 12 - Predicted:  right hand lays right x x right right fails the little red part with pad  - CER: 0.27
+Sample 4 - Beam 13 - Predicted:  f i a s x  - CER: 0.00
+Sample 4 - Beam 14 - Predicted:  white herrn nios white axe it s white ice fills the little white pocket quite  - CER: 0.40
+Sample 4 - Beam 15 - Predicted:  white hen lays white eggs eats white rice tastes the eating white food with pride  - CER: 0.80
+Sample 4 - Beam 16 - Predicted:   - CER: 0.00
+Sample 4 - Beam 17 - Predicted:  white hen he has white eyes big white eyes so thin white pot with pie  - CER: 0.40
+Sample 4 - Beam 18 - Predicted:  white hen raise white eggs it s quite nice there s the very white pot it s played  - CER: 0.27
+Sample 4 - Beam 19 - Predicted:  white hen lays white eggs eats white rice sells the very white pot with pride  - CER: 0.87
+Sample 4 - Beam 20 - Predicted:  white hen lays at the head  - CER: 0.27
+Sample 4 - Beam 21 - Predicted:  white hen leaves white eggs eats white rice tells the little white frog that cried  - CER: 0.67
+Sample 4 - Beam 22 - Predicted:  white hen mows white eggs eats white rice fills the left white pot with pride  - CER: 0.87
+Sample 4 - Beam 23 - Predicted:  white hen lays white eggs eats white rice feels below what pork meat might  - CER: 0.53
+Sample 4 - Beam 24 - Predicted:  white hen lays white eggs eats white rice fills the white pot with pride  - CER: 0.93
+Sample 4 - Beam 25 - Predicted:  white hound knows white ants eats white grass feels like a white cock with pollen  - CER: 0.40
+Sample 4 - Beam 26 - Predicted:   - CER: 0.00
+Sample 4 - Beam 27 - Predicted:  white hair white eyes black eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes white eyes  - CER: -18.47
+Sample 4 - Beam 28 - Predicted:  white hands white lips white voice who is the new white man in town  - CER: 0.27
+Sample 4 - Beam 29 - Predicted:  what happens when x eats one x that s because the red book is black  - CER: 0.00
+Sample 4 - Beam 30 - Predicted:  why can t this work it s work less please directly update your phone  - CER: 0.00
+Sample 4 - Beam 31 - Predicted:  white hair knows white eggs it s white eggs fills the little white pot with blood  - CER: 0.60
+输入文本: Month by month: lanterns, temple fairs, rice dumplings, moon-watching, winter feasts.
+Sample 5 - Beam 0 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts - CER: 1.00
+Sample 5 - Beam 2 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 3 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 4 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts  - CER: 1.00
+Sample 5 - Beam 5 - Predicted:  month by month lanterns temple fairs rice dumplings moon watching winter feasts - CER: 1.00
+Sample 5 - Beam 6 - Predicted:  month by month anchors temple fairs rice dumplings you re watching anchor faces  - CER: 0.58
+Sample 5 - Beam 7 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 8 - Predicted:  what  - CER: 0.00
+Sample 5 - Beam 9 - Predicted:  month by month banters temple fairs life stompings green watching interfeasts  - CER: 0.50
+Sample 5 - Beam 10 - Predicted:  month by month writers talk about my stories in watching interviews  - CER: 0.33
+Sample 5 - Beam 11 - Predicted:  month by month wankers tempting fangs rice dumplings moon watching wanker feasts  - CER: 0.67
+Sample 5 - Beam 12 - Predicted:  month by moon writers templars art templars moon marchers winter feasts  - CER: 0.42
+Sample 5 - Beam 13 - Predicted:  month by month the light has temple flares the light strengthens new year action new taste  - CER: 0.00
+Sample 5 - Beam 14 - Predicted:  month by month lanterns temple fairs rice dumplings blue watching winter feasts  - CER: 0.92
+Sample 5 - Beam 15 - Predicted:  month by month lanterns temple fairs no stompers no watching  - CER: 0.58
+Sample 5 - Beam 16 - Predicted:  month by month winters temple fairs last dinners moon watching winter feasts - CER: 0.75
+Sample 5 - Beam 17 - Predicted:  month by month renters pay per fares tax bankers re entry enter fees  - CER: 0.17
+Sample 5 - Beam 18 - Predicted:  month by month waggings tank of bears less dumplings moon watching winter fists  - CER: 0.50
+Sample 5 - Beam 19 - Predicted:  month by month lanterns temple fairs life s dumplings moon watching  - CER: 0.67
+Sample 5 - Beam 20 - Predicted:  month by month annotations typing things hand stompings hand watching and typing  - CER: 0.33
+Sample 5 - Beam 21 - Predicted:  month by month napkins taping trays rice tapings moon washing winter clothes  - CER: 0.50
+Sample 5 - Beam 22 - Predicted:  month by month interns camp affairs voice actors new watching winter feasts  - CER: 0.50
+Sample 5 - Beam 23 - Predicted:  one by one it is the first last day has been a child in the first  - CER: -0.25
+Sample 5 - Beam 24 - Predicted:  month by month it changes 30 years there s the earth it changes  - CER: 0.17
+Sample 5 - Beam 25 - Predicted:  yeah  - CER: 0.00
+Sample 5 - Beam 26 - Predicted:  burnt by light the angels came and the angels came  - CER: 0.08
+Sample 5 - Beam 27 - Predicted:  night by night lanterns tap of furs wise deltas moon watching  - CER: 0.25
+Sample 5 - Beam 28 - Predicted:  months  - CER: 0.00
+Sample 5 - Beam 29 - Predicted:  link by link linkers token pairs your stampers your archive your cafes  - CER: 0.08
+Sample 5 - Beam 30 - Predicted:  1 5 months 70 36 80 90 80 80 assists  - CER: 0.00
+Sample 5 - Beam 31 - Predicted:  moved by loud dancers goofy face dance dancers and watching interviews  - CER: 0.17
+输入文本: Little boy cries for a bride—to light the lamp, talk at night, and braid his hair in the morning.
+Sample 6 - Beam 0 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 1 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 2 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 3 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 4 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 5 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 6 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 7 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 8 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 9 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 10 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 11 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 12 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 13 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning and - CER: 0.95
+Sample 6 - Beam 14 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 15 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 16 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 17 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 18 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 19 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 20 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning  - CER: 1.00
+Sample 6 - Beam 21 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 22 - Predicted:  little boy cries for bride to light the lamp talk at night and braid his hair in the morning - CER: 0.95
+Sample 6 - Beam 23 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 24 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 25 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 26 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 27 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 28 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 29 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 30 - Predicted:  little boy cries for a bride to light the lamp talk at night and braid his hair in the morning - CER: 1.00
+Sample 6 - Beam 31 - Predicted:  you - CER: 0.00
+[GPU 6] Partial CER: 0.00%
+[GPU 6] Partial similarity: 0.027345592954329083
+[GPU 6] Partial similarity (ref seg): 0.042517014113920074
+[GPU 6] AES‑CE: 5.801243782043457
+[GPU 6] AES‑CU: 6.709752764020648
+[GPU 6] AES‑PC: 1.4500625814710344
+[GPU 6] AES‑PQ: 7.0654410634722025
+[GPU 6] AES‑utmos: 4.199237653187343
+GPU 6 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB16_BW2/partial_result_6.json

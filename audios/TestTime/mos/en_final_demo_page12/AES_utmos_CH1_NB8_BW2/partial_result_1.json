@@ -1,0 +1,29 @@
+{
+  "gpu_rank": 1,
+  "cer": 0.0,
+  "similarity": -0.055683258920907974,
+  "similarity_r": 0.21866140887141228,
+  "trans_gt": [
+    "with a gentle touch and a loving smile she reassured don t worry my love we ll get through this together just like we always have i love you ",
+    "the detective s voice full of determination and fire was heard loud and clear in the room no one will tell me what i can or cannot do i ll prove them all wrong get me my gun what are you all looking at me for ",
+    "stop all the clocks cut off the telephone prevent the dog from barking with a juicy bone silence the pianos and with muffled drum bring out the coffin let the mourners come ",
+    "deep into that darkness peering long i stood there wondering fearing doubting dreaming dreams no mortals ever dared to dream before but the silence was unbroken and the stillness gave no token and the only word there spoken was the whispered word lenore this i whispered and an echo murmured back the word lenore merely this and nothing more "
+  ],
+  "trans_pred": [
+    " with a gentle touch and a loving smile she reassured don t worry my love we ll get through this together just like we always have i love you",
+    " the detective s voice full of determination and fire was heard loud and clear in the room no one will tell me what i can or cannot do i ll prove them all wrong get me my gun what are you all looking at me for",
+    " stop all the clocks cut off the telephone prevent the dog from barking with a juicy bone silence the pianos and with muffled drum bring out the coffin let the mourners come",
+    " deep into that darkness peering long i stood there wondering fearing doubting dreaming dreams no mortals ever dared to dream before but the silence was unbroken and the stillness gave no token and the only word there spoken was the whispered word lenore this i whispered and an echo murmured back the word lenore merely this and nothing more "
+  ],
+  "cer_results": [
+    3.1101814270019537,
+    3.089070415496826,
+    3.132514047622681,
+    3.104778528213501
+  ],
+  "aes_ce": 6.487847566604614,
+  "aes_cu": 7.393121957778931,
+  "aes_pc": 1.3846455216407776,
+  "aes_pq": 8.201362609863281,
+  "aes_utmos": 4.504514455795288
+}

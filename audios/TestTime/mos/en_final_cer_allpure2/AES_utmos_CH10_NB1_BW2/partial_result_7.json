@@ -1,0 +1,38 @@
+{
+  "gpu_rank": 7,
+  "cer": 0.24546952224052718,
+  "similarity": 0.016147894651762078,
+  "similarity_r": 0.4625596116696085,
+  "trans_gt": [
+    "little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free ",
+    "sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes ",
+    "the lama and the mute try trading trumpet and marmot who hit whom no one knows ",
+    "flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace ",
+    "little baldy s dad drums in the south mom wears clacking shoes ten toes only three show ",
+    "counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles ",
+    "by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold "
+  ],
+  "trans_pred": [
+    " little butterfly dodges chicken and cat ",
+    " sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes ",
+    " the lama and the mute tried trading trumpet and marmot who hit whom no one knows",
+    " flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace",
+    " thank you ",
+    " counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles",
+    " by the eighth and ninth of the twelfth month even puppets and kids frisily applied "
+  ],
+  "cer_results": [
+    2.2019160957897412,
+    4.0643211841583256,
+    3.7668678760528564,
+    3.556981611251831,
+    2.196647047996521,
+    4.077370738983154,
+    2.61810759937062
+  ],
+  "aes_ce": 4.997069358825684,
+  "aes_cu": 6.267153876168387,
+  "aes_pc": 1.655569212777274,
+  "aes_pq": 6.732492446899414,
+  "aes_utmos": 3.491562604904175
+}

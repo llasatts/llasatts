@@ -1,0 +1,212 @@
+2025-05-13 21:55:28.526627: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 21:55:28.532352: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 21:55:28.532377: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 21:56:23,488 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/7 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 14%|█▍        | 1/7 [02:44<16:27, 164.56s/it] 29%|██▊       | 2/7 [04:03<09:31, 114.26s/it] 43%|████▎     | 3/7 [05:15<06:20, 95.03s/it]  57%|█████▋    | 4/7 [07:11<05:10, 103.37s/it] 71%|███████▏  | 5/7 [10:38<04:40, 140.50s/it] 86%|████████▌ | 6/7 [13:01<02:21, 141.49s/it]100%|██████████| 7/7 [14:12<00:00, 118.25s/it]100%|██████████| 7/7 [14:12<00:00, 121.72s/it]
+输入文本: Little butterfly dodges chicken and cat, lands gently in my palm—I whisper and set it free.
+Sample 0 - Beam 0 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 3 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  little butterfly dodges chicken and pie wings gently in my palm and you spare and set it free  - CER: 0.71
+Sample 0 - Beam 5 - Predicted:  little butterfly dog is chicken and cat runs gently in my arm i whisper and set it free  - CER: 0.76
+Sample 0 - Beam 6 - Predicted:  little butterfly dodges chicken and cat worms don t need no comb and whisper and sit at three  - CER: 0.41
+Sample 0 - Beam 7 - Predicted:  little butterfly dodges chicken and cat and he s getting a little carry and he s playing sonic 4  - CER: 0.29
+Sample 0 - Beam 8 - Predicted:  little butterfly doc s cooking cat was getting a poem and whispering has sent home  - CER: 0.18
+Sample 0 - Beam 9 - Predicted:  we re a butterfly darkest chicken and cat we re all struggling in our power i whisper  - CER: 0.18
+Sample 0 - Beam 10 - Predicted:  little butterfly dog is chicken and cat names gently in my phone i whisper in static phone - CER: 0.53
+Sample 0 - Beam 11 - Predicted:  where is the sound station  - CER: 0.00
+Sample 0 - Beam 12 - Predicted:   - CER: 0.00
+Sample 0 - Beam 13 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 14 - Predicted:  little black flag digest shippin cat  - CER: 0.12
+Sample 0 - Beam 15 - Predicted:  little butterfly i just took a very cut it was too good like oh i was by a circuit fair  - CER: 0.00
+输入文本: Sisters forge iron, earn money, and buy gifts. Godfather wears a red-tasseled cap, godmother fancy shoes.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 1 - Beam 0 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 9 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tassel cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 12 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 13 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 14 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+输入文本: The lama and the mute try trading trumpet and marmot—who hit whom? No one knows.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 4 - Predicted:  the lama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 5 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 6 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 8 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 9 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 10 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 11 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 12 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 13 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 14 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 15 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+输入文本: Flower or fog, dream or cloud—arriving at midnight, vanishing at dawn without a trace.
+Sample 3 - Beam 0 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  flower fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 0.93
+Sample 3 - Beam 10 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 12 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 13 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  you - CER: 0.00
+Sample 3 - Beam 15 - Predicted:  flower or fog  - CER: 0.20
+输入文本: Little baldy’s dad drums in the south, mom wears clacking shoes—ten toes, only three show.
+Sample 4 - Beam 0 - Predicted:  little baldy s dad drums in a sack long wears cotton shoes ten toes on the - CER: 0.59
+Sample 4 - Beam 1 - Predicted:  little baldi s dad drums himself long as clacking shoes ten tails or a three shell  - CER: 0.41
+Sample 4 - Beam 2 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 3 - Predicted:  little baldi s dad drowns in the south normalize clacking shoes ten toes only three shall  - CER: 0.71
+Sample 4 - Beam 4 - Predicted:  will bowler s dad drives himself along with his clapper shoes 10 times only through show  - CER: 0.29
+Sample 4 - Beam 5 - Predicted:  this is all this deck  - CER: 0.00
+Sample 4 - Beam 6 - Predicted:  uh - CER: 0.00
+Sample 4 - Beam 7 - Predicted:  this is a video that i did in the past while i was at the scene thank you  - CER: 0.00
+Sample 4 - Beam 8 - Predicted:  little bulby s dad comes in his south long hair clacking shade turn taste only face show  - CER: 0.47
+Sample 4 - Beam 9 - Predicted:  real boobies fat gums and your style always fucking shoes thank you and it s been a shame  - CER: -0.06
+Sample 4 - Beam 10 - Predicted:  little ball is done  - CER: 0.06
+Sample 4 - Beam 11 - Predicted:  you did well dear  - CER: 0.00
+Sample 4 - Beam 12 - Predicted:  little ball being sad drums in the cell long legs clocking shoes pen tells only for the show  - CER: 0.35
+Sample 4 - Beam 13 - Predicted:  little boy has dark eyes and the soft light was crackling shows catacombs on a fine show  - CER: 0.18
+Sample 4 - Beam 14 - Predicted:  little barbie s dad jones and his son long eyes crockered shoes pen tied and his son  - CER: 0.24
+Sample 4 - Beam 15 - Predicted:  little baldi s dad comes in the south long ways quacking shins ten times only three is down  - CER: 0.47
+输入文本: Counting gourds and ladles: one gourd two ladles… twenty-four gourds forty-eight ladles.
+Sample 5 - Beam 0 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 2 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 3 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 4 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 5 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds - CER: 0.79
+Sample 5 - Beam 6 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 7 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 8 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 9 - Predicted:  counting goods and ladles 1 gram 10 ladles 24 grams 48 ladles  - CER: 0.36
+Sample 5 - Beam 10 - Predicted:  counting gourds and ladies one gourd two ladies twenty four gourds four ladies  - CER: 0.64
+Sample 5 - Beam 11 - Predicted:  counting gourds and ladies one boy two ladies twenty four boys forty eight ladies - CER: 0.64
+Sample 5 - Beam 12 - Predicted:   - CER: 0.00
+Sample 5 - Beam 13 - Predicted:  counting gourds and ladders 1 by 2 ladders 25 by 28 ladders  - CER: 0.21
+Sample 5 - Beam 14 - Predicted:  counting grass and ladders looking glad to the ladders  - CER: 0.14
+Sample 5 - Beam 15 - Predicted:  30 guys and ladders 1 guy 2 ladders 24 guys 48 ladders  - CER: 0.07
+输入文本: By the eighth and ninth of the twelfth month, even puppies and kids freeze in the cold.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 6 - Beam 0 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 1 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 2 - Predicted:  by the eighth and ninth of the twelfth century even puppies and ticks were as old  - CER: 0.65
+Sample 6 - Beam 3 - Predicted:  by the eighth and ninth of the eighth night there were puppies and pigs for the play - CER: 0.53
+Sample 6 - Beam 4 - Predicted:  by the 8th and 9th of the 12th of the month  - CER: 0.35
+Sample 6 - Beam 5 - Predicted:  i d yet unmind of the caretaker even for teasing kids first in the day  - CER: 0.35
+Sample 6 - Beam 6 - Predicted:  by the eighth of night at the crack of night even puppies and kids fell in a pile  - CER: 0.47
+Sample 6 - Beam 7 - Predicted:  by the eighth and ninth of the fourth month even poplar things have been acquired  - CER: 0.53
+Sample 6 - Beam 8 - Predicted:  by the eighth and ninth of the twelfth month even copies and kids lose in the cold  - CER: 0.88
+Sample 6 - Beam 9 - Predicted:  by the eighth and ninth of the past month seven couples and ten sons were born  - CER: 0.53
+Sample 6 - Beam 10 - Predicted:  by the death and birth of the twelfth month even puppies and cats froze in a pod  - CER: 0.65
+Sample 6 - Beam 11 - Predicted:  by the eighth and ninth of the twelfth month even puppies and pigs pigs and corn  - CER: 0.71
+Sample 6 - Beam 12 - Predicted:  by the age of 9 that s at 12 months you can participate in losing the point  - CER: 0.18
+Sample 6 - Beam 13 - Predicted:  by the eighth and ninth of the twelfth month even puppies and cats face a moth hole  - CER: 0.71
+Sample 6 - Beam 14 - Predicted:  by the 8th and 9th of the class month even cousins and kids visit the home  - CER: 0.59
+Sample 6 - Beam 15 - Predicted:  by the 8th and 9th of the 5th month the upcoming 6th is the month of  - CER: 0.35
+[GPU 7] Partial CER: 2.47%
+[GPU 7] Partial similarity: 0.0126534995755979
+[GPU 7] Partial similarity (ref seg): 0.18159551253276213
+[GPU 7] AES‑CE: 5.752511501312256
+[GPU 7] AES‑CU: 6.621235574994769
+[GPU 7] AES‑PC: 1.4572796651295252
+[GPU 7] AES‑PQ: 7.154562950134277
+[GPU 7] AES‑utmos: 4.106887289455959
+GPU 7 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB8_BW2/partial_result_7.json

@@ -1329,34 +1329,177 @@
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded"> 
 	<h2 id="Scaling Inference-Time Compute" style="text-align: center;">Scaling Inference-Time Compute</h2>
     <p style="text-align: left; font-size: 16px; color: #555;"></p>
-	Using the Llasa-1b-250k model, we compared the results of direct inference and inference-time scaling. The two examples shown below were randomly selected from the seed-tts-eval test-hard.</p>	
-		<div class="table-responsive pt-3">
-			<table class="table table-hover pt-2">
-				<thead>
-				<tr>
-				<th style="vertical-align : middle;text-align: center">Target Text </th>
-				<th style="vertical-align : middle;text-align: center">Prompt </th>
-				<th style="vertical-align : middle;text-align: center">Directly Inference</th>
-				<th style="vertical-align : middle;text-align: center">Scaling Inference-Time Compute</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">喇嘛与哑巴 打南边来了个哑巴，腰里别了个喇叭; 打北边来了个喇嘛，手里提了个獭犸. 提着獭犸的喇嘛要拿獭犸换别着喇叭的哑巴的喇叭; 别着喇叭的哑巴不愿拿喇叭换提着獭犸的喇嘛的獭犸. 不知是别着喇叭的哑巴打了提着獭犸的喇嘛一喇叭; 还是提着獭犸的喇嘛打了别着喇叭的哑巴一獭犸. 喇嘛回家炖獭犸; 哑巴嘀嘀哒哒吹喇叭</td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/00005253-00000103.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/raokouling-0045.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/raokouling-0045-scale.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
-					</tr>
-					<tr>
-						<td style="vertical-align : middle;text-align:center;">高高山上一座庙，住了八个出家人，八个道人都有名：大弟子，叫凳大，二弟子，叫大凳，三弟子，叫猴三，四弟子，叫三猴，五弟子，叫瓶茶，六弟子，叫茶瓶，七弟子，叫冰别边，八弟子，叫边别冰。凳大会打鼓，大凳会撞钟，猴三会烧火，三猴会点灯；瓶茶会吹管，茶瓶会吹笙；冰别边会煮饭，边别冰会念经。大凳要打凳大鼓，凳大要撞大凳钟；三猴要烧猴三火，猴三要点三猴灯；茶瓶要吹瓶茶管，瓶茶要吹茶瓶笙；边别冰要煮冰别边的饭，冰别边要念边别冰的经。大凳打不好凳大的鼓，凳大撞不好大凳的钟；三猴烧不好猴三的火，猴三点不好三猴的灯；茶瓶吹不好瓶茶的管，瓶茶吹不好茶瓶的笙；边别冰煮不好冰别边的饭，冰别边念不好边别冰的经。凳大还打凳大鼓，大凳还撞大凳钟；猴三还烧猴三火，三猴还点三猴灯；瓶茶还吹瓶茶管，茶瓶还吹茶瓶笙；冰别边还煮冰别边的饭，边别冰还念边别冰的经。各人还干各一行，白白争个脸红脖子青。</td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/00004818-00000054.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/raokouling-0116.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/raokouling-0116-scale.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-        We use Llasa-1b-250k for continuation experiment on the LibriSpeech test-clean dataset. The generated audio for each sample starts with the first 3 seconds of the ground truth audio, followed by the model's generated continuation.
+
+        Samples for fig3 using esemble verifiers
+
+        <div class="table-responsive pt-3">
+            <table class="table table-hover pt-2">
+              <thead>
+
+     
+                  
+                  <tbody>
+                    <tr>
+                        <td colspan="7" style="vertical-align: middle; text-align: center; font-weight: bold;">
+                            The Liang family’s sheep knock down the Jiang family’s wall; the wall hurts the sheep. Liang wants Jiang to pay for the sheep, Jiang wants Liang to rebuild the wall.                                                </td>
+                    </tr>
+                
+                <tr>
+                  <!-- <th style="text-align: center; vertical-align: middle;">Target Text</th> -->
+                  <th style="text-align: center; vertical-align: middle;">NB1</th>
+                  <th style="text-align: center; vertical-align: middle;">NB2</th>
+                  <th style="text-align: center; vertical-align: middle;">NB4</th>
+                  <th style="text-align: center; vertical-align: middle;">NB8</th>
+                  <th style="text-align: center; vertical-align: middle;">NB16</th>
+                  <th style="text-align: center; vertical-align: middle;">NB32</th>
+                  <th style="text-align: center; vertical-align: middle;">NB64</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <!-- <td style="text-align: center; vertical-align: middle;">喇嘛与哑巴...</td> -->
+                  <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB1_BW2/raokouling-0002.wav" type="audio/wav"></audio></td>
+                  <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB2_BW2/raokouling-0002.wav" type="audio/wav"></audio></td>
+                  <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB4_BW2/raokouling-0002.wav" type="audio/wav"></audio></td>
+                  <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB8_BW2/raokouling-0002.wav" type="audio/wav"></audio></td>
+                  <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB16_BW2/raokouling-0002.wav" type="audio/wav"></audio></td>
+                  <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB32_BW2/raokouling-0002.wav" type="audio/wav"></audio></td>
+                  <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB64_BW2/raokouling-0002.wav" type="audio/wav"></audio></td>
+                
+                </tr>
+  
+
+                  <tbody>
+                    <tr>
+                        <td colspan="7" style="vertical-align: middle; text-align: center; font-weight: bold;">
+                            In the southeast corner stands a cold temple; a straw hat hangs on the beam. Leave the temple—wear the hat. Enter again—take it off.
+                                                </td>
+                    </tr>
+                
+                    <tr>
+                        <!-- <th style="text-align: center; vertical-align: middle;">Target Text</th> -->
+                        <th style="text-align: center; vertical-align: middle;">NB1</th>
+                        <th style="text-align: center; vertical-align: middle;">NB2</th>
+                        <th style="text-align: center; vertical-align: middle;">NB4</th>
+                        <th style="text-align: center; vertical-align: middle;">NB8</th>
+                        <th style="text-align: center; vertical-align: middle;">NB16</th>
+                        <th style="text-align: center; vertical-align: middle;">NB32</th>
+                        <th style="text-align: center; vertical-align: middle;">NB64</th>
+                      </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <!-- <td style="text-align: center; vertical-align: middle;">喇嘛与哑巴...</td> -->
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB1_BW2/raokouling-0016.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB2_BW2/raokouling-0016.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB4_BW2/raokouling-0016.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB8_BW2/raokouling-0016.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB16_BW2/raokouling-0016.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB32_BW2/raokouling-0016.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_cer_allpure2\AES_utmos_CH10_NB64_BW2/raokouling-0016.wav" type="audio/wav"></audio></td>
+
+                  </tr>
+                     
+
+                  <tbody>
+                    <tr>
+                        <td colspan="7" style="vertical-align: middle; text-align: center; font-weight: bold;">
+                            Deep into that darkness peering, Long I stood there, wondering, fearing, Doubting, dreaming dreams no mortals. Ever dared to dream before; But the silence was unbroken, And the stillness gave no token, And the only word there spoken. Was the whispered word, "Lenore!" This I whispered, and an echo. Murmured back the word, "Lenore!" Merely this, and nothing more.
+                                                </td>
+                    </tr>
+                
+                    <tr>
+                        <!-- <th style="text-align: center; vertical-align: middle;">Target Text</th> -->
+                        <th style="text-align: center; vertical-align: middle;">NB1</th>
+                        <th style="text-align: center; vertical-align: middle;">NB2</th>
+                        <th style="text-align: center; vertical-align: middle;">NB4</th>
+                        <th style="text-align: center; vertical-align: middle;">NB8</th>
+                        <th style="text-align: center; vertical-align: middle;">NB16</th>
+                        <th style="text-align: center; vertical-align: middle;">NB32</th>
+                        <th style="text-align: center; vertical-align: middle;">NB64</th>
+                      </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <!-- <td style="text-align: center; vertical-align: middle;">喇嘛与哑巴...</td> -->
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB1_BW2/raokouling-0003.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB2_BW2/raokouling-0003.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB4_BW2/raokouling-0003.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB8_BW2/raokouling-0003.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB16_BW2/raokouling-0003.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB32_BW2/raokouling-0003.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB64_BW2/raokouling-0003.wav" type="audio/wav"></audio></td>
+ 
+                </tr>
+
+
+                <tbody>
+                    <tr>
+                        <td colspan="7" style="vertical-align: middle; text-align: center; font-weight: bold;">
+                            The detective’s voice, full of determination and fire, was heard loud and clear in the room, "No one will tell me what I can or cannot do. I’ll prove them all wrong! Get me my gun. What are you all looking at me for?"                                            </td>
+                    </tr>
+                
+                    <tr>
+                        <!-- <th style="text-align: center; vertical-align: middle;">Target Text</th> -->
+                        <th style="text-align: center; vertical-align: middle;">NB1</th>
+                        <th style="text-align: center; vertical-align: middle;">NB2</th>
+                        <th style="text-align: center; vertical-align: middle;">NB4</th>
+                        <th style="text-align: center; vertical-align: middle;">NB8</th>
+                        <th style="text-align: center; vertical-align: middle;">NB16</th>
+                        <th style="text-align: center; vertical-align: middle;">NB32</th>
+                        <th style="text-align: center; vertical-align: middle;">NB64</th>
+                      </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <!-- <td style="text-align: center; vertical-align: middle;">喇嘛与哑巴...</td> -->
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB1_BW2/raokouling-0001.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB2_BW2/raokouling-0001.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB4_BW2/raokouling-0001.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB8_BW2/raokouling-0001.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB16_BW2/raokouling-0001.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB32_BW2/raokouling-0001.wav" type="audio/wav"></audio></td>
+                    <td style="text-align: center;"><audio controls style="width: 190px;"><source src="audios\TestTime\mos\en_final_demo_page12\AES_utmos_CH1_NB64_BW2/raokouling-0001.wav" type="audio/wav"></audio></td>
+ 
+                </tr>
+
+
+                <!-- Add more rows as needed Little spider spins silver threads, back and forth, weaving a web to catch flies and mosquitoes.  --> 
+              </tbody>
+            </table>
+          </div>
+          
+          Samples for fig4
+
+          Using the Llasa-1b-250k model, we compared the results of direct inference and inference-time scaling. The two examples shown below were randomly selected from the seed-tts-eval test-hard.</p>	
+          <div class="table-responsive pt-3">
+              <table class="table table-hover pt-2">
+                  <thead>
+                  <tr>
+                  <th style="vertical-align : middle;text-align: center">Target Text </th>
+                  <th style="vertical-align : middle;text-align: center">Prompt </th>
+                  <th style="vertical-align : middle;text-align: center">Directly Inference</th>
+                  <th style="vertical-align : middle;text-align: center">Scaling Inference-Time Compute</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td style="vertical-align : middle;text-align:center;">喇嘛与哑巴 打南边来了个哑巴，腰里别了个喇叭; 打北边来了个喇嘛，手里提了个獭犸. 提着獭犸的喇嘛要拿獭犸换别着喇叭的哑巴的喇叭; 别着喇叭的哑巴不愿拿喇叭换提着獭犸的喇嘛的獭犸. 不知是别着喇叭的哑巴打了提着獭犸的喇嘛一喇叭; 还是提着獭犸的喇嘛打了别着喇叭的哑巴一獭犸. 喇嘛回家炖獭犸; 哑巴嘀嘀哒哒吹喇叭</td>
+                          <td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/00005253-00000103.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/raokouling-0045.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+                          <td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/raokouling-0045-scale.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+                      </tr>
+                      <tr>
+                          <td style="vertical-align : middle;text-align:center;">高高山上一座庙，住了八个出家人，八个道人都有名：大弟子，叫凳大，二弟子，叫大凳，三弟子，叫猴三，四弟子，叫三猴，五弟子，叫瓶茶，六弟子，叫茶瓶，七弟子，叫冰别边，八弟子，叫边别冰。凳大会打鼓，大凳会撞钟，猴三会烧火，三猴会点灯；瓶茶会吹管，茶瓶会吹笙；冰别边会煮饭，边别冰会念经。大凳要打凳大鼓，凳大要撞大凳钟；三猴要烧猴三火，猴三要点三猴灯；茶瓶要吹瓶茶管，瓶茶要吹茶瓶笙；边别冰要煮冰别边的饭，冰别边要念边别冰的经。大凳打不好凳大的鼓，凳大撞不好大凳的钟；三猴烧不好猴三的火，猴三点不好三猴的灯；茶瓶吹不好瓶茶的管，瓶茶吹不好茶瓶的笙；边别冰煮不好冰别边的饭，冰别边念不好边别冰的经。凳大还打凳大鼓，大凳还撞大凳钟；猴三还烧猴三火，三猴还点三猴灯；瓶茶还吹瓶茶管，茶瓶还吹茶瓶笙；冰别边还煮冰别边的饭，边别冰还念边别冰的经。各人还干各一行，白白争个脸红脖子青。</td>
+                          <td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/00004818-00000054.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                          <td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/raokouling-0116.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+                          <td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/TestTime/raokouling-0116-scale.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+
+        <!-- We use Llasa-1b-250k for continuation experiment on the LibriSpeech test-clean dataset. The generated audio for each sample starts with the first 3 seconds of the ground truth audio, followed by the model's generated continuation.
         <div class="table-responsive pt-3">
             <table class="table table-hover pt-2">
               <thead>
@@ -1396,7 +1539,7 @@
             </table>
           </div>
           </div>
-          
+           -->
 
 
 

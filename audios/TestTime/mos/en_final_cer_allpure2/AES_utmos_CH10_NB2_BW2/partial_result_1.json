@@ -1,0 +1,32 @@
+{
+  "gpu_rank": 1,
+  "cer": 0.01384083044982699,
+  "similarity": -0.00018846243619918823,
+  "similarity_r": 0.4551238059997559,
+  "trans_gt": [
+    "look at these fence top grasses when the wind blows east they lean west when it blows west they lean east ",
+    "kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go ",
+    "little flat wa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back ",
+    "count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more ",
+    "poplar leaves rustle sleep child says mom if the monkey comes i ll chase it away "
+  ],
+  "trans_pred": [
+    " look at these fence top grasses when the wind blows east they lean west when it blows west they lean east",
+    " kites are such fun a spring breeze lifts them swallows little bats the monkey king chasing a centipede flip dive down they go",
+    " little flat wa picks flat beans with a flat basket on flat mountain he picks so many beans the basket is too heavy so he carries only half back",
+    " count one two three three two one seven girls gather with seven flower baskets picking oranges tangerines persimmons and more ",
+    " hepler leaves russell sleep child says rome if the monkey comes i ll chase it away"
+  ],
+  "cer_results": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.8125
+  ],
+  "aes_ce": 5.621322441101074,
+  "aes_cu": 6.499114894866944,
+  "aes_pc": 1.488301968574524,
+  "aes_pq": 6.796782684326172,
+  "aes_utmos": 3.910999393463135
+}

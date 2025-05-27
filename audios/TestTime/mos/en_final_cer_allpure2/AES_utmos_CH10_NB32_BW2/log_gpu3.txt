@@ -1,0 +1,482 @@
+2025-05-13 22:41:26.715307: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 22:41:26.720219: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 22:41:26.720240: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 22:41:57,620 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/6 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 17%|█▋        | 1/6 [07:04<35:21, 424.33s/it] 33%|███▎      | 2/6 [10:25<19:32, 293.10s/it] 50%|█████     | 3/6 [12:55<11:22, 227.53s/it] 67%|██████▋   | 4/6 [16:06<07:06, 213.21s/it] 83%|████████▎ | 5/6 [22:03<04:25, 265.04s/it]100%|██████████| 6/6 [28:15<00:00, 301.44s/it]100%|██████████| 6/6 [28:15<00:00, 282.56s/it]
+输入文本: Writing the character “Fu”: whose calligraphy is better, Mr. Fanghu or Mr. Huanghu?
+Sample 0 - Beam 0 - Predicted:  writing the character fu who s called the first daughter mr fa hu or mr hu hu  - CER: 0.23
+Sample 0 - Beam 1 - Predicted:  writing the character foo whose co edit is betty mr fang ho or mr - CER: 0.46
+Sample 0 - Beam 2 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 3 - Predicted:  writing the character fu whose calligraphy is better mr fang hu or mr huang hu  - CER: 0.69
+Sample 0 - Beam 4 - Predicted:  writing the character fu who s co epathy is better mr fanfu or mr panfu  - CER: 0.54
+Sample 0 - Beam 5 - Predicted:  writing the character fu his calligraphy is better mr thanku or mr hoito  - CER: 0.77
+Sample 0 - Beam 6 - Predicted:  writing the character for his calligraphy is better mr fernhill and mr - CER: 0.62
+Sample 0 - Beam 7 - Predicted:  writing the character fi whose calligraphy is better mr fi or mr hw  - CER: 0.77
+Sample 0 - Beam 8 - Predicted:  writing the character foo was committed to his daddy mr fang ho or mr - CER: 0.31
+Sample 0 - Beam 9 - Predicted:  writing the character foo his codwiflf is better mr fowle or mr - CER: 0.62
+Sample 0 - Beam 10 - Predicted:  writing the character fu whose calligraphy is etta mr fan hu or mr horn hu  - CER: 0.62
+Sample 0 - Beam 11 - Predicted:  writing the character fu his calligraphy is better mr fang fu or mr huang fu  - CER: 0.62
+Sample 0 - Beam 12 - Predicted:  writing the character foo i think it s better i think it s fun i think it s cool  - CER: -0.15
+Sample 0 - Beam 13 - Predicted:  writing the character foam - CER: 0.23
+Sample 0 - Beam 14 - Predicted:  writing the character fu whose color and face are mr feng fu and mr ong fu  - CER: 0.31
+Sample 0 - Beam 15 - Predicted:  writing the character fung whose calligraphy is better mr fung or mr fong  - CER: 0.77
+Sample 0 - Beam 16 - Predicted:   - CER: 0.00
+Sample 0 - Beam 17 - Predicted:  writing the character foo whose choreography is better mr foo hoo or mr foo hoo - CER: 0.54
+Sample 0 - Beam 18 - Predicted:  writing the character fei is clear that fei is better it s the fair fei and it s the wrong fei  - CER: -0.23
+Sample 0 - Beam 19 - Predicted:  word in the character - CER: 0.08
+Sample 0 - Beam 20 - Predicted:  writing the character foon whose calligraphy is better mr foon or mr foon  - CER: 0.77
+Sample 0 - Beam 21 - Predicted:  writing the character fu whose character feels better mr fu or mr hu  - CER: 0.69
+Sample 0 - Beam 22 - Predicted:  rising the car attack  - CER: 0.08
+Sample 0 - Beam 23 - Predicted:  writing the character fu whose clever face better mr feng hu or mr feng hu  - CER: 0.54
+Sample 0 - Beam 24 - Predicted:  writing the character fu  - CER: 0.31
+Sample 0 - Beam 25 - Predicted:  riding the tartar  - CER: 0.08
+Sample 0 - Beam 26 - Predicted:  writing the character for whose calligraphy is better mr fowler or mr fowler  - CER: 0.77
+Sample 0 - Beam 27 - Predicted:  writing the character foo whose calligraphy is better mr fung hoo or mr fong hoo  - CER: 0.62
+Sample 0 - Beam 28 - Predicted:  writing the character foo whose polygamy is better mr firehole or mr wildhole  - CER: 0.69
+Sample 0 - Beam 29 - Predicted:  writing the character f this character is batman  - CER: 0.31
+Sample 0 - Beam 30 - Predicted:  writing the character font whose character is better mr font or mr font  - CER: 0.69
+Sample 0 - Beam 31 - Predicted:  writing the type trophy was clear because the letter was to find the a and was to find the a  - CER: -0.38
+Sample 0 - Beam 32 - Predicted:  writing the character for all colleagues of his is better with the far off or with the - CER: 0.15
+Sample 0 - Beam 33 - Predicted:  writing the character for you this character for you is better it s a favorite and it s a fan  - CER: -0.15
+Sample 0 - Beam 34 - Predicted:  writing the character foo  - CER: 0.23
+Sample 0 - Beam 35 - Predicted:  writing the character fu whose calender thing is dying mr fang liu and mr huang hu  - CER: 0.38
+Sample 0 - Beam 36 - Predicted:  writing the character 4 hostel de floresta vista fan hall or vista - CER: 0.31
+Sample 0 - Beam 37 - Predicted:  writing the character fu was callipathia s bow was the fu who or was the hua who  - CER: 0.08
+Sample 0 - Beam 38 - Predicted:  writing the character fu who is calling fu s dad mr fu and mr fu  - CER: 0.31
+Sample 0 - Beam 39 - Predicted:  writing the character thor was quite perfect as bechtel was the thor of all and as the hwoar of all  - CER: -0.31
+Sample 0 - Beam 40 - Predicted:  writing the cat to  - CER: 0.15
+Sample 0 - Beam 41 - Predicted:  writing the character fu who s character is better mr fan hu or mr huo hu  - CER: 0.46
+Sample 0 - Beam 42 - Predicted:  writing the character 肥 is created from the study mr fang fei and mr huang fei  - CER: 0.15
+Sample 0 - Beam 43 - Predicted:  writing the character thel his choreography is by mr falko or mr falko  - CER: 0.54
+Sample 0 - Beam 44 - Predicted:  writing the character film his color i think is better instead of following him or instead of following  - CER: 0.08
+Sample 0 - Beam 45 - Predicted:  writing the characters  - CER: 0.15
+Sample 0 - Beam 46 - Predicted:  writing the character of thor was part of the battle against thor for thor vestor  - CER: 0.08
+Sample 0 - Beam 47 - Predicted:  read the character so his time is about mr sun ho and mr hwang ho  - CER: 0.23
+Sample 0 - Beam 48 - Predicted:  writing the character for his calligraphy is by mr feng hu or mr feng hu  - CER: 0.46
+Sample 0 - Beam 49 - Predicted:  you are doing the perfect  - CER: 0.00
+Sample 0 - Beam 50 - Predicted:  writing the character how us uh mr uh uh  - CER: 0.31
+Sample 0 - Beam 51 - Predicted:  writing with jerry talk oh it s all one thing is that uh it s tough for oh - CER: -0.23
+Sample 0 - Beam 52 - Predicted:  writing the character foe there s plenty of foes there mr foe who or mr foe who  - CER: 0.15
+Sample 0 - Beam 53 - Predicted:  ready  - CER: 0.00
+Sample 0 - Beam 54 - Predicted:  writing the character feng was caught up in his eye mr feng feng or mr huang feng  - CER: 0.15
+Sample 0 - Beam 55 - Predicted:   - CER: 0.00
+Sample 0 - Beam 56 - Predicted:  writing the character - CER: 0.23
+Sample 0 - Beam 57 - Predicted:  recognition thing most point you could use better was to find who  - CER: 0.08
+Sample 0 - Beam 58 - Predicted:  read the characters this character is bad this character is bad  - CER: 0.15
+Sample 0 - Beam 59 - Predicted:  right through the tag sign sue is calling for this effort mr founcy or mr founcy  - CER: 0.08
+Sample 0 - Beam 60 - Predicted:   - CER: 0.00
+Sample 0 - Beam 61 - Predicted:  right in the jacket  - CER: 0.00
+Sample 0 - Beam 62 - Predicted:  writing the character foon let s collect my fans better mr foon and mr long foon  - CER: 0.23
+Sample 0 - Beam 63 - Predicted:  letting the character sing is quite a thing of better music than  - CER: 0.15
+输入文本: Husband and wife make tofu and sell it; both grow rich—rich husband, rich wife, happy together.
+Sample 1 - Beam 0 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 9 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 12 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 13 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 14 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 16 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 17 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 18 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 19 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 20 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife - CER: 0.88
+Sample 1 - Beam 21 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 22 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 23 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 24 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 25 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 26 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 27 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 28 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 29 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 30 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 31 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 32 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 33 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 34 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 35 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 36 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+Sample 1 - Beam 37 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 38 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 39 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 40 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 41 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 42 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 43 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 44 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 45 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 46 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 47 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 48 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 49 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 50 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 51 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 52 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 53 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 54 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 55 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 56 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+Sample 1 - Beam 57 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 58 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 59 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 60 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 61 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 62 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+Sample 1 - Beam 63 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+输入文本: Elder brother and third uncle eat sweet potatoes beneath a cypress, peeling and splitting them with delight.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 1 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 3 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight  - CER: 0.94
+Sample 2 - Beam 4 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 6 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight  - CER: 1.00
+Sample 2 - Beam 8 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 9 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 10 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 11 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 12 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 13 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 14 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 15 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 16 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 17 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 18 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 19 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 20 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 21 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight  - CER: 1.00
+Sample 2 - Beam 22 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 23 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight  - CER: 0.94
+Sample 2 - Beam 24 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight  - CER: 1.00
+Sample 2 - Beam 25 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 26 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 27 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 28 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 29 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 30 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 31 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 32 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 33 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 34 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 35 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 36 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 37 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 38 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 39 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 40 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 41 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 42 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 43 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight  - CER: 0.94
+Sample 2 - Beam 44 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 45 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight  - CER: 1.00
+Sample 2 - Beam 46 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and spitting them with delight - CER: 0.88
+Sample 2 - Beam 47 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight  - CER: 0.94
+Sample 2 - Beam 48 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 49 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 50 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 51 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 52 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 53 - Predicted:  elder brother and third uncle eat sweet potatoes the niece a cypress peeling and splitting them with delight - CER: 0.88
+Sample 2 - Beam 54 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 55 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 56 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 57 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight - CER: 0.94
+Sample 2 - Beam 58 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 59 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 60 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and spreading them with delight - CER: 0.88
+Sample 2 - Beam 61 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 62 - Predicted:  elder brother and third uncle eat sweet potatoes beneath acypress peeling and splitting them with delight - CER: 0.88
+Sample 2 - Beam 63 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+输入文本: Red Child and Yellow Child swap shoes: red wears yellow, yellow wears red, and both laugh happily after the trade.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 3 - Beam 0 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 10 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 12 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 13 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 15 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 16 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 17 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 18 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 19 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 20 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 21 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 22 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 23 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 24 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 25 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 26 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 27 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 28 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 29 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 30 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 31 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 32 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 33 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 34 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 35 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 36 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 37 - Predicted:  redchild and yellowchild swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 0.80
+Sample 3 - Beam 38 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 39 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 40 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 41 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 42 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 43 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 44 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 45 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 46 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 47 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 48 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 49 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 50 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 51 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 52 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 53 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 54 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 55 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 56 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 57 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 58 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 59 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 60 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 61 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 62 - Predicted:  ah red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 0.95
+Sample 3 - Beam 63 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+输入文本: Militia platoon picks eight model soldiers to visit Beijing—let’s see who’s best!
+Sample 4 - Beam 0 - Predicted:  militia platoon picks eight model soldiers to his again let s see in his best  - CER: 0.73
+Sample 4 - Beam 1 - Predicted:  militia platoon picks eight lotto soldiers to visit beijing let s see who is best  - CER: 0.87
+Sample 4 - Beam 2 - Predicted:  militia pleture picks eight native soldiers to visit beijing let s see who s best  - CER: 0.87
+Sample 4 - Beam 3 - Predicted:  militia platoon picks 8 model soldiers to visit ajin let s see who is best  - CER: 0.80
+Sample 4 - Beam 4 - Predicted:  militia platoon picks 8 live seekers to visit bezhoo 8 serve as best  - CER: 0.40
+Sample 4 - Beam 5 - Predicted:  militia platoon packs eight model soldiers to visit ajean let s save his best  - CER: 0.67
+Sample 4 - Beam 6 - Predicted:  militia platoon picks eight model soldiers to head at bay let s see who s best  - CER: 0.80
+Sample 4 - Beam 7 - Predicted:  militia platoon picks eight raider savers to visit bay jinn let s see who s best  - CER: 0.73
+Sample 4 - Beam 8 - Predicted:  militia platoon picks at now so hashtag is a bad game what s in his ass  - CER: 0.13
+Sample 4 - Beam 9 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 10 - Predicted:  militia cloutier takes 8 million soldiers to visit beijing let s see who s next  - CER: 0.67
+Sample 4 - Beam 11 - Predicted:  militia platoon takes 8 minutes to visit beijing exit first  - CER: 0.33
+Sample 4 - Beam 12 - Predicted:  militia platoon picks 8 royal soldiers to visit a game let s see who s best  - CER: 0.73
+Sample 4 - Beam 13 - Predicted:  militia platoon cocks eight royal soldiers to visit bajau let s see who s best  - CER: 0.80
+Sample 4 - Beam 14 - Predicted:  militia platoon pets 8 vile sawgeys to visit beijing let s see who s best  - CER: 0.73
+Sample 4 - Beam 15 - Predicted:  militia petit picks eight young sages to visit their journey it s in his face  - CER: 0.33
+Sample 4 - Beam 16 - Predicted:  militia platoon picks eight model soldiers to visit their gym let s see who s best  - CER: 0.87
+Sample 4 - Beam 17 - Predicted:  militia platoon picks eight royal soongears to visit their gym let s see who s best  - CER: 0.73
+Sample 4 - Beam 18 - Predicted:  my wish of birthday is to be a singer play music and sing yes i wish this  - CER: -0.13
+Sample 4 - Beam 19 - Predicted:  militia platoon expects navy soldiers to visit beijing let s see who s best  - CER: 0.80
+Sample 4 - Beam 20 - Predicted:  militia plicto pix oot ee sae cae stuizit bogey eet soo hees eesp  - CER: 0.07
+Sample 4 - Beam 21 - Predicted:  thank you  - CER: 0.00
+Sample 4 - Beam 22 - Predicted:  militia platoon picks 8 moral soldiers to visit their jail let s see who s best  - CER: 0.73
+Sample 4 - Beam 23 - Predicted:  militia plataeum picks eight model circuits to visit their home it s in his best  - CER: 0.47
+Sample 4 - Beam 24 - Predicted:  militia platoon picks eight new soldiers to visit asia let s see who s best  - CER: 0.87
+Sample 4 - Beam 25 - Predicted:  militia platoon takes eight royal soviets to visit beijing let s see who s best  - CER: 0.80
+Sample 4 - Beam 26 - Predicted:  militia platoon picks 8 yenisei guests to visit beijing it s the city s best  - CER: 0.60
+Sample 4 - Beam 27 - Predicted:  newishet platoon takes eight loyal soldiers to visit anken at sea and fast  - CER: 0.33
+Sample 4 - Beam 28 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 29 - Predicted:  militia putti picks eight laurel silvers to visit beijing and see who s best - CER: 0.67
+Sample 4 - Beam 30 - Predicted:  belisha petul x8 model is the best in the bag x8 was best  - CER: 0.13
+Sample 4 - Beam 31 - Predicted:  no sure  - CER: 0.00
+Sample 4 - Beam 32 - Predicted:  mirror ship platoon picks eight model soldiers to visit mansion let s see who s best  - CER: 0.80
+Sample 4 - Beam 33 - Predicted:  the bishop at two kicks eight model soldiers to visit beijing but soon as best  - CER: 0.33
+Sample 4 - Beam 34 - Predicted:  militia pertune picks eight mobile soldiers to visit a j not to say his best  - CER: 0.47
+Sample 4 - Beam 35 - Predicted:  marisha potein picks a lot of soldiers to use in a game let s see who s best  - CER: 0.40
+Sample 4 - Beam 36 - Predicted:  militia platoon  - CER: 0.13
+Sample 4 - Beam 37 - Predicted:  militia catoon packs eight modern soldiers to visit england let s see who s last  - CER: 0.67
+Sample 4 - Beam 38 - Predicted:   - CER: 0.00
+Sample 4 - Beam 39 - Predicted:  militia platoon picks eight wild soul carries to visit their game let s see who s best  - CER: 0.67
+Sample 4 - Beam 40 - Predicted:  militia proton picks eight model soldiers to visit their zone let s see who s best  - CER: 0.80
+Sample 4 - Beam 41 - Predicted:  militia plateau picks eight marvel singers to visit dj let s see who s best  - CER: 0.73
+Sample 4 - Beam 42 - Predicted:  the reshapert room expect one of several people to come in  - CER: 0.00
+Sample 4 - Beam 43 - Predicted:  vesha  - CER: 0.00
+Sample 4 - Beam 44 - Predicted:  militia platoon x 8 royal service to visit base let s see who s best  - CER: 0.67
+Sample 4 - Beam 45 - Predicted:  i wish you the best of luck on your studies and your education thanks  - CER: 0.00
+Sample 4 - Beam 46 - Predicted:   - CER: 0.00
+Sample 4 - Beam 47 - Predicted:  militia platoon picks a running scientist as a manager let s see who s best  - CER: 0.60
+Sample 4 - Beam 48 - Predicted:  militia platoon picks eight warring soldiers give us a jam and see who s best  - CER: 0.60
+Sample 4 - Beam 49 - Predicted:  malaysia air 2 is a series of aircraft in asia air 3 this series is f  - CER: -0.07
+Sample 4 - Beam 50 - Predicted:  thank you  - CER: 0.00
+Sample 4 - Beam 51 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 52 - Predicted:  militia bertone ex agnatis ministerial 9a ex cfs  - CER: 0.07
+Sample 4 - Beam 53 - Predicted:  verisha patul picks 10 mile circus the hesitant game exit is test - CER: 0.07
+Sample 4 - Beam 54 - Predicted:  the leadership of kmxa s global soldiers has been amazing that s it that s us  - CER: 0.13
+Sample 4 - Beam 55 - Predicted:  will you shut the car expect normal soldiers to visit beijing let s see who s best  - CER: 0.53
+Sample 4 - Beam 56 - Predicted:  x and y  - CER: 0.00
+Sample 4 - Beam 57 - Predicted:  militia platoon picks eight male snakers to visit bayton let s see who s best  - CER: 0.80
+Sample 4 - Beam 58 - Predicted:   - CER: 0.00
+Sample 4 - Beam 59 - Predicted:  militia platoon picks eight modern soldiers to visit beijing let s see if it s best  - CER: 0.80
+Sample 4 - Beam 60 - Predicted:  belisha prattler puts an oral service to the surbelger at seals best  - CER: 0.13
+Sample 4 - Beam 61 - Predicted:  the richard protein takes 8 long solvents to dissipate in let s see who s best  - CER: 0.40
+Sample 4 - Beam 62 - Predicted:  the bishop of the week ex saint juan of san jose to visit their home let s see who s best  - CER: 0.13
+Sample 4 - Beam 63 - Predicted:  leloucha plouton takes eight hours a day to visit beijing that s in his best  - CER: 0.33
+输入文本: A knife hangs upside-down on the bridge. The rope snaps, the knife drops point-first onto the road.
+Sample 5 - Beam 0 - Predicted:  a knife hangs upside down on the bridge the rope snaps the knife drops point first onto the road  - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  a knife hangs upside down on the bridge the rope snaps the knife drops point first onto the road  - CER: 1.00
+Sample 5 - Beam 2 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 3 - Predicted:  a knife hangs upside down on a branch the rope snaps the knife drops point first onto the rod  - CER: 0.84
+Sample 5 - Beam 4 - Predicted:  a knife hangs upside down on a bench the whip slips the knife drops point first onto the line  - CER: 0.74
+Sample 5 - Beam 5 - Predicted:  a knife hangs upside down on a branch the rope snaps the knife drops point first onto the log  - CER: 0.84
+Sample 5 - Beam 6 - Predicted:  a knife hangs upside down on a bench a rope snaps a knife drops plank faced onto the wall  - CER: 0.63
+Sample 5 - Beam 7 - Predicted:  a knife hangs upside down on the birch the rope snaps the rope drops point first onto the head  - CER: 0.84
+Sample 5 - Beam 8 - Predicted:  the knife hangs upside down on the bench the rub snaps the knife claps point first onto the ring  - CER: 0.74
+Sample 5 - Beam 9 - Predicted:  a knife hangs upside down on the bench the rope snaps the knife pops point first onto the edge  - CER: 0.84
+Sample 5 - Beam 10 - Predicted:  a knife hangs upside down on the bench a knife saps a knife cuts point first into a head  - CER: 0.53
+Sample 5 - Beam 11 - Predicted:  a knife hangs upside down on a branch the knife snaps the ninth gaps plait first into the nag - CER: 0.58
+Sample 5 - Beam 12 - Predicted:  a knife hangs upside down on the bench he upsets the knife cut but first leaves it in the bag  - CER: 0.47
+Sample 5 - Beam 13 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 14 - Predicted:  a knife hangs upside down on the bridge the rope snaps the knife drops point first onto a road  - CER: 0.95
+Sample 5 - Beam 15 - Predicted:   - CER: 0.00
+Sample 5 - Beam 16 - Predicted:  a knife hangs upside down on the bridge the rope snaps the knife drags paint fast into the head  - CER: 0.74
+Sample 5 - Beam 17 - Predicted:  a knife hangs upside down on a bench the rope snaps the knife drops point first onto the road  - CER: 0.89
+Sample 5 - Beam 18 - Predicted:  and  - CER: 0.00
+Sample 5 - Beam 19 - Predicted:  a knife hangs upside down on the bench the rope snaps the knife curves point first onto the road  - CER: 0.89
+Sample 5 - Beam 20 - Predicted:  the knife hangs upside down on the plank the rock slaps the knife cuts point first onto the end  - CER: 0.68
+Sample 5 - Beam 21 - Predicted:  a knife hangs upside down on the branch the wood snaps the knife drops quite fast onto the branch  - CER: 0.74
+Sample 5 - Beam 22 - Predicted:  a knife hangs upside down and snips the knife  - CER: 0.37
+Sample 5 - Beam 23 - Predicted:  a knife hangs upside down on the bridge the rope sets the knife cuts point first into the road  - CER: 0.84
+Sample 5 - Beam 24 - Predicted:  a knife hangs upside down on a bench a rope snaps a knife drops point first off the wall  - CER: 0.68
+Sample 5 - Beam 25 - Predicted:  a knife hangs upside down on the bridge when it snaps the knife drops point blast onto the road  - CER: 0.84
+Sample 5 - Beam 26 - Predicted:  a knife hangs upside down on the bench the next night the knife drops flat faced onto the ground  - CER: 0.68
+Sample 5 - Beam 27 - Predicted:  the knife hangs upside down on the bench the rope snaps the knife drops point faced onto the log  - CER: 0.79
+Sample 5 - Beam 28 - Predicted:  the knife hangs upside down on the block the rope slips then the knife drops point first onto the rock  - CER: 0.74
+Sample 5 - Beam 29 - Predicted:  a knife hangs upside down on a bridge the rope snaps the rope cuts back first down to the road  - CER: 0.68
+Sample 5 - Beam 30 - Predicted:  a knife hangs upside down on the branch the rope snaps the knife drops point first onto the rod - CER: 0.89
+Sample 5 - Beam 31 - Predicted:  a nurse and upside down  - CER: 0.16
+Sample 5 - Beam 32 - Predicted:  i m going to change upside down on the board you will see that the laptop is placed onto the wall  - CER: 0.21
+Sample 5 - Beam 33 - Predicted:  the knife hangs upside down on the branch the rope snaps the knife drops point first onto the rope  - CER: 0.84
+Sample 5 - Beam 34 - Predicted:  a knife hangs upside down on the bench the hook snaps  - CER: 0.47
+Sample 5 - Beam 35 - Predicted:  a note hangs upside down on a bench a rope snaps an act of exploitation of the light  - CER: 0.42
+Sample 5 - Beam 36 - Predicted:  the knife hangs upside down on the bench the knife slaps the knife cuts pointless opening  - CER: 0.47
+Sample 5 - Beam 37 - Predicted:  hi i m mike and this is the video on the new samsung galaxy s9 plus  - CER: 0.11
+Sample 5 - Beam 38 - Predicted:  a knife hangs upside down on a brick  - CER: 0.32
+Sample 5 - Beam 39 - Predicted:  the north homes upside down the the next steps the liftoffs both were stunk of air  - CER: 0.26
+Sample 5 - Beam 40 - Predicted:  the bridge hangs upside down on the bridge the rope snaps and the lights flash quite fast off the wall  - CER: 0.53
+Sample 5 - Beam 41 - Predicted:  a knife hangs upside down on the edge one snaps and that counts one person into the other  - CER: 0.47
+Sample 5 - Beam 42 - Predicted:  a nerd hangs upside down on the bridge the note snaps the knife drops port fished onto the ground  - CER: 0.74
+Sample 5 - Beam 43 - Predicted:  a knife hangs upside down on the bridge the rock slips the rock drops both fastened together  - CER: 0.58
+Sample 5 - Beam 44 - Predicted:  a knife hangs upside down on the break the rope snaps the knife grabs point first onto the leg - CER: 0.84
+Sample 5 - Beam 45 - Predicted:  a knife hangs upside down in the bridge the rope snaps the knife stops just where it started to go  - CER: 0.58
+Sample 5 - Beam 46 - Predicted:  and nine hands back side down all that break the rope slams the light tops all case all to the wall  - CER: 0.16
+Sample 5 - Beam 47 - Predicted:  i learned how to use the screen download on the bridge to help set the laptop on track on the ground  - CER: 0.11
+Sample 5 - Beam 48 - Predicted:  a knife hangs upside down on a deck the rock snaps the egg drops quite close onto the rock  - CER: 0.63
+Sample 5 - Beam 49 - Predicted:  the knife hangs upside down on the bench the axe works without text and the force is in the hand  - CER: 0.37
+Sample 5 - Beam 50 - Predicted:  and my friends have said they re in the states they don t feel like they ve got that service here  - CER: -0.05
+Sample 5 - Beam 51 - Predicted:  a knife ends up so narrowly in the edge it makes nuts and left outs like this into the air  - CER: 0.16
+Sample 5 - Beam 52 - Predicted:  my name is dr john mcevoy i am a student at the university of michigan  - CER: 0.05
+Sample 5 - Beam 53 - Predicted:  the nerd hangs upside down on the bridge no it s not  - CER: 0.32
+Sample 5 - Beam 54 - Predicted:  the knife goes upside down on the plate the next shot the knife drops from the plate onto the hill  - CER: 0.53
+Sample 5 - Beam 55 - Predicted:  a knife held upside down on the bench the left side the knife held first on the knee  - CER: 0.58
+Sample 5 - Beam 56 - Predicted:  a knife hangs upside down on the bench the lamp snaps the lamp caps the lamp fakes a killing look  - CER: 0.47
+Sample 5 - Beam 57 - Predicted:  for most hands up and down on the bridge now let the left left hand head onto the wall  - CER: 0.32
+Sample 5 - Beam 58 - Predicted:  a knife hangs upside down on the bench the rope snaps the knife cuts plant based body again  - CER: 0.63
+Sample 5 - Beam 59 - Predicted:  i m ruth holmes officer of the army on the beach the north snaps the north ducks ted feast all together  - CER: 0.11
+Sample 5 - Beam 60 - Predicted:  2 light hands upside down on the chest the left neck and right jaw point 1  - CER: 0.32
+Sample 5 - Beam 61 - Predicted:  no pain whatsoever on the base the left left the left left both both sides of the earth  - CER: 0.21
+Sample 5 - Beam 62 - Predicted:  a knife hangs upside down on the bridge the rope snaps the knife cuts right first onto the road  - CER: 0.89
+Sample 5 - Beam 63 - Predicted:  and that ends upside down on the bridge and that snaps the nath cops point first into the world  - CER: 0.53
+[GPU 3] Partial CER: 3.22%
+[GPU 3] Partial similarity: 0.033697244711220264
+[GPU 3] Partial similarity (ref seg): 0.21501792346437773
+[GPU 3] AES‑CE: 5.687128225962321
+[GPU 3] AES‑CU: 6.425926685333252
+[GPU 3] AES‑PC: 1.5074093143145244
+[GPU 3] AES‑PQ: 6.934364636739095
+[GPU 3] AES‑utmos: 3.84942364692688
+GPU 3 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB32_BW2/partial_result_3.json

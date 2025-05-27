@@ -1,0 +1,35 @@
+{
+  "gpu_rank": 0,
+  "cer": 0.0029498525073746312,
+  "similarity": 0.04388962251444658,
+  "similarity_r": 0.025836850206057232,
+  "trans_gt": [
+    "annie keeps disrupting class stirring the whole room teacher an urges her to behave and finally annie settles down and listens quietly ",
+    "girl peddling eggs shouting once and turning the corner buy three get two no haggling ",
+    "the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall ",
+    "happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget ",
+    "on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen ",
+    "convex glass beats concave concave beats convex round and round the tongue goes "
+  ],
+  "trans_pred": [
+    " annie keeps disrupting class stirring the whole room teacher anne urges her to behave and finally annie settles down and listens quietly ",
+    " girl peddling eggs shouting once and turning the corner buy three get two no haggling",
+    " the liang family s sheep knock down the jiang family s wall the wall hurts the sheep liang wants jiang to pay for the sheep jiang wants liang to rebuild the wall ",
+    " happy kids learn to write the kitten loves fish bones candy and sweet honey don t forget ",
+    " on the second day of the second lunar month the dragon lifts its head thunder boomed two nights ago today s sunshine is a good omen ",
+    " convex glass beats concave concave beats convex round and round the tongue goes "
+  ],
+  "cer_results": [
+    0.9545454545454546,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "aes_ce": 6.205095370610555,
+  "aes_cu": 7.359564224878947,
+  "aes_pc": 1.409400959809621,
+  "aes_pq": 7.786942640940349,
+  "aes_utmos": 4.573634306589763
+}

@@ -1,0 +1,35 @@
+{
+  "gpu_rank": 4,
+  "cer": 0.0,
+  "similarity": 0.02309400650362174,
+  "similarity_r": 0.03158278095846375,
+  "trans_gt": [
+    "phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace ",
+    "dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind ",
+    "phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds ",
+    "goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay ",
+    "south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail ",
+    "in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver "
+  ],
+  "trans_pred": [
+    " phoenix mountain smells of phoenix flowers phoenixes of many colors land upon phoenix terrace ",
+    " dad gives me silk mom a cow brother a paper fan sister in law a little maid i wear the silk ride the cow shade myself with the fan the maid follows behind",
+    " phoenix painted on a pink wall red phoenix pink phoenix patterned phoenix so many vibrant birds ",
+    " goats collide horns on the mountain buffalo sink to their bellies in water pigs root the trough and a donkey bends under hay",
+    " south bank rails tie boats untie them and the boat can return want to free the boat first loose the rail ",
+    " in deepest winter the seventh and eighth days freeze ducks by the ninth and tenth even puppies shiver"
+  ],
+  "cer_results": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "aes_ce": 6.240673303604126,
+  "aes_cu": 7.423728942871094,
+  "aes_pc": 1.40740833679835,
+  "aes_pq": 7.843572616577148,
+  "aes_utmos": 4.561391035715739
+}

@@ -1,0 +1,292 @@
+2025-05-13 22:12:01.155212: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 22:12:01.160503: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 22:12:01.160529: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 22:13:00,216 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/6 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 17%|█▋        | 1/6 [02:18<11:33, 138.67s/it] 33%|███▎      | 2/6 [05:22<11:00, 165.16s/it] 50%|█████     | 3/6 [06:27<05:58, 119.64s/it] 67%|██████▋   | 4/6 [08:20<03:53, 116.94s/it] 83%|████████▎ | 5/6 [09:57<01:49, 109.58s/it]100%|██████████| 6/6 [11:52<00:00, 111.58s/it]100%|██████████| 6/6 [11:52<00:00, 118.77s/it]
+输入文本: Round tables, square tables without legs; ink bottles without ink; vases with flowers but no leaves. Sweet cane tastes great, yet the watermelon has no flavor.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 0 - Beam 0 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 3 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 5 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 6 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 7 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 8 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 9 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 10 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 11 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 12 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 13 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 14 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 15 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 16 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 17 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 18 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 19 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 20 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 21 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 22 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 23 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 24 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the water melon has no flavour - CER: 0.88
+Sample 0 - Beam 25 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 26 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 27 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavour - CER: 0.96
+Sample 0 - Beam 28 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 29 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 30 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+Sample 0 - Beam 31 - Predicted:  round tables square tables without legs ink bottles without ink vases with flowers but no leaves sweet cane tastes great yet the watermelon has no flavor - CER: 1.00
+输入文本: Little spider spins silver threads, back and forth, weaving a web to catch flies and mosquitoes.
+Sample 1 - Beam 0 - Predicted:  little spiders spin silver threads back and forth weaving a web to catch flies and mosquitoes  - CER: 0.88
+Sample 1 - Beam 1 - Predicted:  little spider spins silver threads back and forth weaving a web to catch flies and mosquitoes  - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  little spider spins silver threads back and forth weaving a web to catch flies and mosquitoes  - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  little spider spins silver threads back and forth weaving a web to catch flies and mosquitoes  - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  little spider spins silver threads back and forth weaving a web to catch flies and mosquitoes  - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  little spider spins silver threads back and forth weaving a web to catch flies and mosquitoes  - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  you - CER: 0.00
+Sample 1 - Beam 7 - Predicted:  you - CER: 0.00
+Sample 1 - Beam 8 - Predicted:  little spider spins safer flights back and forth moving ahead to catch the eyes of his goodies  - CER: 0.38
+Sample 1 - Beam 9 - Predicted:  little spiders spin silver threads back and forth moving around to catch flies and mosquitoes  - CER: 0.69
+Sample 1 - Beam 10 - Predicted:  little spider spins silver threads back and forth leaving a web to catch flies and mosquitoes  - CER: 0.94
+Sample 1 - Beam 11 - Predicted:  peace  - CER: 0.00
+Sample 1 - Beam 12 - Predicted:   - CER: 0.00
+Sample 1 - Beam 13 - Predicted:  little spider - CER: 0.12
+Sample 1 - Beam 14 - Predicted:   - CER: 0.00
+Sample 1 - Beam 15 - Predicted:  little spider spins silver flags back and forth weaving a web to catch flies and mosquitoes  - CER: 0.94
+Sample 1 - Beam 16 - Predicted:  little spider spins silver times back and forth and around to catch flies and mosquitoes  - CER: 0.75
+Sample 1 - Beam 17 - Predicted:  little spider spins solid planes hoping for using a rat to catch flies in his headings  - CER: 0.38
+Sample 1 - Beam 18 - Predicted:  little spider stares several times back and forth moving away to catch flies and mosquitoes  - CER: 0.62
+Sample 1 - Beam 19 - Predicted:  riddlespot has been sending fans back and forth leading the way to catch flies in yesterday s  - CER: 0.31
+Sample 1 - Beam 20 - Predicted:  little spider spins silver threads back and forth waving a leg to catch flies and mosquitoes - CER: 0.88
+Sample 1 - Beam 21 - Predicted:  little spiders spin circle threads back and forth weaving a wrap to catch flies and mosquitoes  - CER: 0.75
+Sample 1 - Beam 22 - Predicted:  you - CER: 0.00
+Sample 1 - Beam 23 - Predicted:  little spider spins silver flags that is it we re going to go to catch spiders in the school bus  - CER: 0.12
+Sample 1 - Beam 24 - Predicted:  little spider spins single threads apple thread little web to patch flies in his kiddos  - CER: 0.38
+Sample 1 - Beam 25 - Predicted:  maybe spiders can think of their back and forth maybe we re going to put that back  - CER: 0.12
+Sample 1 - Beam 26 - Predicted:  little spider spins single friends back and forth leaving alone to catch flies and mosquitoes  - CER: 0.69
+Sample 1 - Beam 27 - Predicted:  little spider spins silver threads back and forth moving again to catch flies in his feeders  - CER: 0.62
+Sample 1 - Beam 28 - Predicted:  little spider spins servant clouds at and for weaving a wrap to catch flies and mosquitoes  - CER: 0.69
+Sample 1 - Beam 29 - Predicted:  little spider spun several threads back and forth leaving one to catch flies in the sweet house  - CER: 0.44
+Sample 1 - Beam 30 - Predicted:  beatles by those things singing fast back and forth needing a red to catch flies and mosquitoes  - CER: 0.50
+Sample 1 - Beam 31 - Predicted:  real spidey back and forth to home  - CER: 0.25
+输入文本: Golden blossoms glow yellow and fragrant, each facing the sun with bright delight.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 8 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 9 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 10 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 11 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 12 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 13 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 14 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 15 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 16 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 17 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 18 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 19 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 20 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 21 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 22 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 23 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 24 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 25 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 26 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 27 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 28 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 29 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight  - CER: 1.00
+Sample 2 - Beam 30 - Predicted:  golden blossoms glow yellow and fragrant each facing the sun with bright delight - CER: 1.00
+Sample 2 - Beam 31 - Predicted:  golden blossoms blow yellow and fragrant each facing the sun with bright delight - CER: 0.92
+输入文本: Uncle buys books, Aunt buys cloth. Uncle finishes reading and helps dye cloth; Aunt finishes dyeing and helps him read.
+Sample 3 - Beam 0 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 10 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 12 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 13 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 15 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 16 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 17 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 18 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 19 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 20 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 21 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 22 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 23 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 24 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 25 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 26 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 27 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read - CER: 1.00
+Sample 3 - Beam 28 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 29 - Predicted:  uncle buys books aunt buys cloth uncle finishes reading and helps dye cloth aunt finishes dyeing and helps him read  - CER: 1.00
+Sample 3 - Beam 30 - Predicted:  uncle buys books and buys cloth uncle finishes reading and helps dye cloth and finishes dyeing and helps him read - CER: 0.90
+Sample 3 - Beam 31 - Predicted:  uncle buys books and buys cloth uncle finishes reading and helps dye cloth and finishes dyeing and helps him read - CER: 0.90
+输入文本: Anna and Lana set plates and bowls—plates face bowls, bowls face plates. Aunt praises their perfect layout.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 4 - Beam 0 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout  - CER: 1.00
+Sample 4 - Beam 1 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 2 - Predicted:  anna and lanna set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 0.94
+Sample 4 - Beam 3 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 4 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 5 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates and praises their perfect layout  - CER: 0.94
+Sample 4 - Beam 6 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates and praises their perfect layout  - CER: 0.94
+Sample 4 - Beam 7 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 8 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 9 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout  - CER: 1.00
+Sample 4 - Beam 10 - Predicted:  anna and nanna set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 0.94
+Sample 4 - Beam 11 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 12 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 13 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 14 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 15 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout  - CER: 1.00
+Sample 4 - Beam 16 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout  - CER: 1.00
+Sample 4 - Beam 17 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 18 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 19 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout  - CER: 1.00
+Sample 4 - Beam 20 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates ant praises their perfect layout  - CER: 0.94
+Sample 4 - Beam 21 - Predicted:  anna and lanna set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 0.94
+Sample 4 - Beam 22 - Predicted:  anna and lanna set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 0.94
+Sample 4 - Beam 23 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout  - CER: 1.00
+Sample 4 - Beam 24 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 25 - Predicted:  anna and lana set plates and bows plates face bows bows face plates aunt praises their perfect layout  - CER: 0.83
+Sample 4 - Beam 26 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 27 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates ant praises their perfect layout  - CER: 0.94
+Sample 4 - Beam 28 - Predicted:  anna and lonna set plates and bowls plates face bowls bowls face plates and praises their perfect layout - CER: 0.89
+Sample 4 - Beam 29 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt traces their perfect layout - CER: 0.94
+Sample 4 - Beam 30 - Predicted:  anna and lana set plates and bowls plates face bowls bowls face plates aunt praises their perfect layout - CER: 1.00
+Sample 4 - Beam 31 - Predicted:  anna and lana plates and bowls bowls base plates - CER: 0.44
+输入文本: In the southeast corner stands a cold temple; a straw hat hangs on the beam. Leave the temple—wear the hat. Enter again—take it off.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 5 - Beam 0 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 2 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 3 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 4 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 5 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 6 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 7 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 8 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 9 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 10 - Predicted:  in the south east corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 0.92
+Sample 5 - Beam 11 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 12 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 13 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 14 - Predicted:  in the south east corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 0.92
+Sample 5 - Beam 15 - Predicted:  in the south east corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 0.92
+Sample 5 - Beam 16 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 17 - Predicted:  in the south east corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 0.92
+Sample 5 - Beam 18 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 19 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 20 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 21 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 22 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 23 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 24 - Predicted:  in the south east corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 0.92
+Sample 5 - Beam 25 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 26 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 27 - Predicted:  in the south east corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 0.92
+Sample 5 - Beam 28 - Predicted:  in the south east corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 0.92
+Sample 5 - Beam 29 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+Sample 5 - Beam 30 - Predicted:  in the south east corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 0.92
+Sample 5 - Beam 31 - Predicted:  in the southeast corner stands a cold temple a straw hat hangs on the beam leave the temple wear the hat enter again take it off - CER: 1.00
+[GPU 2] Partial CER: 0.00%
+[GPU 2] Partial similarity: -0.05068583476046721
+[GPU 2] Partial similarity (ref seg): 0.1811745303372542
+[GPU 2] AES‑CE: 6.2987221876780195
+[GPU 2] AES‑CU: 7.325177907943726
+[GPU 2] AES‑PC: 1.4157936771710713
+[GPU 2] AES‑PQ: 7.960568745930989
+[GPU 2] AES‑utmos: 4.5210230350494385
+GPU 2 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB16_BW2/partial_result_2.json

@@ -1,0 +1,26 @@
+{
+  "gpu_rank": 3,
+  "cer": 0.0057692307692307696,
+  "similarity": 0.008048025270303091,
+  "similarity_r": 0.17184973073502383,
+  "trans_gt": [
+    "with a gentle touch and a loving smile she reassured don t worry my love we ll get through this together just like we always have i love you ",
+    "the detective s voice full of determination and fire was heard loud and clear in the room no one will tell me what i can or cannot do i ll prove them all wrong get me my gun what are you all looking at me for ",
+    "stop all the clocks cut off the telephone prevent the dog from barking with a juicy bone silence the pianos and with muffled drum bring out the coffin let the mourners come "
+  ],
+  "trans_pred": [
+    " with a gentle touch and a loving smile she reassured don t worry my love we ll get through this together just like we always have i love you",
+    " the detective s voice full of determination and fire was heard loud and clear in the room no one will tell me what i can or cannot do i ll prove them all wrong get me my gun what are you all looking at me for",
+    " stop all the clocks cut off the telephone prevent the dog from barking with the juicy bone silence the pianos and with muffled drum bring out the coffin let the mourners come"
+  ],
+  "cer_results": [
+    3.0136726856231686,
+    3.0059197902679444,
+    2.7017933845520017
+  ],
+  "aes_ce": 5.964825630187988,
+  "aes_cu": 6.837354818979899,
+  "aes_pc": 1.390426516532898,
+  "aes_pq": 7.364407380421956,
+  "aes_utmos": 4.4523491859436035
+}

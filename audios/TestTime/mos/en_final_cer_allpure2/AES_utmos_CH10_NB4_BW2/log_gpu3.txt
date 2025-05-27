@@ -1,0 +1,147 @@
+2025-05-13 21:41:10.059360: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 21:41:10.064516: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 21:41:10.064542: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 21:41:34,700 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/6 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 17%|█▋        | 1/6 [01:09<05:46, 69.20s/it] 33%|███▎      | 2/6 [01:32<02:48, 42.07s/it] 50%|█████     | 3/6 [01:50<01:33, 31.21s/it] 67%|██████▋   | 4/6 [02:18<00:59, 29.76s/it] 83%|████████▎ | 5/6 [03:08<00:37, 37.05s/it]100%|██████████| 6/6 [03:48<00:00, 38.19s/it]100%|██████████| 6/6 [03:48<00:00, 38.08s/it]
+输入文本: Writing the character “Fu”: whose calligraphy is better, Mr. Fanghu or Mr. Huanghu?
+Sample 0 - Beam 0 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 1 - Predicted:  writing the character thel  - CER: 0.23
+Sample 0 - Beam 2 - Predicted:  right okay okay  - CER: 0.00
+Sample 0 - Beam 3 - Predicted:  writing the character sun his pregnancy is better mr sun who and mr huang who  - CER: 0.38
+Sample 0 - Beam 4 - Predicted:  writing the character  - CER: 0.23
+Sample 0 - Beam 5 - Predicted:  writing the character 4 is a perfect as a key is the way of the - CER: 0.08
+Sample 0 - Beam 6 - Predicted:  what is a cat say it s a it s a  - CER: 0.00
+Sample 0 - Beam 7 - Predicted:  writing the characters for mysticography in mr soulful or mr or  - CER: 0.38
+输入文本: Husband and wife make tofu and sell it; both grow rich—rich husband, rich wife, happy together.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 1 - Beam 0 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together  - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  husband and wife make tofu and sell it both grow rich rich husband rich wife happy together - CER: 1.00
+输入文本: Elder brother and third uncle eat sweet potatoes beneath a cypress, peeling and splitting them with delight.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight  - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  elder brother and third uncle eat sweet potatoes beneath a cypress peeling and splitting them with delight - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  elder brother and third uncle eat sweet potatoes beneath the cypress peeling and splitting them with delight  - CER: 0.94
+输入文本: Red Child and Yellow Child swap shoes: red wears yellow, yellow wears red, and both laugh happily after the trade.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 3 - Beam 0 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade  - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  red child and yellow child swap shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  red child and yellow child sew up shoes red wears yellow yellow wears red and both laugh happily after the trade - CER: 0.90
+输入文本: Militia platoon picks eight model soldiers to visit Beijing—let’s see who’s best!
+Sample 4 - Beam 0 - Predicted:  militia platoon picks eight model soldiers to visit andrea let s see who s best  - CER: 0.93
+Sample 4 - Beam 1 - Predicted:  militia platoon picks 8 novel soulcasts to visit beijing let s see who s best  - CER: 0.80
+Sample 4 - Beam 2 - Predicted:  milla ship platoon picks aunt lila st gage to visit oj let s do his best  - CER: 0.33
+Sample 4 - Beam 3 - Predicted:  militia platoon picks 8 low soldiers to visit asian let s see who s next  - CER: 0.73
+Sample 4 - Beam 4 - Predicted:  militia platoon picks 8 royal soldiers to visit beijing let s see who s best  - CER: 0.87
+Sample 4 - Beam 5 - Predicted:  nilesha plator makes 8 long singles to visit beijing let s see whose best  - CER: 0.47
+Sample 4 - Beam 6 - Predicted:  you should get to expect more new singers to visit major let s see who s best  - CER: 0.40
+Sample 4 - Beam 7 - Predicted:  lucia pettini picks eight young singers to visit beijing and see these things  - CER: 0.40
+输入文本: A knife hangs upside-down on the bridge. The rope snaps, the knife drops point-first onto the road.
+Sample 5 - Beam 0 - Predicted:  a knife hangs upside down on the brick the rope snaps the knife grabs point first onto the wood  - CER: 0.84
+Sample 5 - Beam 1 - Predicted:  a knife hangs upside down on a brick the rope snaps and the knife grabs one first onto the log  - CER: 0.68
+Sample 5 - Beam 2 - Predicted:  and no pain stops like that  - CER: 0.00
+Sample 5 - Beam 3 - Predicted:  i love having victor down in cambridge the next stop is our stop what s up in pinnacle day  - CER: 0.05
+Sample 5 - Beam 4 - Predicted:  my friend is sitting down on the bench he helps yaks and i ve dropped my fist onto the ground  - CER: 0.21
+Sample 5 - Beam 5 - Predicted:  i m mary queen s upside downing ex i want to see what the night sounds like when i face onto the air  - CER: 0.00
+Sample 5 - Beam 6 - Predicted:  a knife and a jacks are down on the bench the eight slaps the knife drops point first all the way to the end  - CER: 0.37
+Sample 5 - Beam 7 - Predicted:  my friends expect i will be rich i want sex i want what s best for me  - CER: 0.00
+[GPU 3] Partial CER: 6.98%
+[GPU 3] Partial similarity: 0.0636196198562781
+[GPU 3] Partial similarity (ref seg): 0.1888723522424698
+[GPU 3] AES‑CE: 4.964775959650676
+[GPU 3] AES‑CU: 5.694386124610901
+[GPU 3] AES‑PC: 1.6262354453404744
+[GPU 3] AES‑PQ: 6.31541911760966
+[GPU 3] AES‑utmos: 3.370499928792318
+GPU 3 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB4_BW2/partial_result_3.json

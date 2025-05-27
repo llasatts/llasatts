@@ -1,0 +1,546 @@
+2025-05-13 22:41:28.360488: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 22:41:28.366006: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 22:41:28.366034: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 22:42:16,037 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/7 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 14%|█▍        | 1/7 [06:00<36:00, 360.12s/it] 29%|██▊       | 2/7 [09:40<23:09, 277.88s/it] 43%|████▎     | 3/7 [12:04<14:26, 216.68s/it] 57%|█████▋    | 4/7 [15:22<10:28, 209.56s/it] 71%|███████▏  | 5/7 [21:22<08:47, 263.50s/it] 86%|████████▌ | 6/7 [28:01<05:09, 309.79s/it]100%|██████████| 7/7 [33:45<00:00, 321.00s/it]100%|██████████| 7/7 [33:45<00:00, 289.40s/it]
+输入文本: Little butterfly dodges chicken and cat, lands gently in my palm—I whisper and set it free.
+Sample 0 - Beam 0 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 3 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 5 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 6 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 7 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 8 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free - CER: 1.00
+Sample 0 - Beam 9 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free - CER: 1.00
+Sample 0 - Beam 10 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 11 - Predicted:  little butterfly dodges chicken and cat lands gently in my palm i whisper and set it free  - CER: 1.00
+Sample 0 - Beam 12 - Predicted:  little butterfly dodges chicken and cat i sup poessssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss - CER: 0.41
+Sample 0 - Beam 13 - Predicted:  little butterfly dodges chicken and cat lies gently in la pomme and whisper and set it free  - CER: 0.76
+Sample 0 - Beam 14 - Predicted:  little butterfly dodges chicken and cat lines gently in my poem i whisper and say it fair  - CER: 0.76
+Sample 0 - Beam 15 - Predicted:  little butterfly dodges chicken and cat and gently i pull i whisper and send it free  - CER: 0.71
+Sample 0 - Beam 16 - Predicted:  little butterfly dodges chicken and cat lies gently in my car i whisper and set it free  - CER: 0.88
+Sample 0 - Beam 17 - Predicted:  little butterfly dodges chicken and cat moves gently in my palm i whisk out and set it free  - CER: 0.82
+Sample 0 - Beam 18 - Predicted:  little butterfly dog tastes chicken and cat ames chinkney and matt paul alice fung seneca  - CER: 0.24
+Sample 0 - Beam 19 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 20 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 21 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 22 - Predicted:  little butterfly duchess chicken and cat dance gently in my home a whisper and set it free  - CER: 0.76
+Sample 0 - Beam 23 - Predicted:  little butterfly dot his chicken and cat wings jingling in my palm i whisper and set it free  - CER: 0.76
+Sample 0 - Beam 24 - Predicted:  little butterfly dodges chicken and cat and is gently leapt home out of state and safe for him  - CER: 0.41
+Sample 0 - Beam 25 - Predicted:   - CER: 0.00
+Sample 0 - Beam 26 - Predicted:  little butterfly badges chicken and cat and is jingling in their pond by whispering and said it fine - CER: 0.41
+Sample 0 - Beam 27 - Predicted:  little butterfly darkness chicken and cock next gently like pine i whisper and say it s fine  - CER: 0.47
+Sample 0 - Beam 28 - Predicted:  little butterfly badgers checking it out  - CER: 0.18
+Sample 0 - Beam 29 - Predicted:  little butterfly dodges chicken and cat grabs chicken in my palm and whispers in sight of fear  - CER: 0.53
+Sample 0 - Beam 30 - Predicted:  little butterfly dog is chicken and cat and straight out of the airplane and he s spitting his edit fur  - CER: 0.12
+Sample 0 - Beam 31 - Predicted:  little butterfly dog is chicken and cat moves gently in my palm i whisper and set up food  - CER: 0.71
+Sample 0 - Beam 32 - Predicted:  chicken and pet - CER: 0.12
+Sample 0 - Beam 33 - Predicted:  little butterfly dodges chicken and cat and gently in my palm i whisper and take it free  - CER: 0.88
+Sample 0 - Beam 34 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 35 - Predicted:  you do butterfly anchors to a a  - CER: 0.00
+Sample 0 - Beam 36 - Predicted:  little butterfly dodges chicken and cat runs gently in a pond i whisper and set it free  - CER: 0.82
+Sample 0 - Beam 37 - Predicted:  little butterfly got his chicken coat and gently a poem a whisper and set it free  - CER: 0.47
+Sample 0 - Beam 38 - Predicted:  little butterfly dodges chicken and cat and is taking a nap on ace and sadie pink  - CER: 0.41
+Sample 0 - Beam 39 - Predicted:  little butterfly dog is checking on the cat and is checking on the cat and this guy is checking on the cat  - CER: -0.12
+Sample 0 - Beam 40 - Predicted:  little butterfly catches chicken and cat made jenkins and i home and this guy and - CER: 0.41
+Sample 0 - Beam 41 - Predicted:  blue butterfly dog is chicken and cat it is taffy and a pug i miss being sick  - CER: 0.18
+Sample 0 - Beam 42 - Predicted:  little butterfly blanket it s very very nice and it s very very nice  - CER: 0.12
+Sample 0 - Beam 43 - Predicted:  little butterfly dodges chicken and cat lands gently on my palm i whisper and set it free  - CER: 0.94
+Sample 0 - Beam 44 - Predicted:   - CER: 0.00
+Sample 0 - Beam 45 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 46 - Predicted:  you - CER: 0.00
+Sample 0 - Beam 47 - Predicted:  little butterfly dodges chicken and cat runs gently in my palm i whisper and say it clean  - CER: 0.82
+Sample 0 - Beam 48 - Predicted:  little butterfly dodges chicken and cat and he s checking in on paul i just ate my food  - CER: 0.35
+Sample 0 - Beam 49 - Predicted:  lidl verify digest checkout and craft lens and respec and selection - CER: 0.12
+Sample 0 - Beam 50 - Predicted:  little butterfly dog is keeping a cat and is gently licking the ground  - CER: 0.12
+Sample 0 - Beam 51 - Predicted:   - CER: 0.00
+Sample 0 - Beam 52 - Predicted:  little butterfly dog s chicken and cat there s a little dog and it s been a little bit  - CER: 0.18
+Sample 0 - Beam 53 - Predicted:  please let us know if you have any questions  - CER: 0.00
+Sample 0 - Beam 54 - Predicted:  little boy is dancing stepping inside and stretching his legs and his feet inside  - CER: 0.12
+Sample 0 - Beam 55 - Predicted:  river break while dodges tipping in front and sticking in my palm i was eight and seven years  - CER: 0.24
+Sample 0 - Beam 56 - Predicted:  little butterfly dodges chicken and cat lies gently at home at his boat and sad friend  - CER: 0.47
+Sample 0 - Beam 57 - Predicted:  thank you  - CER: 0.00
+Sample 0 - Beam 58 - Predicted:  here s burgerfly s dachshund chicken tag now it s tempting like home i m mixed by an insect queen  - CER: -0.06
+Sample 0 - Beam 59 - Predicted:  little butterfly engages chicker and cat and gently repeats a whisper or a fiddle fiddle  - CER: 0.35
+Sample 0 - Beam 60 - Predicted:  what do puppeteers focus typically on things like thinking or feeling or listening or sitting  - CER: 0.00
+Sample 0 - Beam 61 - Predicted:  bluebird s word dot is chicken and stuff now it s chicken and a pole i miss that  - CER: 0.00
+Sample 0 - Beam 62 - Predicted:  real bunch of i don t use chicken until i m january 11th on wednesday and saturday  - CER: 0.00
+Sample 0 - Beam 63 - Predicted:  little butterfly got this tipping cap while standing in my car i whispered and said  - CER: 0.35
+输入文本: Sisters forge iron, earn money, and buy gifts. Godfather wears a red-tasseled cap, godmother fancy shoes.
+Sample 1 - Beam 0 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 2 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 3 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 6 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 9 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 10 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 11 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 12 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 13 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tassel cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 14 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 15 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red pestled cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 16 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 17 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tassel cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 18 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 19 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 20 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 21 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 22 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 23 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 24 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 25 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 26 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 27 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 28 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 29 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 30 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 31 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 32 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 33 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 34 - Predicted:  sisters ford iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 35 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 36 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 37 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tassel cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 38 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 39 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 40 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 41 - Predicted:  seasters forge iron earn money and buy gifts godfather wears a rat tasseled cap godmother fancy shoes  - CER: 0.88
+Sample 1 - Beam 42 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red pastled cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 43 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 44 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 45 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 46 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 47 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tassel cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 48 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 49 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 50 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 51 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 52 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 53 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 54 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 55 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 56 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tassel cap godmother fancy shoes  - CER: 0.94
+Sample 1 - Beam 57 - Predicted:  sisters forge iron earn money and buy gifts  - CER: 0.47
+Sample 1 - Beam 58 - Predicted:  you - CER: 0.00
+Sample 1 - Beam 59 - Predicted:  sisters forge iron earn money and buy gifts godfather wears a red tasseled cap godmother fancy shoes  - CER: 1.00
+Sample 1 - Beam 60 - Predicted:  sisters forge iron earn money and buy gifts  - CER: 0.47
+Sample 1 - Beam 61 - Predicted:  sisters for each other i will embrace godfather ruth i kiss  - CER: 0.12
+Sample 1 - Beam 62 - Predicted:  sisters urge iron iron weaving and buying gifts god favor earth avoid traffic plot god labor thanks issues  - CER: 0.18
+Sample 1 - Beam 63 - Predicted:  sisters forge iron earn money - CER: 0.29
+输入文本: The lama and the mute try trading trumpet and marmot—who hit whom? No one knows.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 2 - Beam 0 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  the llama and the mute tri trading trumpets and marmots who hit whom no one knows  - CER: 0.75
+Sample 2 - Beam 3 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 4 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 6 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 8 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 9 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 10 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 11 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 12 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 13 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 14 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 15 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 16 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 17 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 18 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 19 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 20 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 21 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 22 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 23 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 24 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 25 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 26 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 27 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 28 - Predicted:  the lama and the mute try a trading trumpet and marmot who hit whom no one knows - CER: 0.94
+Sample 2 - Beam 29 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 30 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 31 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 32 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 33 - Predicted:  the lama and the mute tri trading trumpet and marmot who hit whom no one knows - CER: 0.94
+Sample 2 - Beam 34 - Predicted:  the lama and the mute tried trading trumpet and marmot who hit whom no one knows - CER: 0.94
+Sample 2 - Beam 35 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 36 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 37 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 38 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 39 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 40 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 41 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 42 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 43 - Predicted:  the llama and the mute try a trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 44 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 45 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 46 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 47 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 48 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 49 - Predicted:  the llama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 50 - Predicted:  the lama and the mute tried trading trumpet and marmot who hit whom no one knows - CER: 0.94
+Sample 2 - Beam 51 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 52 - Predicted:  the lama and the mute tried trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 53 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 54 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 55 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 1.00
+Sample 2 - Beam 56 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 57 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 58 - Predicted:  the llama and the mute try trading trumpets and marmot who hit whom no one knows  - CER: 0.88
+Sample 2 - Beam 59 - Predicted:  the llama and the mute tried trading trumpet and marmot who hid whom no one knows  - CER: 0.81
+Sample 2 - Beam 60 - Predicted:  the lama and the mute try trading trumpet and marmot who hit whom no one knows - CER: 1.00
+Sample 2 - Beam 61 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 62 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+Sample 2 - Beam 63 - Predicted:  the llama and the mute try trading trumpet and marmot who hit whom no one knows  - CER: 0.94
+输入文本: Flower or fog, dream or cloud—arriving at midnight, vanishing at dawn without a trace.
+Sample 3 - Beam 0 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 1 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 2 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 3 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 4 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 5 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 6 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 7 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 8 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 9 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 10 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 11 - Predicted:  flower or fog dream or cloud arriving at midnight banishing at dawn without a trace  - CER: 0.93
+Sample 3 - Beam 12 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 13 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 14 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 15 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 16 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 17 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 18 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 19 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 20 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 21 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 22 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 23 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 24 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 25 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 26 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 27 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 28 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 29 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 30 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 31 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 32 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 33 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 34 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 35 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 36 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 37 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 38 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 39 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 40 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 41 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 42 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 43 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 44 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 45 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 46 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 47 - Predicted:  flower or fog dream or cloud arriving at midnight banishing at dawn without a trace  - CER: 0.93
+Sample 3 - Beam 48 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 49 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 50 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 51 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 52 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 53 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 54 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 55 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 56 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 57 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace  - CER: 1.00
+Sample 3 - Beam 58 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 59 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 60 - Predicted:  flower or fog dream or cloud arriving at midnight banishing at dawn without a trace - CER: 0.93
+Sample 3 - Beam 61 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 62 - Predicted:  flower or fog dream or cloud arriving at midnight vanishing at dawn without a trace - CER: 1.00
+Sample 3 - Beam 63 - Predicted:  flower fog dream  - CER: 0.20
+输入文本: Little baldy’s dad drums in the south, mom wears clacking shoes—ten toes, only three show.
+Sample 4 - Beam 0 - Predicted:  well  - CER: 0.00
+Sample 4 - Beam 1 - Predicted:  little baldy s dad drems in the south near knows clacking shoes ten toes only three - CER: 0.76
+Sample 4 - Beam 2 - Predicted:  little boldy s dad goes in the south long wears clocking shoes two toes all through show - CER: 0.59
+Sample 4 - Beam 3 - Predicted:  little baldy s dad drums in the south always clacking shoes ping pong s in every show - CER: 0.59
+Sample 4 - Beam 4 - Predicted:  little baldi s dad drums in the south rolls his clacking shoes ten toes only for a show  - CER: 0.71
+Sample 4 - Beam 5 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 6 - Predicted:  little baldi s dad comes in the south moldenized cock and shoes 10 tiles all at their show  - CER: 0.41
+Sample 4 - Beam 7 - Predicted:  little baldy s dad drums in the south mom wears clocking shoes ten toes only for show - CER: 0.88
+Sample 4 - Beam 8 - Predicted:  little baldy s dagpoles and a sack new year s plackin shoes ten toes and a fair - CER: 0.35
+Sample 4 - Beam 9 - Predicted:  little baldi s dad drums in his house while i m in his cracker shoes 10ks only a three show  - CER: 0.29
+Sample 4 - Beam 10 - Predicted:  little baldi s dad drums in the south always cockin shoes ten toes on the thin show  - CER: 0.59
+Sample 4 - Beam 11 - Predicted:  little baldi s dad drives in the south and wears clapping shoes tiny toes only to show  - CER: 0.65
+Sample 4 - Beam 12 - Predicted:  little baldi s dad drives him to the safe and he wears crappy shoes tent toys and a pretty shoe  - CER: 0.18
+Sample 4 - Beam 13 - Predicted:  little baldy s dad drives in the south long wears clacking shoes ten toes and a fair - CER: 0.71
+Sample 4 - Beam 14 - Predicted:  little baldi s dive drums in the south long live clackenshires ten colors only three show - CER: 0.59
+Sample 4 - Beam 15 - Predicted:  little baldi s dad jumps in the cell one wears cracking shoes ten tears on the hair show  - CER: 0.47
+Sample 4 - Beam 16 - Predicted:  little bogus dad runs in the south man wears clacker shoes ten toes are a thin show  - CER: 0.53
+Sample 4 - Beam 17 - Predicted:  little baldy s dad drums in the south walworth s clacking of shays car tires only through the show - CER: 0.53
+Sample 4 - Beam 18 - Predicted:  little baldy s dad comes in the south long wears planting shoes ten times only for his - CER: 0.65
+Sample 4 - Beam 19 - Predicted:  little baldi s dad charlie said he has coffee sheets tongue tied and he feels safe  - CER: 0.18
+Sample 4 - Beam 20 - Predicted:  little baldi s dad drowns in the south wearing his clapping shoes ten toes on a thrush show  - CER: 0.53
+Sample 4 - Beam 21 - Predicted:  little wald is dad groans in the south long as clackin shaves ten towels only three shall - CER: 0.47
+Sample 4 - Beam 22 - Predicted:  little baldi s dad goes and says i love pocket shoes toot toot i love pocket shoes  - CER: 0.18
+Sample 4 - Beam 23 - Predicted:  little baldi s dad drives us up there is plopper shoes popo s i m very shy  - CER: 0.18
+Sample 4 - Beam 24 - Predicted:  little baldi s dark drive in the south known as crocker shoe s tenters in the shoe  - CER: 0.29
+Sample 4 - Beam 25 - Predicted:  little bobby s dad drives his car there is papa s car two cars with their car  - CER: 0.18
+Sample 4 - Beam 26 - Predicted:  little baldy s dad drives in the south long wears clacking shoes ten tires only for the show - CER: 0.71
+Sample 4 - Beam 27 - Predicted:  little baldy s dad drives in the south nine rats collecting sheds ten toes only three shed  - CER: 0.65
+Sample 4 - Beam 28 - Predicted:  little baldi s dad drums in the cell he wears clapping shoes ten toes and a three shell  - CER: 0.59
+Sample 4 - Beam 29 - Predicted:  little baldi s dog grounds in the south moonwashed cracking shoes tentos and wither shoes  - CER: 0.35
+Sample 4 - Beam 30 - Predicted:  little baldi s dad draws himself long as popping shoes tinted eyes on a gray show  - CER: 0.24
+Sample 4 - Beam 31 - Predicted:  little baldur s day at guns and south ron wears clocking shoes tim tows only through show  - CER: 0.41
+Sample 4 - Beam 32 - Predicted:  little ball dispel trains in the sand and erase traffic chains breakers and pollution  - CER: 0.18
+Sample 4 - Beam 33 - Predicted:  youtube is a dumb case i m just saying my house i m spun  - CER: 0.00
+Sample 4 - Beam 34 - Predicted:  little baldi s dad drums in a south long waist packing shoes ten times only three a show  - CER: 0.59
+Sample 4 - Beam 35 - Predicted:  little  - CER: 0.06
+Sample 4 - Beam 36 - Predicted:  little ball bees that dumps in the south long as clocking shoes pen cars and a kitchen  - CER: 0.29
+Sample 4 - Beam 37 - Predicted:  all bodies dead crows in the sound runners cockroaches tenters and a day fell  - CER: 0.12
+Sample 4 - Beam 38 - Predicted:  little buggy stays in the room  - CER: 0.18
+Sample 4 - Beam 39 - Predicted:  little baldies bad drums in the cell long ways cracking shoes penthouse only free show  - CER: 0.41
+Sample 4 - Beam 40 - Predicted:   - CER: 0.00
+Sample 4 - Beam 41 - Predicted:  little baldi s dad drowns in the south while most parking shitheads tempt his own into the shout  - CER: 0.29
+Sample 4 - Beam 42 - Predicted:  you - CER: 0.00
+Sample 4 - Beam 43 - Predicted:  nneke  - CER: 0.00
+Sample 4 - Beam 44 - Predicted:  okay - CER: 0.00
+Sample 4 - Beam 45 - Predicted:  when i bought this bag comes in the south mom wears clacking shoes ten times over to the show  - CER: 0.41
+Sample 4 - Beam 46 - Predicted:  little baldies com default mom is talking to you turn off all the sitcoms  - CER: 0.06
+Sample 4 - Beam 47 - Predicted:  love you  - CER: 0.00
+Sample 4 - Beam 48 - Predicted:  little bold as death guards on the south wild waves cracking cheers ten times only three shall  - CER: 0.35
+Sample 4 - Beam 49 - Predicted:  little bulby s bag guns in the south rain horse clapping shoes king kidders and the coochie  - CER: 0.35
+Sample 4 - Beam 50 - Predicted:  may 8 is day of gum division one of our second years 10 years only three show  - CER: 0.18
+Sample 4 - Beam 51 - Predicted:  little ball do s thang thumbs in the south long as clock ensues thin toes only thin side  - CER: 0.35
+Sample 4 - Beam 52 - Predicted:  how balder s dad gone to the south long ways pot and cheese ten cows only one shell  - CER: 0.29
+Sample 4 - Beam 53 - Predicted:   - CER: 0.00
+Sample 4 - Beam 54 - Predicted:  we re the world s best friends and friends and yes we re the sheep pears and fish here  - CER: -0.06
+Sample 4 - Beam 55 - Predicted:  i m going to go to the back and i m going to decide where i m going to stop and see  - CER: -0.24
+Sample 4 - Beam 56 - Predicted:  little bodies deck drawers and a shelf no less cracker shoes tattoos or a fire show  - CER: 0.18
+Sample 4 - Beam 57 - Predicted:   - CER: 0.00
+Sample 4 - Beam 58 - Predicted:  the boldness that draws us out of our miraculous tentacles on a fine show  - CER: 0.06
+Sample 4 - Beam 59 - Predicted:  little bob is dad blums in the south long as clackin he does ten tons only to - CER: 0.35
+Sample 4 - Beam 60 - Predicted:  little ball these dad guns and stuff round nose crack on shoes tongue toes all the good stuff  - CER: 0.18
+Sample 4 - Beam 61 - Predicted:  little bodies that glides in the sky long as clocking shoes contain only three shells  - CER: 0.35
+Sample 4 - Beam 62 - Predicted:  little board is that it comes from the south  - CER: 0.12
+Sample 4 - Beam 63 - Predicted:  little bobby is sad and drowning to himself mom writes cracking sheets time to eat only three shares  - CER: 0.18
+输入文本: Counting gourds and ladles: one gourd two ladles… twenty-four gourds forty-eight ladles.
+Sample 5 - Beam 0 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  counting gourds and ladles 1 gourd 2 ladles 24 gourds 48 ladles  - CER: 0.57
+Sample 5 - Beam 2 - Predicted:  counting gourds and ladles 1 gourd 2 ladles 24 gourds 48 ladles  - CER: 0.57
+Sample 5 - Beam 3 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 4 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 5 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 6 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 7 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 8 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 9 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 10 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 11 - Predicted:  counting gourds and ladles 1 gourd 2 ladles 24 gourds 48 ladles  - CER: 0.57
+Sample 5 - Beam 12 - Predicted:  counting gourds and ladles one gourd two ladles 24 gourds 48 ladles  - CER: 0.71
+Sample 5 - Beam 13 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 14 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 15 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds for he ate ladles - CER: 0.79
+Sample 5 - Beam 16 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 17 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 18 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 19 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 20 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 21 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 22 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 23 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 24 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 25 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 26 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds  - CER: 0.79
+Sample 5 - Beam 27 - Predicted:  counting gourds and ladles one gourd two ladles  - CER: 0.57
+Sample 5 - Beam 28 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 29 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 30 - Predicted:  counting gourds and ladles one gourd two ladles  - CER: 0.57
+Sample 5 - Beam 31 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles  - CER: 1.00
+Sample 5 - Beam 32 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 33 - Predicted:  counting gourds and ladders one guard two ladders twenty four guards forty eight ladders  - CER: 0.64
+Sample 5 - Beam 34 - Predicted:  thank you  - CER: 0.00
+Sample 5 - Beam 35 - Predicted:  counting goy time  - CER: 0.07
+Sample 5 - Beam 36 - Predicted:  counting gourds and ladles turtles - CER: 0.29
+Sample 5 - Beam 37 - Predicted:  cutting parts and leaders  - CER: 0.07
+Sample 5 - Beam 38 - Predicted:  you - CER: 0.00
+Sample 5 - Beam 39 - Predicted:  counting gourds and ladles and going to the meetings playing fair or extending meetings - CER: 0.29
+Sample 5 - Beam 40 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds forty eight ladles - CER: 1.00
+Sample 5 - Beam 41 - Predicted:  counting gourds and ladles one gourd two ladles twenty four gourds four ladles  - CER: 0.86
+Sample 5 - Beam 42 - Predicted:  counting golds and legos 1 gold 2 legos 24 golds 48 legos  - CER: 0.14
+Sample 5 - Beam 43 - Predicted:  counting quads and ladles  - CER: 0.21
+Sample 5 - Beam 44 - Predicted:  counting gourds and riddles and part two - CER: 0.29
+Sample 5 - Beam 45 - Predicted:  counting gold s thorn riders one gold tallads twenty four golds forty eight - CER: 0.36
+Sample 5 - Beam 46 - Predicted:  patterns and words and logos one word two logos  - CER: 0.14
+Sample 5 - Beam 47 - Predicted:  counting gourds and ladings one hand turning ladings twenty four hands counted and ladings - CER: 0.43
+Sample 5 - Beam 48 - Predicted:  county tays and aidas a d a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i a i - CER: -14.79
+Sample 5 - Beam 49 - Predicted:  counting boards and ladles one board two ladles twenty four boards - CER: 0.57
+Sample 5 - Beam 50 - Predicted:  counting words and letters 1 by 3 letters 24 by 8 letters  - CER: 0.14
+Sample 5 - Beam 51 - Predicted:  counting cards and labels 1 card 2 labels 24 cards 48 labels  - CER: 0.14
+Sample 5 - Beam 52 - Predicted:  panky board two letters wing board two letters tinker bell two letters  - CER: 0.07
+Sample 5 - Beam 53 - Predicted:  counting gourds and ladies one girl two ladies twenty four gourds forty eight ladies  - CER: 0.71
+Sample 5 - Beam 54 - Predicted:  thank you  - CER: 0.00
+Sample 5 - Beam 55 - Predicted:  thank you  - CER: 0.00
+Sample 5 - Beam 56 - Predicted:  counting words and legals 1 bag 2 legals 24 bags 48 legals - CER: 0.14
+Sample 5 - Beam 57 - Predicted:  i can t do it  - CER: 0.00
+Sample 5 - Beam 58 - Predicted:  time to go to your days when do you go to your days time to play games what do you do in your days  - CER: -0.71
+Sample 5 - Beam 59 - Predicted:  counting gourds and ladders one guard two ladders twenty five guards thirty eight - CER: 0.50
+Sample 5 - Beam 60 - Predicted:  cocky what a nice lovely place  - CER: 0.00
+Sample 5 - Beam 61 - Predicted:  i m two boys and ladies we re going to ladies  - CER: 0.00
+Sample 5 - Beam 62 - Predicted:  cartoon girls and ladies one two three  - CER: 0.21
+Sample 5 - Beam 63 - Predicted:  counting down to the level 1 to 2 level 24 to 48 level  - CER: 0.07
+输入文本: By the eighth and ninth of the twelfth month, even puppies and kids freeze in the cold.
+Sample 6 - Beam 0 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 1 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 2 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 3 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 4 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 5 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 6 - Predicted:  by the 8th and 9th of the 12th month even puppies and kids freeze in the cold  - CER: 0.82
+Sample 6 - Beam 7 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 8 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 9 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 10 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 11 - Predicted:  by the eighth and ninth of the twelfth month even puppies and cats froze and appalled  - CER: 0.71
+Sample 6 - Beam 12 - Predicted:  thank you  - CER: 0.00
+Sample 6 - Beam 13 - Predicted:  by the eighth and ninth of the twelfth month even coppins and coats freezing cold - CER: 0.71
+Sample 6 - Beam 14 - Predicted:  by the eighth and ninth of the twelfth month given puppies and kids frozen cold  - CER: 0.76
+Sample 6 - Beam 15 - Predicted:  by the eighth and ninth of the call point living puppies and kids froze in the cold  - CER: 0.76
+Sample 6 - Beam 16 - Predicted:  by the 8th and 9th of the 12th month even puppies and kids freeze in the pond  - CER: 0.76
+Sample 6 - Beam 17 - Predicted:   - CER: 0.00
+Sample 6 - Beam 18 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the pond  - CER: 0.94
+Sample 6 - Beam 19 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 20 - Predicted:  by the eighth and ninth of the twelfth night they had partners and kids fairs in the cold  - CER: 0.71
+Sample 6 - Beam 21 - Predicted:  by the eighth and ninth of the third month even puppies and kids freezing the cold - CER: 0.82
+Sample 6 - Beam 22 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 23 - Predicted:  by the eighth and ninth and twelfth week feeding puppies and kids finished and appalled - CER: 0.53
+Sample 6 - Beam 24 - Predicted:  by the eighth and ninth of the twelfth month evil puppies and kids fairies and the cold  - CER: 0.82
+Sample 6 - Beam 25 - Predicted:  by the eighth and ninth of the fourth night leaving poppers and kurt with things in the - CER: 0.53
+Sample 6 - Beam 26 - Predicted:  by the eighth and ninth of the twelfth month eaters coffees and kids breathe in the cold  - CER: 0.82
+Sample 6 - Beam 27 - Predicted:  by the 8th and 9th of may 12th we will be up using 2d azure and core  - CER: 0.24
+Sample 6 - Beam 28 - Predicted:  by the eighth and ninth of the twelfth month living puppies and kids froze in the cold  - CER: 0.88
+Sample 6 - Beam 29 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold - CER: 1.00
+Sample 6 - Beam 30 - Predicted:   - CER: 0.00
+Sample 6 - Beam 31 - Predicted:  by the eighth and ninth of the twelfth month even papazinti and the frasier were called  - CER: 0.65
+Sample 6 - Beam 32 - Predicted:  by the eighth and ninth of the craft month even puppies and cats freeze in the cold  - CER: 0.88
+Sample 6 - Beam 33 - Predicted:  by the end and length of the program even puppies and kids will be in the program  - CER: 0.59
+Sample 6 - Beam 34 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in the cold  - CER: 1.00
+Sample 6 - Beam 35 - Predicted:  by the eighth and ninth of the twelfth month even puppies and cats lose their poll  - CER: 0.71
+Sample 6 - Beam 36 - Predicted:  by the eighth and after class - CER: 0.24
+Sample 6 - Beam 37 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 38 - Predicted:  by the eighth and ninth of the twelfth night even puppies and kids freezing the plague  - CER: 0.76
+Sample 6 - Beam 39 - Predicted:  by the eighth and ninth and the twelfth night even the police and police first indicate - CER: 0.47
+Sample 6 - Beam 40 - Predicted:  by the eight and nose of the twelve long moving at his own tips frozen and cold  - CER: 0.35
+Sample 6 - Beam 41 - Predicted:  on the 8th and 9th of the 12th one you can copy and paste the code  - CER: 0.29
+Sample 6 - Beam 42 - Predicted:  by the eighth and ninth it declined right even puppies and kids sores in the cold  - CER: 0.71
+Sample 6 - Beam 43 - Predicted:  by new app and link it declares that you can practice and create rules in the cloud  - CER: 0.29
+Sample 6 - Beam 44 - Predicted:  by the eighth and ninth of the twelfth ninth little pappas and cats froze over court - CER: 0.53
+Sample 6 - Beam 45 - Predicted:  i ate a night of dark toast rice beans and puppies and cheese  - CER: 0.12
+Sample 6 - Beam 46 - Predicted:  by the eighth and ninth of the twelfth month even puppies and chicks freeze in the pond  - CER: 0.88
+Sample 6 - Beam 47 - Predicted:  thank you  - CER: 0.00
+Sample 6 - Beam 48 - Predicted:  i am a person that is  - CER: 0.00
+Sample 6 - Beam 49 - Predicted:  bothering or not if the kids leave even puppies or kids schools are full  - CER: 0.24
+Sample 6 - Beam 50 - Predicted:  by the eighth and ninth of the fourth month little puppies and pigs face in the corn  - CER: 0.71
+Sample 6 - Beam 51 - Predicted:  by the eighth and ninth of the twelfth ninth eleventh eighth and sixth in the whole  - CER: 0.65
+Sample 6 - Beam 52 - Predicted:  by the age of nine i have felt lost and i have come to understand the circle  - CER: 0.18
+Sample 6 - Beam 53 - Predicted:  on the eighth and ninth of the twelfth month even puppies and kids graze in the pond  - CER: 0.82
+Sample 6 - Beam 54 - Predicted:  by the 8th and 9th of the 12th month even puppies and kids lose their toll  - CER: 0.59
+Sample 6 - Beam 55 - Predicted:  i m the head and i am  - CER: 0.12
+Sample 6 - Beam 56 - Predicted:  why the ant and lion off the claw front even puppies and kids flee in the pond - CER: 0.53
+Sample 6 - Beam 57 - Predicted:  bye dave  - CER: 0.00
+Sample 6 - Beam 58 - Predicted:  by the 8th and 9th at the 12th run even puppies and kids lose in the fall  - CER: 0.59
+Sample 6 - Beam 59 - Predicted:  are the 8 and 9 of the 5 9 even copies and keep the first in the cloud  - CER: 0.41
+Sample 6 - Beam 60 - Predicted:  well it is a lie but we can t want even a couple of sentences when you re sitting alone  - CER: -0.12
+Sample 6 - Beam 61 - Predicted:  that is the 9th of the top 9 using options and tips used in the course  - CER: 0.29
+Sample 6 - Beam 62 - Predicted:  by the eighth and ninth of the twelfth month even puppies and kids freeze in a pond  - CER: 0.88
+Sample 6 - Beam 63 - Predicted:  by the 8th and 9th and the 12th month living purposes and takes place in the plan  - CER: 0.47
+[GPU 7] Partial CER: 0.82%
+[GPU 7] Partial similarity: -0.0008029708904879433
+[GPU 7] Partial similarity (ref seg): 0.21455074061772653
+[GPU 7] AES‑CE: 5.79508774621146
+[GPU 7] AES‑CU: 6.779282774244036
+[GPU 7] AES‑PC: 1.448209626334054
+[GPU 7] AES‑PQ: 7.350125925881522
+[GPU 7] AES‑utmos: 4.206132446016584
+GPU 7 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB32_BW2/partial_result_7.json

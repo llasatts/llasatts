@@ -1,0 +1,546 @@
+2025-05-13 22:41:26.715394: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-13 22:41:26.720213: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/cm/shared/apps/slurm/current/lib64/slurm:/cm/shared/apps/slurm/current/lib64:/aifs4su/data/zheny/Flashspeech/es/lib:/aifs4su/data/zheny/Flashspeech/es/lib:/usr/mpi/gcc/openmpi-4.1.7a1/lib
+2025-05-13 22:41:26.720238: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/byol_s/byol_a/common.py:20: UserWarning: torchaudio._backend.set_audio_backend has been deprecated. With dispatcher enabled, this function is no-op. You can remove the function call.
+  torchaudio.set_audio_backend("sox_io")
+WARNING:s3prl.upstream.espnet_hubert.expert:ESPnet is not installed, cannot use espnet_hubert upstream
+/aifs4su/data/zheny/s3prl-s3prl-42086bd/s3prl/upstream/wavlm/expert.py:37: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(ckpt)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/music_codec/inference_time_scaling/speaker_verification/verification.py:31: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(checkpoint, map_location=lambda storage, loc: storage)
+2025-05-13 22:42:08,323 - modelscope - WARNING - Using branch: master as version is unstable, use with caution
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/funasr/train_utils/load_pretrained_model.py:68: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  src_state = torch.load(path, map_location=map_location)
+Using cache found in /home/yezhen/.cache/torch/hub/tarepan_SpeechMOS_v1.2.0
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+/aifs4su/data/zheny/music_codec/inference_time_scaling/./infer_hard_no_prompt_cer_pure.py:393: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(ckpt_path, map_location='cpu')
+Downloading Model to directory: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch
+ckpt: /home/yezhen/.cache/modelscope/hub/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch/model.pt
+Loading codec checkpoint from /aifs4su/data/zheny/music_codec/logs_rebuttal/v11_5/epoch=4-step=1400000.ckpt
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0000.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0001.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0002.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0003.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0004.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0005.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0006.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0007.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0008.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0009.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0010.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0011.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0012.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0013.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0014.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0015.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0016.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0017.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0018.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0019.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0020.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0021.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0022.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0023.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0024.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0025.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0026.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0027.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0028.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0029.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0030.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0031.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0032.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0033.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0034.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0035.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0036.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0037.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0038.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0039.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0040.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0041.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0042.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0043.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0044.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0045.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0046.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0047.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0048.wav
+警告: 音频文件不存在: /aifs4su/data/zheny/seedtts_testset/zh/wavs/raokouling-0049.wav
+  0%|          | 0/7 [00:00<?, ?it/s]/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/functional.py:5849: UserWarning: Support for mismatched key_padding_mask and attn_mask is deprecated. Use same type for both instead.
+  warnings.warn(
+/aifs4su/data/zheny/anaconda3/envs/west/lib/python3.10/site-packages/torch/nn/utils/weight_norm.py:143: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+ 14%|█▍        | 1/7 [04:14<25:24, 254.11s/it] 29%|██▊       | 2/7 [07:30<18:20, 220.08s/it] 43%|████▎     | 3/7 [11:30<15:17, 229.30s/it] 57%|█████▋    | 4/7 [14:48<10:50, 216.71s/it] 71%|███████▏  | 5/7 [18:17<07:08, 214.08s/it] 86%|████████▌ | 6/7 [20:51<03:13, 193.60s/it]100%|██████████| 7/7 [29:04<00:00, 291.64s/it]100%|██████████| 7/7 [29:04<00:00, 249.26s/it]
+输入文本: Counting gourds and ladles: one gourd two ladles, two gourds four ladles… all the way to twenty-four gourds forty-eight ladles.
+所有 beams 在第 1 步都出现了结束标记，停止生成。
+Sample 0 - Beam 0 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 1 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 2 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 3 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 4 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 5 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 6 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 7 - Predicted:  counting gourds and ladles 1 gourd 2 ladles 2 gourds 4 ladles all the way to 24 gourds 48 ladles - CER: 0.64
+Sample 0 - Beam 8 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 9 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 10 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 11 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 12 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 13 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 14 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 15 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 16 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to 24 gourds 48 ladles  - CER: 0.82
+Sample 0 - Beam 17 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 18 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 19 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to 24 gourds 48 ladles  - CER: 0.82
+Sample 0 - Beam 20 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 21 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 22 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to 24 gourds 48 ladles  - CER: 0.82
+Sample 0 - Beam 23 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 24 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 25 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 26 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds for he ate ladles - CER: 0.86
+Sample 0 - Beam 27 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 28 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 29 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 30 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 31 - Predicted:  counting gourds and ladles one good two ladles two gourds four ladles all the way to twenty four words forty eight ladles - CER: 0.91
+Sample 0 - Beam 32 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 33 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 34 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds - CER: 0.86
+Sample 0 - Beam 35 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 36 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles  - CER: 1.00
+Sample 0 - Beam 37 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to 24 gourds 48 ladles  - CER: 0.82
+Sample 0 - Beam 38 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 39 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 40 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 41 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 42 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 43 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 44 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles  - CER: 1.00
+Sample 0 - Beam 45 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 46 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 47 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 48 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 49 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 50 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 51 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 52 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 53 - Predicted:  counting gourds and ladles two ladles two gourds four ladles all the way to twenty four gourds  - CER: 0.77
+Sample 0 - Beam 54 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 55 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to 24 gourds 48 ladles  - CER: 0.82
+Sample 0 - Beam 56 - Predicted:  counting gourds and ladles 1 gourd 2 ladles 2 gourds 4 ladles all the way to 24 gourds 48 ladles  - CER: 0.64
+Sample 0 - Beam 57 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles - CER: 1.00
+Sample 0 - Beam 58 - Predicted:  counting gourds and ladles 1 gourd 2 ladles 2 gourds 4 ladles all the way to 24 gourds 48 ladles  - CER: 0.64
+Sample 0 - Beam 59 - Predicted:  counting gourds and ladles one gourd two ladles two gourds four ladles all the way to twenty four gourds forty eight ladles  - CER: 1.00
+Sample 0 - Beam 60 - Predicted:  counting gourds and ladles 1 gourd 2 ladles 2 gourds 4 ladles either way to 24 gourds 48 ladles  - CER: 0.55
+Sample 0 - Beam 61 - Predicted:  counting gourds or ladles 1 gourd 2 ladles 2 gourds 4 ladles all the way to 24 gourds 48 ladles  - CER: 0.59
+Sample 0 - Beam 62 - Predicted:  counting gourds and leaders overdive three leaders two gourds over eight override to twenty three gourds over eight leaders  - CER: 0.41
+Sample 0 - Beam 63 - Predicted:  counting dudes and labels 1 dollar to 2 labels 10 dollars to 4 labels all the way to 25 dollars to 48 dollars  - CER: 0.18
+输入文本: Old Zhao boils medicine. Wet wood smokes, dry wood burns well—the herbs simmer smoothly.
+Sample 1 - Beam 0 - Predicted:  old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 1.00
+Sample 1 - Beam 1 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 2 - Predicted:  old jal boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 3 - Predicted:  old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 1.00
+Sample 1 - Beam 4 - Predicted:  old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 1.00
+Sample 1 - Beam 5 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 6 - Predicted:  old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 1.00
+Sample 1 - Beam 7 - Predicted:  old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 1.00
+Sample 1 - Beam 8 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 9 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 10 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 11 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 12 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 13 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 14 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 15 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 16 - Predicted:  old jal boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 17 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 18 - Predicted:  old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 1.00
+Sample 1 - Beam 19 - Predicted:  old jiao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 20 - Predicted:  old chow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 21 - Predicted:  old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 1.00
+Sample 1 - Beam 22 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well he herbs simmer smoothly - CER: 0.87
+Sample 1 - Beam 23 - Predicted:  old jowl boils medicine wetwood smokes drywood burns well the herbs simmer smoothly - CER: 0.67
+Sample 1 - Beam 24 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 25 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 26 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 27 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 28 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 29 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 30 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 31 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 32 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 33 - Predicted:  old chow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 34 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 35 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 36 - Predicted:  old zou boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 37 - Predicted:  oh zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 38 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 39 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 40 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 41 - Predicted:  old zhao boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 1.00
+Sample 1 - Beam 42 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 43 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 44 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 45 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 46 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 47 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 48 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 49 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 50 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 51 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 52 - Predicted:  old jow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 53 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 54 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly  - CER: 0.93
+Sample 1 - Beam 55 - Predicted:  old gel boils medicine wet wood smokes dry wood burns well the herbs simmer slowly - CER: 0.87
+Sample 1 - Beam 56 - Predicted:  old chow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 57 - Predicted:  old jowl boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 58 - Predicted:  old jaw boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 59 - Predicted:  oak jowl boils medicine wet wood smokes dry wood burns well and herbs simmer smoothly - CER: 0.80
+Sample 1 - Beam 60 - Predicted:  old jowl boils leveson wet wood smokes dry wood burns well it irks simmer - CER: 0.67
+Sample 1 - Beam 61 - Predicted:  old chow oils medicine wet wood smokes dry wood burns well the herbs simmered smoothly - CER: 0.80
+Sample 1 - Beam 62 - Predicted:  old chow boils medicine wet wood smokes dry wood burns well the herbs simmer smoothly - CER: 0.93
+Sample 1 - Beam 63 - Predicted:  old chal voids medicine wet wood slopes dry wood burns well the earths simmer slowly - CER: 0.67
+输入文本: A monkey up the tree, a dog below. They clash, bark, howl, then both run—who fears whom?
+Sample 2 - Beam 0 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 1 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 2 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 3 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 4 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 5 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 6 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 7 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 8 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 9 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 10 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 11 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 12 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 13 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 14 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 15 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 16 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 17 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 18 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 19 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 20 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 21 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 22 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 23 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 24 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 25 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 26 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 27 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 28 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 29 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 30 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 31 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 32 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 33 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 34 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 35 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 36 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom  - CER: 1.00
+Sample 2 - Beam 37 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom  - CER: 1.00
+Sample 2 - Beam 38 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 39 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 40 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 41 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 42 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 43 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 44 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 45 - Predicted:  a monkey of the tree a dog below they clash bark howl then both run who fears whom - CER: 0.94
+Sample 2 - Beam 46 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 47 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 48 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 49 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 50 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 51 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 52 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 53 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 54 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 55 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 56 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 57 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 58 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 59 - Predicted:  a monkey up the tree a daub below they clash bark howl then both run who fears whom  - CER: 0.94
+Sample 2 - Beam 60 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 61 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom  - CER: 1.00
+Sample 2 - Beam 62 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run who fears whom - CER: 1.00
+Sample 2 - Beam 63 - Predicted:  a monkey up the tree a dog below they clash bark howl then both run  - CER: 0.83
+输入文本: Old Shi always skips stone-fetching. Teacher scolds, saying he's dishonest.
+Sample 3 - Beam 0 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 1 - Predicted:  old chi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 2 - Predicted:  old she always skips stonefetching teacher scolds saying he s dishonest  - CER: 0.75
+Sample 3 - Beam 3 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 4 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 5 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 6 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 7 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 8 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 9 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 10 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 11 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 12 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 13 - Predicted:  old xi always skips stonefetching teacher scolds saying he s dishonest  - CER: 0.75
+Sample 3 - Beam 14 - Predicted:  old chi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 15 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 16 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 17 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 18 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 19 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 20 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 21 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 22 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 23 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 24 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 25 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 26 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 27 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 28 - Predicted:  old shi always skips stonefetching teacher scolds saying he s dishonest  - CER: 0.83
+Sample 3 - Beam 29 - Predicted:  hold she always skip stone fetching teacher scolds saying he s dishonest  - CER: 0.75
+Sample 3 - Beam 30 - Predicted:  old she always skips stone fetching teacher scoats saying he s dishonest  - CER: 0.83
+Sample 3 - Beam 31 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 32 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 33 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 34 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 35 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 36 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 37 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 38 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 39 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 40 - Predicted:  old shi always skips stone fetching teacher scolds saying he s dishonest  - CER: 1.00
+Sample 3 - Beam 41 - Predicted:  old chi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 42 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 43 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 44 - Predicted:  old chi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 45 - Predicted:  all chi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.83
+Sample 3 - Beam 46 - Predicted:  ho wee old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.75
+Sample 3 - Beam 47 - Predicted:  old chi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 48 - Predicted:  old shi always skips stone fetching teacher scolds saying he s dishonest  - CER: 1.00
+Sample 3 - Beam 49 - Predicted:  old xi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 50 - Predicted:  old she always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 51 - Predicted:  old she always gets stone fexing teacher scolds saying he s dishonest  - CER: 0.75
+Sample 3 - Beam 52 - Predicted:  old chi always skips stone fetching teacher scolds saying he s dishonest  - CER: 0.92
+Sample 3 - Beam 53 - Predicted:  old she always skips stone fetching teacher scolds saying  - CER: 0.67
+Sample 3 - Beam 54 - Predicted:  old she it is tet stone fetching teter stane said his deceased - CER: 0.17
+Sample 3 - Beam 55 - Predicted:  old she o erfits day future to trespass saith his defilest  - CER: 0.08
+Sample 3 - Beam 56 - Predicted:  old shiu asked the stone fixer to dispose of his deceased  - CER: 0.17
+Sample 3 - Beam 57 - Predicted:   - CER: 0.00
+Sample 3 - Beam 58 - Predicted:  oh she always skips stone fetching teacher starts saying he s dishonest  - CER: 0.75
+Sample 3 - Beam 59 - Predicted:   - CER: 0.00
+Sample 3 - Beam 60 - Predicted:  r p o 16 picker starts soon  - CER: 0.00
+Sample 3 - Beam 61 - Predicted:  oh - CER: 0.00
+Sample 3 - Beam 62 - Predicted:  she always gets the fetchers goals  - CER: 0.08
+Sample 3 - Beam 63 - Predicted:   - CER: 0.00
+输入文本: Raise the mast, open the sail—wind blows, boat glides through the bay.
+Sample 4 - Beam 0 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 1 - Predicted:  raise the mast open the sail wind blows boat glides to the bay  - CER: 0.92
+Sample 4 - Beam 2 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 3 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 4 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 5 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 6 - Predicted:  raise the mast open the sail wind blows boat glides to the bay  - CER: 0.92
+Sample 4 - Beam 7 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 8 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 9 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 10 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 11 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 12 - Predicted:  raise the mast open the sail wind blows boat glides to the bay - CER: 0.92
+Sample 4 - Beam 13 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 14 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 15 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 16 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 17 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 18 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 19 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 20 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 21 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 22 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 23 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 24 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 25 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 26 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 27 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 28 - Predicted:  raise the mast open the sail wind blows boat glides to the bay  - CER: 0.92
+Sample 4 - Beam 29 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 30 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 31 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 32 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 33 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 34 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 35 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 36 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 37 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 38 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 39 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 40 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 41 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 42 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 43 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 44 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 45 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 46 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 47 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 48 - Predicted:  raise the mast open the sail wind blows boat blights through the bay  - CER: 0.92
+Sample 4 - Beam 49 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 50 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 51 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 52 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 53 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 54 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 55 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 56 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 57 - Predicted:  raise the mast open the sail wind blows boat glides through the bay  - CER: 1.00
+Sample 4 - Beam 58 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 59 - Predicted:  raise the mast open the sail wind blow boat glides through the bay  - CER: 0.92
+Sample 4 - Beam 60 - Predicted:  raise the mast open the sail wind blows boat glides through the bay - CER: 1.00
+Sample 4 - Beam 61 - Predicted:  raise the mast open the sail and raise both sides to the bay  - CER: 0.62
+Sample 4 - Beam 62 - Predicted:  raise the mast  - CER: 0.23
+Sample 4 - Beam 63 - Predicted:  raise the mast it is safe here it is take care sturge again  - CER: 0.23
+输入文本: Kick the shuttlecock with flair—Eight Immortals pass, counting all the way to one hundred!
+Sample 5 - Beam 0 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 1 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 2 - Predicted:  kick the shuttlecock with flare 8 immortals pass counting all the way to 100  - CER: 0.73
+Sample 5 - Beam 3 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 4 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 5 - Predicted:  kick the shuttlecock with flair at immortals pass counting all the way to 100  - CER: 0.80
+Sample 5 - Beam 6 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 7 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 8 - Predicted:  kick the shuttlecock with flair hate immortals pass counting all the way to 100  - CER: 0.80
+Sample 5 - Beam 9 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 10 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 11 - Predicted:  kicked the shuttlecock with flair ate a mortal s pass counting all the way to one hundred - CER: 0.67
+Sample 5 - Beam 12 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 13 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 14 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 15 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 16 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 17 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 18 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred - CER: 1.00
+Sample 5 - Beam 19 - Predicted:  kick the shuttlecock with flair hate immortals pass counting all the way to 100  - CER: 0.80
+Sample 5 - Beam 20 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 21 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 22 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 23 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 24 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 25 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 26 - Predicted:  kicked the shuttlecock with flair eight immortals pass counting all the way to one hundred - CER: 0.93
+Sample 5 - Beam 27 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 28 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 29 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 30 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 31 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 32 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 33 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 34 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 35 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred - CER: 1.00
+Sample 5 - Beam 36 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 37 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 38 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 39 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 40 - Predicted:  kicked the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.80
+Sample 5 - Beam 41 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 42 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 43 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 44 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 45 - Predicted:  kip the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.80
+Sample 5 - Beam 46 - Predicted:  tick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.80
+Sample 5 - Beam 47 - Predicted:  kick the shuttle cup with flair eight immortals pass counting all the way to 100  - CER: 0.73
+Sample 5 - Beam 48 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 49 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 50 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 51 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 52 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 53 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 54 - Predicted:  tick the shuttlecock with flare eight immortals pass counting all the way to 100  - CER: 0.73
+Sample 5 - Beam 55 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 56 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 57 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 58 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 59 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 60 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 61 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to 100  - CER: 0.87
+Sample 5 - Beam 62 - Predicted:  kick the shuttlecock with flair eight immortals pass counting all the way to one hundred  - CER: 1.00
+Sample 5 - Beam 63 - Predicted:  kick the shuttlecock with flair eight immortals pass count him all the way to one hundred  - CER: 0.87
+输入文本: Little cradle, don’t rock—sister’s asleep. No needle or egg, just a ribbon to braid her hair.
+Sample 6 - Beam 0 - Predicted:  little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair - CER: 1.00
+Sample 6 - Beam 1 - Predicted:  little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair - CER: 1.00
+Sample 6 - Beam 2 - Predicted:  little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair - CER: 1.00
+Sample 6 - Beam 3 - Predicted:  little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair - CER: 1.00
+Sample 6 - Beam 4 - Predicted:  little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair  - CER: 1.00
+Sample 6 - Beam 5 - Predicted:  little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair - CER: 1.00
+Sample 6 - Beam 6 - Predicted:  little cradle don t rock sister s asleep no needle or egg just a ribbon to braid her hair  - CER: 1.00
+Sample 6 - Beam 7 - Predicted:  little cradle don t rock sister s asleep  - CER: 0.42
+Sample 6 - Beam 8 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 9 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 10 - Predicted:  thank you  - CER: 0.00
+Sample 6 - Beam 11 - Predicted:  mm hmm  - CER: 0.00
+Sample 6 - Beam 12 - Predicted:  little cradle don t walk sister s asleep no knitting or egg just a wedding to brag or - CER: 0.68
+Sample 6 - Beam 13 - Predicted:  no  - CER: 0.05
+Sample 6 - Beam 14 - Predicted:  you - CER: 0.00
+Sample 6 - Beam 15 - Predicted:  little cradle don t rap sisters of sin no nothing to add just a little bit of that  - CER: 0.37
+Sample 6 - Beam 16 - Predicted:  little cradle don t rock sister s asleep now you don t rag just a rag to braid her hair  - CER: 0.68
+Sample 6 - Beam 17 - Predicted:  little crow don t walk  - CER: 0.16
+Sample 6 - Beam 18 - Predicted:   - CER: 0.00
+Sample 6 - Beam 19 - Predicted:  little cradle don t crock sisters asleep no needle or egg just a rubbing to braid her hair - CER: 0.79
+Sample 6 - Beam 20 - Predicted:  little cradle don t look sister s asleep just a little to guide her hair  - CER: 0.63
+Sample 6 - Beam 21 - Predicted:   - CER: 0.00
+Sample 6 - Beam 22 - Predicted:  little cradle thankful sister s mistake one day i ll earn just a little to pay her home  - CER: 0.37
+Sample 6 - Beam 23 - Predicted:  yeah - CER: 0.00
+Sample 6 - Beam 24 - Predicted:  little cradle don t walk sisters asleep not now or aye just a moment to play here  - CER: 0.47
+Sample 6 - Beam 25 - Predicted:  little cradle don t flake sister s asleep na na na i just say i came to bed hey hey - CER: 0.42
+Sample 6 - Beam 26 - Predicted:  rippas - CER: 0.00
+Sample 6 - Beam 27 - Predicted:  little cradle don t rot sisters asit no little her egg just a living to bear her egg - CER: 0.53
+Sample 6 - Beam 28 - Predicted:  little critters they shrug this is a street we need air air just air then to get air  - CER: 0.16
+Sample 6 - Beam 29 - Predicted:  meow meow - CER: 0.00
+Sample 6 - Beam 30 - Predicted:  little cradle  - CER: 0.11
+Sample 6 - Beam 31 - Predicted:  little cradle no sisters as new - CER: 0.16
+Sample 6 - Beam 32 - Predicted:   - CER: 0.00
+Sample 6 - Beam 33 - Predicted:  little cradle don t rock sisters asleep no needle or egg just a living to break her - CER: 0.74
+Sample 6 - Beam 34 - Predicted:  biddle cradle up sisters asleep no need a head just a heaven to build her head  - CER: 0.37
+Sample 6 - Beam 35 - Predicted:  little cradle don t flock sisters asleep no needlework just a little bit of play to have  - CER: 0.37
+Sample 6 - Beam 36 - Predicted:  little cradle don t walk sisters of slut no nitty a yad just a nitty a bad a a  - CER: 0.37
+Sample 6 - Beam 37 - Predicted:  blue cree thank you sisters receive remedy and aid  - CER: 0.00
+Sample 6 - Beam 38 - Predicted:  little canada don t walk - CER: 0.16
+Sample 6 - Beam 39 - Predicted:  little cradle sister of the sea - CER: 0.16
+Sample 6 - Beam 40 - Predicted:  thank you  - CER: 0.00
+Sample 6 - Beam 41 - Predicted:  mm hmm  - CER: 0.00
+Sample 6 - Beam 42 - Predicted:  little cradle don t walk sae stairs a step nae able o ag just a runnin to bed o have - CER: 0.32
+Sample 6 - Beam 43 - Predicted:  thank you  - CER: 0.00
+Sample 6 - Beam 44 - Predicted:  little cradle don t walk sister is asleep no needle or egg just a weapon to bite her head  - CER: 0.74
+Sample 6 - Beam 45 - Predicted:  little cradle don t walk sis goes to sleep no needle or rag just a living a good boy don t worry - CER: 0.32
+Sample 6 - Beam 46 - Predicted:  okay - CER: 0.00
+Sample 6 - Beam 47 - Predicted:  little cradle don t hurt sisters to see long live our old just a little bit of love  - CER: 0.32
+Sample 6 - Beam 48 - Predicted:  little cradle don t laugh sister s a saint kiss together hey  - CER: 0.37
+Sample 6 - Beam 49 - Predicted:  the cradle s back - CER: 0.11
+Sample 6 - Beam 50 - Predicted:  little cradle elm rock seaside sessions young and young and old and justin and eric and - CER: 0.16
+Sample 6 - Beam 51 - Predicted:  you can also download the app from the link in the description  - CER: 0.00
+Sample 6 - Beam 52 - Predicted:  libby created a band of systems of sleep no need for an egg just a little to burn a heart  - CER: 0.21
+Sample 6 - Beam 53 - Predicted:  you re the cradle the rock sisters asleep no leader and just a heaven to burn in error  - CER: 0.26
+Sample 6 - Beam 54 - Predicted:  little cradle fell fast two steps apart no moving eyes just a hibbing to all her pain  - CER: 0.37
+Sample 6 - Beam 55 - Predicted:  little cradle don t walk sister s asleep little needle more egg chest of rhythm to bite her head  - CER: 0.58
+Sample 6 - Beam 56 - Predicted:  little cradle don t walk sister s asleep now need only egg just a weapon to fight in pain  - CER: 0.58
+Sample 6 - Beam 57 - Predicted:  little greedo s north york sisters assume you re neither or and just everything compares to her  - CER: 0.26
+Sample 6 - Beam 58 - Predicted:  you re pretty don t you sisters asleep living in a world of disability  - CER: 0.16
+Sample 6 - Beam 59 - Predicted:  aum - CER: 0.00
+Sample 6 - Beam 60 - Predicted:  leader  - CER: 0.00
+Sample 6 - Beam 61 - Predicted:  little crudles help or assistance is the only way to get the message to tag me back  - CER: 0.11
+Sample 6 - Beam 62 - Predicted:  don t walk  - CER: 0.11
+Sample 6 - Beam 63 - Predicted:  we can hide them back off sisters escape now you know i am just a little a guy from here  - CER: 0.05
+[GPU 5] Partial CER: 0.00%
+[GPU 5] Partial similarity: 0.014947348939520972
+[GPU 5] Partial similarity (ref seg): 0.10279479090656553
+[GPU 5] AES‑CE: 6.034903185708182
+[GPU 5] AES‑CU: 7.370779378073556
+[GPU 5] AES‑PC: 1.4142116137913294
+[GPU 5] AES‑PQ: 7.633017948695591
+[GPU 5] AES‑utmos: 4.470333235604422
+GPU 5 done. Results saved to /aifs4su/data/zheny/music_codec/inference_time_scaling/sample_hard/en_final_cer_allpure2/AES_utmos_CH10_NB32_BW2/partial_result_5.json
