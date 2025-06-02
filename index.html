@@ -47,7 +47,7 @@
         <li><a href="#Codec Reconstruction Samples">Codec Reconstruction Samples</a></li> 
         <li><a href="#Scaling Train-Time Compute">Scaling Train-Time Compute</a></li> 
 		<li><a href="#Scaling Inference-Time Compute">Scaling Inference-Time Compute</a></li> 
-		
+		<li><a href="#Zero-shot In-context Learning">Zero-shot In-context Learning</a></li> 
 		<!-- <li><a href="#rl-samples">Scaling Test-Time Compute</a></li>  Scaling Inference-Time Compute : Reconstruction Samples
         <li><a href="#zero-shot-icl-samples">Zero-shot In-context Learning</a></li>
         <li><a href="#speaker-finetune-samples">Speaker Fine-tune</a></li>
@@ -2444,6 +2444,67 @@
                   </tbody>
               </table>
           </div>
+</div>		 
+
+
+
+
+	 
+		
+
+	<div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded"> 
+		<h2 id="zero-shot-icl-samples" style="text-align: center;">Zero-shot In-context Learning using Llasa-1b-250k with direct inference(Prompts from demo page of seed-tts)</h2>
+		<div class="table-responsive pt-3">
+			<table class="table table-hover pt-2">
+				<thead>
+				<tr>
+				<th style="vertical-align : middle;text-align: center">Language </th>
+				<th style="vertical-align : middle;text-align: center">Prompt </th>
+				<th style="vertical-align : middle;text-align: center">Same Language Generation</th>
+				<th style="vertical-align : middle;text-align: center">Cross-linugal Generation</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td style="vertical-align : middle;text-align:center;" rowspan="3">EN</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/EN/prompt/4245145269330795065.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/0_en.wav" autoplay/>Your browser does not support the audio element.</audio><br>I don't really care what you call me. I've been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring. Respect me and I'll nurture you; ignore me and you shall face the consequences.</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/0.wav" autoplay/>Your browser does not support the audio element.</audio><br>顿时，气氛变得沉郁起来。乍看之下，一切的困扰仿佛都围绕在我身边。我皱着眉头，感受着那份压力，但我知道我不能放弃，不能认输。于是，我深吸一口气，心底的声音告诉我：“无论如何，都要冷静下来，重新开始。”</td>
+					</tr>
+					<tr>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/EN/prompt/2486365921931244890.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/1_en.wav" autoplay/>Your browser does not support the audio element.</audio><br>Dealing with family secrets is never easy. Yet, sometimes, omission is a form of protection, intending to safeguard some from the harsh truths. One day, I hope you understand the reasons behind my actions. Until then, Anna, please, bear with me.</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/1.wav" autoplay/>Your browser does not support the audio element.</audio><br>处理家庭秘密从来都不是一件容易的事。然而，有时候，隐瞒是一种保护形式，旨在保护一些人免受残酷的真相伤害。有一天，我希望你能理解我行为背后的原因。在那之前，安娜，请容忍我。</td>
+					</tr>
+					<tr>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/EN/prompt/-9102975986427238220.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/2_en.wav" autoplay/>Your browser does not support the audio element.</audio><br>The combinations of different textures and flavors create a perfect harmony. The succulence of the steak, the tartness of the cranberries, the crunch of pine nuts, and creaminess of blue cheese make it a truly delectable delight. Enjoy your culinary adventure!</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/2.wav" autoplay/>Your browser does not support the audio element.</audio><br>听着你的话，我心里五味杂陈。虽然我愿意一直在你身边，承担一切不幸，但我知道只有让你自己面对，才能真正让你变得更强大。所以，你要记得，无论面对何种困难，都请你坚强，我会在心里一直支持你的。</td>
+					</tr>
+
+					<tr>
+						<td style="vertical-align : middle;text-align:center;" rowspan="3">ZH</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/ZH/prompt/2648200402409733590.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/3.wav" autoplay/>Your browser does not support the audio element.</audio><br>突然，身边一阵笑声。我看着他们，意气风发地挺直了胸膛，甩了甩那稍显肉感的双臂，轻笑道："我身上的肉，是为了掩饰我爆棚的魅力，否则，岂不吓坏了你们呢？"</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/3_en.wav" autoplay/>Your browser does not support the audio element.</audio><br>Suddenly, there was a burst of laughter beside me. I looked at them, stood up straight with high spirit, shook the slightly fleshy arms, and smiled lightly, saying, "The flesh on my body is to hide my bursting charm. Otherwise, wouldn't it scare you?"</td>
+					</tr>
+					<tr>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/ZH/prompt/8913957783621352198.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/4.wav" autoplay/>Your browser does not support the audio element.</audio><br>他闭上眼睛，期望这一切都能过去。然而，当他再次睁开眼睛，眼前的景象让他不禁倒吸一口气。雾气中出现的禁闭岛，陌生又熟悉，充满未知的危险。他握紧拳头，心知他的生活即将发生翻天覆地的改变。</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/4_en.wav" autoplay/>Your browser does not support the audio element.</audio><br>He closed his eyes, expecting that all of this could pass. However, when he opened his eyes again, the sight in front of him made him couldn't help but take a deep breath. The closed island that appeared in the fog, strange and familiar, was full of unknown dangers. He tightened his fist, knowing that his life was about to undergo earth-shaking changes. </td>
+					</tr>
+					<tr>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/ZH/prompt/2631296891109983590.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/5.wav" autoplay/>Your browser does not support the audio element.</audio><br>顿时，气氛变得沉郁起来。乍看之下，一切的困扰仿佛都围绕在我身边。我皱着眉头，感受着那份压力，但我知道我不能放弃，不能认输。于是，我深吸一口气，心底的声音告诉我：“无论如何，都要冷静下来，重新开始。”</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios\seedtts\ZeroShotICL_samples/demopage_final/5_en.wav" autoplay/>Your browser does not support the audio element.</audio><br>Suddenly, the atmosphere became gloomy. At first glance, all the troubles seemed to surround me. I frowned, feeling that pressure, but I know I can't give up, can't admit defeat. So, I took a deep breath, and the voice in my heart told me, "Anyway, must calm down and start again."</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+</div>
+		
+		
+
 
         <!-- We use Llasa-1b-250k for continuation experiment on the LibriSpeech test-clean dataset. The generated audio for each sample starts with the first 3 seconds of the ground truth audio, followed by the model's generated continuation.
         <div class="table-responsive pt-3">
